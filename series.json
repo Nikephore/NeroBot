@@ -1,0 +1,93 @@
+{
+  "padoru": {
+    "name": "padoru",
+    "alias" : [
+      "padoru",
+      "original"
+      ]
+  },
+  "seasonal": {
+    "name": "seasonal",
+    "alias" : [
+      "seasonal",
+      "season",
+      "event"
+    ]
+  },
+  "higurashi": {
+    "name" : "higurashi",
+    "alias" : [
+      "higurashi",
+      "higurashi no naku koro ni",
+      "wtc",
+      "when they cry",
+      "When the cicadas Cry"
+      ]
+  },
+  "drstone": {
+    "name": "drstone",
+    "alias" : [
+      "Dr. Stone",
+      "Dr Stone",
+      "El Piedras",
+      "Doctor Stone"
+      ]
+  },
+  
+ "snk": {
+   "name": "snk",
+    "alias" : [
+      "Shingeki no kyojin",
+      "shingeki",
+      "snk",
+      "aot",
+      "attack on titan",
+      "ataque a los titanes",
+      "el manifiesto comunista"
+      ]
+  },
+
+  "ngnl": {
+    "name": "ngnl",
+    "alias" : [
+      "NGNL",
+      "No game No life",
+      "Ese anime banneado en australia",
+      "No Game No life:Zero"
+      ]
+  },
+  
+  "inazuma": {
+    "name": "inazuma",
+    "alias" : [
+      "Inazuma Eleven",
+      "Inazuma",
+      "Inazuma Eleven GO",
+      "Inazuma Eleven Ares"
+      ]
+  },
+  "hxh": {
+    "name" : "hxh",
+    "alias" : [
+      "hunter x hunter",
+      "hxh"
+      ]
+  },
+  "durarara": {
+    "name": "durarara",
+    "alias" : [
+      "durarara",
+      "drrr",
+      "durarara!!",
+      "drrr!!"
+      ]
+  },
+  "hololive": {
+    "name" : "hololive",
+    "alias" : [
+      "Hololive",
+      "Hololive English",
+      "HoloEN"
+      ]
+  }
+}
