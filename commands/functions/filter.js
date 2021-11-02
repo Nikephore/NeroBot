@@ -26,6 +26,15 @@ function seriesFilter(padoruList, seriesList, text){
   return padoruList
 }
 
+function rarityFilter(padoruList, rarity){
+  padoruList = padoruList
+    .filter(a => a.rarity === rarity)
+    .filter(a => a.released === true)
+
+  return padoruList
+}
+
 module.exports = {
-  seriesFilter
+  seriesFilter,
+  rarityFilter
 }

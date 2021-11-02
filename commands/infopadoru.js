@@ -72,10 +72,10 @@ module.exports = {
 
       infoPadoru = padoruBaseList.find(e => e.id === newId)
       if(!infoPadoru.active){
-        msg.edit(`El padoru con id **${newId + 1}** aún no ha salido de forma oficial, no se puede ver su información`)
+        msg.edit(`El padoru con id **${newId}** aún no ha salido de forma oficial, no se puede ver su información`)
       } else {
         msg.edit('ㅤ')
-        infoPadoru.footer = `${newId + 1}/${total}`
+        infoPadoru.footer = `${newId}/${total}`
         var newResult = embed.embedCreator(infoPadoru, '')
         msg.edit(newResult)
       }
