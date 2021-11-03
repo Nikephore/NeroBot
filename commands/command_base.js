@@ -89,6 +89,8 @@ module.exports = (client, commandOptions) => {
           }
 
         }
+
+        console.log(`----------\nUser: ${message.author.username}-${member.id}\nGuild: ${guild.name}-${guild.id}\nCommand: ${command}\n----------`)
        
         callback(message, arguments, arguments.join(' '))
 
