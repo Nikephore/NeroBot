@@ -89,8 +89,19 @@ module.exports = (client, commandOptions) => {
           }
 
         }
+        
+        let data = `
+        ----------
+        User: ${message.author.username}-${member.id}
+        Guild: ${guild.name}-${guild.id}
+        Command: ${command}
+        Date: ${Date.now().toLocaleString()}
+        ----------`
 
-        console.log(`----------\nUser: ${message.author.username}-${member.id}\nGuild: ${guild.name}-${guild.id}\nCommand: ${command}\n----------`)
+        fs.writeFile('logger.txt', data, (err) => {
+          if(err) throw err
+        })
+
        
         callback(message, arguments, arguments.join(' '))
 
