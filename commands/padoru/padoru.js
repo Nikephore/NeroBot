@@ -1,8 +1,8 @@
 const fs = require('fs')
-const math = require('./functions/math')
-const embed = require('./functions/embed')
-const argFilter = require('./functions/filter')
-const economy = require('../economy')
+const math = require('../functions/math')
+const embed = require('../functions/embed')
+const argFilter = require('../functions/filter')
+const economy = require('../../economy')
 
 module.exports = {
   commands: ['padoru','p'],

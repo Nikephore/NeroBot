@@ -143,42 +143,20 @@ module.exports.erase = async (userId, padorupedia) => {
   })
 }
 
-module.exports.update = async (list) => {
+module.exports.update = async () => {
   return await mongo().then(async mongoose => {
     try {
       const result = await profileSchema.find()
+      console.log(result)
+      console.log('----------')
+      console.log(result[0])
+
       /*
-      result.forEach(function(e){
-
-        for(i = 0; i < list.length; i++){
-          let found = list.find(l => l.title === )
-        }
-
-        const user = e.userId
-
-        const update = await profileSchema.findOneAndUpdate({
-          user
-        },
-        {
-          $set: {e.padorupedia: list}
-        }
-        )
+      result.update({
+        $
       })
       */
-      result.forEach(element => element.padorupedia
-
-        .forEach(async function(f){
-          const found = list.find(e => e.title === f.title)
-          /* 
-          console.log('------------------------')
-          console.log(f)
-          console.log(found)
-          console.log('------------------------')
-          */
-          const update = await profileSchema.update({element},{$set:{f:found}})
-
-        }))
-
+     
       return
       
     } finally {

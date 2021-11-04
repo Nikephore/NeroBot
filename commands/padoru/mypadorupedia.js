@@ -1,9 +1,9 @@
 const Discord = require("discord.js")
 const fs = require('fs')
-const economy = require('../economy.js')
+const economy = require('../../economy.js')
 //function files
-const math = require('./functions/math.js')
-const argFilter = require('./functions/filter.js')
+const math = require('../functions/math.js')
+const argFilter = require('../functions/filter.js')
 
 
 module.exports = {

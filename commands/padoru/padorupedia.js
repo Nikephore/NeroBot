@@ -1,7 +1,7 @@
 const fs = require('fs')
-const math = require('./functions/math')
+const math = require('../functions/math')
 const Discord = require("discord.js")
-const argFilter = require('./functions/filter.js')
+const argFilter = require('../functions/filter.js')
 
 module.exports = {
   commands: ['padorupedia', 'pp'],

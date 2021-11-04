@@ -2,6 +2,11 @@ module.exports = {
   commands: ['help'],
   callback: (message) => {
 
-    message.channel.send('**Comandos:**\n%p: Sacar un padoru y añadirlo a tu colección.\n%pp: Ver la lista entera de Padorus.\n%ip: Mirar un padoru especifico.\n%mpp: Ver mi colección de Padorus.')
-  },  
+    message.channel.send(
+      `**Comandos:**
+      %p: Sacar un padoru y añadirlo a tu colección.
+      %pp: Ver la lista entera de Padorus.
+      %ip: Mirar un padoru especifico.
+      %mpp: Ver mi colección de Padorus.`)
+  },
 }
