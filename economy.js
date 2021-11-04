@@ -146,17 +146,37 @@ module.exports.erase = async (userId, padorupedia) => {
 module.exports.update = async () => {
   return await mongo().then(async mongoose => {
     try {
-      const result = await profileSchema.find()
+      const result = await profileSchema.find().update({
+
+      },
+      {
+        $set : {padoruCount : 0}
+      },
+      {
+      upsert: false,
+      multi: true
+      })
+
       console.log(result)
       console.log('----------')
       console.log(result[0])
+      
+      /*
+      result.forEach(function(e) {
 
+      })
+      result.forEach(
+        e => e.updateOne({
+
+        },
+        )
+      )
       /*
       result.update({
         $
       })
       */
-     
+
       return
       
     } finally {
