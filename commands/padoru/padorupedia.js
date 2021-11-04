@@ -82,27 +82,22 @@ module.exports = {
           numPage = totalPages
         } else {
           numPage--
-        }
-        console.log(`page <- ${numPage}`)        
+        }      
 		  } else if (reaction.emoji.name === "➡️"){
         if(numPage === totalPages){
           numPage = 1
         } else {
           numPage++
-        }
-        console.log(`page -> ${numPage}`)  
+        } 
 		  }
 
       var start = (numPage - 1) * page
-      console.log(start)
       var end = numPage * page
-      console.log(end)
 
       let title = ''
       while(padoruBaseList[start] !== undefined && start < end){
         title = title + '\n`' + (padoruBaseList[start].id) + '`**' + padoruBaseList[start].title + '**' + ' ' + math.rarityConvertAscii(padoruBaseList[start].rarity)
-
-        console.log(padoruBaseList[start])
+        
         start ++
       }
 

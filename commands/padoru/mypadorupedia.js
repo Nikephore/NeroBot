@@ -46,8 +46,6 @@ module.exports = {
       .filter(a => padoruList.includes(a.id))
 
     const count = padoruBaseList.length
-
-    console.log(padoruBaseList)
     
     msg = new Discord.MessageEmbed()
       .setAuthor('Padorupedia de ' + target.username, message.author.avatarURL)

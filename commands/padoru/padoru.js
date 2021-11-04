@@ -27,11 +27,8 @@ module.exports = {
     padoruBaseList = padoruBaseList.filter(a => a.active === true).filter(r => r.rarity === rarityChosen)
 
     var count = padoruBaseList.length
-    console.log(count)
-   
-    var randomPadoru = padoruBaseList[(math.randomNumberBetween(1,count))-1]
 
-    console.log(randomPadoru)
+    var randomPadoru = padoruBaseList[(math.randomNumberBetween(1,count))-1]
     
     if(message.author.username !== randomPadoru.owner){
       randomPadoru.footer = `Le has robado el padoru a ${randomPadoru.owner}`
