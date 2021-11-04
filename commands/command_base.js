@@ -1,3 +1,4 @@
+const fs = require('fs')
 const { prefix } = require('../config.json')
 const Duration = require('humanize-duration')
 
@@ -90,15 +91,16 @@ module.exports = (client, commandOptions) => {
 
         }
         
+        const today = new Date(now);
         let data = `
-        ----------
-        User: ${message.author.username}-${member.id}
-        Guild: ${guild.name}-${guild.id}
-        Command: ${command}
-        Date: ${Date.now().toLocaleString()}
-        ----------`
+----------
+User: ${message.author.username}-${member.id}
+Guild: ${guild.name}-${guild.id}
+Command: ${command}
+Date: ${today.toUTCString()}
+----------`
 
-        fs.writeFile('logger.txt', data, (err) => {
+        fs.appendFile('logger.txt', data, (err) => {
           if(err) throw err
         })
 
