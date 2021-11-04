@@ -39,15 +39,18 @@ module.exports.getCoins = async (userId) => {
       })
 
       let padoruCoins = 0
+      let padoruCount = 0
       let padorupedia = []
       if(result){
         padoruCoins = result.padoruCoins
         padorupedia = result.padorupedia
+        padoruCount = result.padoruCount
       } else {
         await new profileSchema({
           userId,
           padoruCoins,
-          padorupedia
+          padorupedia,
+          padoruCount
         }).save()
       }
 
@@ -95,6 +98,7 @@ module.exports.myPadorus = async (userId) => {
       })
 
       let padoruCoins = 0
+      let padoruCount = 0
       let padorupedia = []
       if(result){
         padoruCoins = result.padoruCoins
@@ -104,7 +108,8 @@ module.exports.myPadorus = async (userId) => {
         await new profileSchema({
           userId,
           padoruCoins,
-          padorupedia
+          padorupedia,
+          padoruCount
         }).save()
       }
 
@@ -143,39 +148,46 @@ module.exports.erase = async (userId, padorupedia) => {
   })
 }
 
-module.exports.update = async () => {
+async function update (userId, count){
   return await mongo().then(async mongoose => {
     try {
-      const result = await profileSchema.find().update({
 
-      },
-      {
-        $set : {padoruCount : 0}
-      },
-      {
-      upsert: false,
-      multi: true
+      const result = await profileSchema.findOne({userId}, function (err, doc) {
+      if (err) return done(err);
+      // Create the new field if it doesn't exist yet
+      doc.padoruCount || (doc.padoruCount = count)
+
+      doc.save(done);
       })
-
-      console.log(result)
-      console.log('----------')
-      console.log(result[0])
-      
-      /*
-      result.forEach(function(e) {
-
-      })
-      result.forEach(
-        e => e.updateOne({
-
+/*
+      const result = await profileSchema.findOneAndUpdate({
+          userId
         },
-        )
-      )
-      /*
-      result.update({
-        $
+        {
+          $set : padoruCount
+        },
+        {
+          upsert: false,
+          new: true
+        })
+*/
+      return
+      
+    } finally {
+      mongoose.connection.close()
+    }
+  })
+}
+
+module.exports.updateAll = async () => {
+  return await mongo().then(async mongoose => {
+    try {
+      const result = await profileSchema.find()
+      
+      //const test = await update(result[0].userId)
+      result.forEach(async function(e){
+        var up = await update(e.userId, e.padorupedia.length)
       })
-      */
 
       return
       
@@ -184,3 +196,6 @@ module.exports.update = async () => {
     }
   })
 }
+
+
+

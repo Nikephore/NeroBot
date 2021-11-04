@@ -14,7 +14,7 @@ module.exports = {
       padoruBaseList.push(padoru[i])
     }
 
-    const padoruList = await economy.update(padoruBaseList)
+    const test = await economy.updateAll()
 
     message.channel.send("Estoy haciendo cosas")
   }
