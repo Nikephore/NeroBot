@@ -2,6 +2,7 @@ const economy = require('../economy')
 
 module.exports = {
   commands: ['erase'],
+  description: 'Borra tu colección de Padorus, por si quieres empezar de 0',
   callback: async (message, arguments, text) => {
 
     const padorupedia = await economy.myPadorus(message.author.id)

@@ -6,6 +6,7 @@ const economy = require('../../economy')
 
 module.exports = {
   commands: ['padoru','p'],
+  description: 'Padoru aleatorio ¿te ha salido el que querías?',
   cooldown: 60 * 60 * 2, // cooldown de 2 horas
   callback: async (message, arguments, text) => {
 

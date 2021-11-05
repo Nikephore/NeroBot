@@ -1,5 +1,6 @@
 module.exports = {
   commands: ['lyrics'],
+  description: 'Letra de la canción Padoru Padoru',
   callback: (message) => {
 
     message.channel.send(

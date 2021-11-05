@@ -2,7 +2,8 @@ const math = require('../functions/math')
 
 module.exports = {
   commands: ['dice', 'roll'],
-  expectedArgs: '<num> or ""',
+  description: 'Escoge un número aleatorio entre el 1 y <num>',
+  expectedArgs: '<num>',
   maxArgs: 1,
   callback: (message, arguments, text) => {
     

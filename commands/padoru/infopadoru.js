@@ -4,9 +4,9 @@ const math = require('../functions/math')
 
 module.exports = {
   commands: ['infopadoru', 'ip'],
+  description: 'Información del padoru, también puedes buscar por ID',
   maxArgs: 1,
-  minArgs: 1,
-  expectedArgs: '%ip <id> || %ip <padoru name>',
+  expectedArgs: '<Nombre>',
   callback: async (message, arguments, text) => {
     const jsonString = fs.readFileSync('./padoru.json')
     const padoru = JSON.parse(jsonString)

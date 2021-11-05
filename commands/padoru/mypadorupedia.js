@@ -8,6 +8,9 @@ const argFilter = require('../functions/filter.js')
 
 module.exports = {
   commands: ['mypadorupedia','mpp'],
+  description: 'Muestra la lista de los Padorus que has obtenido',
+  maxArgs: 1,
+  expectedArgs: '<@User>',
   callback: async (message, arguments, text) =>{
     const target = message.mentions.users.first() || message.author
     const targetId = target.id
