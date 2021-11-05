@@ -3,7 +3,7 @@ const path = require('path')
 
 module.exports = (client) => {
     let baseFile = 'command_base.js'
-    let commandBase = require(`./commands/${baseFile}`)
+    let commandBase = require(`./${baseFile}`)
 
     let commandList = []
 

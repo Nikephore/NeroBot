@@ -1,4 +1,4 @@
-const math = require('../functions/math')
+const math = require('../../functions/math')
 
 module.exports = {
   commands: ['dice', 'roll'],

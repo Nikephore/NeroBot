@@ -1,6 +1,6 @@
 const fs = require('fs')
-const embed = require('../functions/embed')
-const math = require('../functions/math')
+const embed = require('../../functions/embed')
+const math = require('../../functions/math')
 
 module.exports = {
   commands: ['infopadoru', 'ip'],
