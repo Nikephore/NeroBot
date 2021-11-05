@@ -20,7 +20,7 @@ module.exports = {
       const args = command.expectedArgs ? ` ${command.expectedArgs}` : ''
       const { description } = command
 
-      reply += `**${mainCommand}${args} : ${description}\n`
+      reply += `***${prefix}${mainCommand}${args}:*** ${description}\n`
     }
 
     msg.setTitle('Guia de comandos de Nero')
@@ -28,7 +28,8 @@ module.exports = {
     msg.setColor('DARK_BLUE')
     msg.addField('\u200B', 'El prefijo del bot es %')
     msg.addField('\u200B', reply)
-    msg.setFooter(`Twitter: https://twitter.com/NeroPadoruBot`)
+    msg.addField('\u200B', `[Cuenta de Twitter](https://twitter.com/NeroPadoruBot)`)
+    msg.addField('\u200B', '[Invita a Nero a tu servidor](https://discord.com/api/oauth2/authorize?client_id=442790194555650048&permissions=0&scope=bot)')
 
 
     message.channel.send(msg)

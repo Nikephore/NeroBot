@@ -4,6 +4,7 @@
     "title": "Padoru normal",
     "active": true,
     "released": true,
+    "banner": false,
     "rarity": 1,
     "raritystar": "⭐☆☆☆☆",
     "series": [
@@ -21,6 +22,7 @@
     "title": "Padoru espejo | ojepse urodaP",
     "active": true,
     "released": true,
+    "banner": false,
     "rarity": 1,
     "raritystar": "⭐☆☆☆☆",
     "series": [
@@ -31,13 +33,14 @@
     "footer": "",
     "artist": "https://www.deviantart.com/manaalchemist",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901827298918010960/PADORUMIRROR.png",
-    "owner": "Rubix"
+    "owner": "Luiso2"
   },
   "padoru_mussolini": {
     "id": 3,
     "title": "Padoru Mussolini",
     "active": true,
     "released": true,
+    "banner": false,
     "rarity": 1,
     "raritystar": "⭐☆☆☆☆",
     "series": [
@@ -55,6 +58,7 @@
     "title": "Padoru dorado",
     "active": true,
     "released": true,
+    "banner": false,
     "description": "El padoru dorado, el comienzo de esta gran aventura padoru",
     "rarity": 4,
     "raritystar": "⭐⭐⭐⭐☆",
@@ -72,6 +76,7 @@
     "title": "Padoru esmeralda",
     "active": true,
     "released": true,
+    "banner": false,
     "rarity": 2,
     "raritystar": "⭐⭐☆☆☆",
     "series": [
@@ -89,6 +94,7 @@
     "title": "Padoru diamante",
     "active": true,
     "released": true,
+    "banner": false,
     "rarity": 2,
     "raritystar": "⭐⭐☆☆☆",
     "series": [
@@ -106,6 +112,7 @@
     "title": "Padoru obsidiana",
     "active": true,
     "released": true,
+    "banner": false,
     "rarity": 2,
     "raritystar": "⭐⭐☆☆☆",
     "series": [
@@ -123,6 +130,7 @@
     "title": "Padoru arcoiris",
     "active": true,
     "released": true,
+    "banner": false,
     "rarity": 5,
     "raritystar": "⭐⭐⭐⭐⭐",
     "series": [
@@ -140,6 +148,7 @@
     "title": "Padoru rubí",
     "active": true,
     "released": true,
+    "banner": false,
     "rarity": 2,
     "raritystar": "⭐⭐☆☆☆",
     "series": [
@@ -157,6 +166,7 @@
     "title": "Padoru naranja",
     "active": true,
     "released": true,
+    "banner": false,
     "rarity": 2,
     "raritystar": "⭐⭐☆☆☆",
     "series": [
@@ -174,6 +184,7 @@
     "title": "Padoru de piedra",
     "active": true,
     "released": true,
+    "banner": false,
     "rarity": 3,
     "raritystar": "⭐⭐⭐☆☆",
     "series": [
@@ -192,6 +203,7 @@
     "title": "Padoru Rena",
     "active": true,
     "released": true,
+    "banner": true,
     "rarity": 4,
     "raritystar": "⭐⭐⭐⭐☆",
     "series": [
@@ -209,6 +221,7 @@
     "title": "Padoru Rika",
     "active": true,
     "released": true,
+    "banner": true,
     "rarity": 4,
     "raritystar": "⭐⭐⭐⭐☆",
     "series": [
@@ -226,6 +239,7 @@
     "title": "Padoru Satoko",
     "active": true,
     "released": true,
+    "banner": true,
     "rarity": 5,
     "raritystar": "⭐⭐⭐⭐⭐",
     "series": [
@@ -243,6 +257,7 @@
     "title": "Padoru Ukyo",
     "active": false,
     "released": false,
+    "banner": false,
     "rarity": 3,
     "raritystar": "⭐⭐⭐☆☆",
     "series": [
@@ -260,6 +275,7 @@
     "title": "Padoru Kohaku",
     "active": false,
     "released": false,
+    "banner": false,
     "rarity": 4,
     "raritystar": "⭐⭐⭐⭐☆",
     "series": [
@@ -277,6 +293,7 @@
     "title": "Padoru Gen",
     "active": false,
     "released": false,
+    "banner": false,
     "rarity": 4,
     "raritystar": "⭐⭐⭐⭐☆",
     "series": [
@@ -294,6 +311,7 @@
     "title": "Padoru Senku",
     "active": false,
     "released": false,
+    "banner": false,
     "rarity": 5,
     "raritystar": "⭐⭐⭐⭐⭐",
     "series": [
@@ -311,6 +329,7 @@
     "title": "Padoru Halloween",
     "active": false,
     "released": true,
+    "banner": false,
     "rarity": 3,
     "raritystar": "⭐⭐⭐☆☆",
     "series": [
@@ -328,6 +347,7 @@
     "title": "Padoru Levi",
     "active": true,
     "released": true,
+    "banner": false,
     "rarity": 3,
     "raritystar": "⭐⭐⭐☆☆",
     "series": [
@@ -345,6 +365,7 @@
     "title": "Padoru Hange",
     "active": true,
     "released": true,
+    "banner": false,
     "rarity": 2,
     "raritystar": "⭐⭐☆☆☆",
     "series": [
@@ -362,6 +383,7 @@
     "title": "Padoru Killua",
     "active": true,
     "released": true,
+    "banner": false,
     "rarity": 3,
     "raritystar": "⭐⭐⭐☆☆",
     "series": [
@@ -379,6 +401,7 @@
     "title": "Padoru Shuvi",
     "active": true,
     "released": true,
+    "banner": false,
     "rarity": 4,
     "raritystar": "⭐⭐⭐⭐☆",
     "series": [
@@ -396,6 +419,7 @@
     "title": "Padoru Shiro",
     "active": true,
     "released": true,
+    "banner": false,
     "rarity": 5,
     "raritystar": "⭐⭐⭐⭐⭐",
     "series": [
@@ -413,6 +437,7 @@
     "title": "Padoru Gura",
     "active": true,
     "released": true,
+    "banner": false,
     "rarity": 3,
     "raritystar": "⭐⭐⭐☆☆",
     "series": [
@@ -430,6 +455,7 @@
     "title": "Padoru Shawn",
     "active": true,
     "released": true,
+    "banner": false,
     "rarity": 3,
     "raritystar": "⭐⭐⭐☆☆",
     "series": [
@@ -447,6 +473,7 @@
     "title": "Padoru Nathan",
     "active": true,
     "released": true,
+    "banner": false,
     "rarity": 3,
     "raritystar": "⭐⭐⭐☆☆",
     "series": [
@@ -464,6 +491,7 @@
     "title": "Padoru Celty",
     "active": true,
     "released": true,
+    "banner": false,
     "rarity": 3,
     "raritystar": "⭐⭐⭐☆☆",
     "series": [

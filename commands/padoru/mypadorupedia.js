@@ -8,7 +8,7 @@ const argFilter = require('../../functions/filter.js')
 
 module.exports = {
   commands: ['mypadorupedia','mpp'],
-  description: 'Muestra la lista de los Padorus que has obtenido',
+  description: 'Muestra la lista de los Padorus que ha obtenido un usuario',
   maxArgs: 1,
   expectedArgs: '<@User>',
   callback: async (message, arguments, text) =>{
@@ -31,15 +31,23 @@ module.exports = {
       seriesBaseList.push(series[i])
     }
 
-    if(text !== ''){
-      padoruBaseList = argFilter.seriesFilter(padoruBaseList, seriesBaseList, text)
-      
-    } else {
-      padoruBaseList = padoruBaseList.filter(a => a.released === true)
+    /* Si el primer argumento es un usuario
+    borramos su mencion del texto a filtrar */
+    if(arguments[0].startsWith('<@')){
+      text = text.replace(arguments[0]+' ', '')
     }
+
+    // Filtramos los Padorus por serie
+    if(text !== ''){
+        padoruBaseList = argFilter.seriesFilter(padoruBaseList, seriesBaseList, text)
+      }
+
+
+    padoruBaseList = padoruBaseList.filter(a => a.released === true)
 
     const total = padoruBaseList.length
 
+    // Obtenemos la lista de Padorus del user
     const padoruList = await economy.myPadorus(target.id)
     
 
@@ -50,7 +58,8 @@ module.exports = {
 
     const count = padoruBaseList.length
     
-    msg = new Discord.MessageEmbed()
+    // Creamos el mensaje para Discord
+    msgmpp = new Discord.MessageEmbed()
       .setAuthor('Padorupedia de ' + target.username, message.author.avatarURL)
       .setColor('RED')
       .setThumbnail('https://cdn.discordapp.com/attachments/901798915425321000/901799120740704276/PADORUorg.png')
@@ -65,12 +74,12 @@ module.exports = {
     }
 
     if(title !== ''){
-      msg.addField('\u200B', title)
+      msgmpp.addField('\u200B', title)
     } else {
-      msg.addField('\u200B', 'cri cri')
+      msgmpp.addField('\u200B', 'cri cri')
     }
     
-    message.channel.send(msg)
+    message.channel.send(msgmpp)
     
   }
 }

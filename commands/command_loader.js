@@ -26,7 +26,7 @@ module.exports = (client) => {
       }
     };
 
-    readCommands('commands')
+    readCommands('.')
 
     return commandList
 }

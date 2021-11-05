@@ -1,8 +1,9 @@
 const economy = require('../../economy.js')
-const math = require('../functions/math.js')
+const math = require('../../functions/math.js')
 
 module.exports = {
   commands: ['dailycoins', 'dc'],
+  description: 'Te da monedas una vez al día, estas se pueden usar en la tienda (tienda aun no disponible)',
   cooldown: 86399, //cooldown de 1 dia
   callback: async (message) => {
     const target = message.author

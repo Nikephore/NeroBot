@@ -11,6 +11,7 @@ module.exports = {
     const seriesString = fs.readFileSync('./series.json')
     const padoru = JSON.parse(padoruString)
     const series = JSON.parse(seriesString)
+    const leyenda = ':no_entry_sign: = El Padoru no se puede rollear actualmente\n:bangbang: = Padoru disponible por tiempo limitado'
     var padoruBaseList = []
     var seriesBaseList = []
 
@@ -48,11 +49,14 @@ module.exports = {
     var title = ''
     var i = 0
     while(padoruBaseList[i] !== undefined && i < page){
-      title = title + '\n`' + (padoruBaseList[i].id) + '`**' + padoruBaseList[i].title + '**' + ' ' + math.rarityConvertAscii(padoruBaseList[i].rarity)
+      var act = padoruBaseList[i].active ? '' : ':no_entry_sign:'
+      var banner = padoruBaseList[i].banner ? ':bangbang:' : ''
+      title = title + '\n`' + (padoruBaseList[i].id) + '`**' + padoruBaseList[i].title + '**' + ' ' + math.rarityConvertAscii(padoruBaseList[i].rarity) + ' ' + act + banner
       i++
     }
     
     embed.addField('\u200B', title)
+    embed.addField(leyenda)
     embed.setFooter(`Página ${numPage}/${totalPages}`)
         
     msg = await message.channel.send(embed)
@@ -96,13 +100,17 @@ module.exports = {
       var end = numPage * page
 
       let title = ''
+      
       while(padoruBaseList[start] !== undefined && start < end){
-        title = title + '\n`' + (padoruBaseList[start].id) + '`**' + padoruBaseList[start].title + '**' + ' ' + math.rarityConvertAscii(padoruBaseList[start].rarity)
+        var act = padoruBaseList[start].active === false ? ':no_entry_sign:' : ''
+        var banner = padoruBaseList[start].banner === true ? ':bangbang:' : ''
+        title = title + '\n`' + (padoruBaseList[start].id) + '`**' + padoruBaseList[start].title + '**' + ' ' + math.rarityConvertAscii(padoruBaseList[start].rarity) + ' ' + act + banner
         
         start ++
       }
 
       newEmbed.addField('\u200B', title)
+      newEmbed.addField('Leyenda de símbolos', leyenda)
       newEmbed.setFooter(`Página ${numPage}/${totalPages}`)
 
       msg.edit(newEmbed)
