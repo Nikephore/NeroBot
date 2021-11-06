@@ -15,6 +15,8 @@ module.exports = {
     const target = message.mentions.users.first() || message.author
     const targetId = target.id
 
+    console.log(target.username)
+
     const padoruString = fs.readFileSync('./padoru.json')
     const seriesString = fs.readFileSync('./series.json')
 
@@ -33,16 +35,17 @@ module.exports = {
 
     /* Si el primer argumento es un usuario
     borramos su mencion del texto a filtrar */
-    if(arguments[0].startsWith('<@')){
-      text = text.replace(arguments[0]+' ', '')
-    }
-
-    // Filtramos los Padorus por serie
     if(text !== ''){
+      if(arguments[0].startsWith('<@')){
+        text = text.replace(arguments[0], '')
+        text = text.replace(' ', '')
+      }
+      // Filtramos los Padorus por serie
+      if(text !== ''){
         padoruBaseList = argFilter.seriesFilter(padoruBaseList, seriesBaseList, text)
       }
-
-
+    }
+    
     padoruBaseList = padoruBaseList.filter(a => a.released === true)
 
     const total = padoruBaseList.length
