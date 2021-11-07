@@ -1714,3 +1714,33 @@ Guild: Liga Eevolution Draft España-782990846752063498
 Command: %p
 Date: Sun, 07 Nov 2021 22:50:30 GMT
 ----------
+----------
+User: Luiso-306496475251081217
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %p
+Date: Sun, 07 Nov 2021 23:17:02 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %mpp
+Date: Sun, 07 Nov 2021 23:17:17 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %pp
+Date: Sun, 07 Nov 2021 23:18:37 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %pp
+Date: Sun, 07 Nov 2021 23:18:54 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 23:19:07 GMT
+----------

@@ -87,7 +87,7 @@
     "footer": "",
     "artist": "https://twitter.com/Luiso_EK",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901799489998815292/PADORUEMERALD.png",
-    "owner": "Éric"
+    "owner": "Luiso"
   },
   "padoru_diamond": {
     "id": 6,
@@ -255,9 +255,9 @@
   "padoru_ukyo": {
     "id": 15,
     "title": "Padoru Ukyo",
-    "active": false,
-    "released": false,
-    "banner": false,
+    "active": true,
+    "released": true,
+    "banner": true,
     "rarity": 3,
     "raritystar": "⭐⭐⭐☆☆",
     "series": [
@@ -273,9 +273,9 @@
   "padoru_kohaku": {
     "id": 16,
     "title": "Padoru Kohaku",
-    "active": false,
-    "released": false,
-    "banner": false,
+    "active": true,
+    "released": true,
+    "banner": true,
     "rarity": 4,
     "raritystar": "⭐⭐⭐⭐☆",
     "series": [
@@ -291,9 +291,9 @@
   "padoru_gen": {
     "id": 17,
     "title": "Padoru Gen",
-    "active": false,
-    "released": false,
-    "banner": false,
+    "active": true,
+    "released": true,
+    "banner": true,
     "rarity": 4,
     "raritystar": "⭐⭐⭐⭐☆",
     "series": [
@@ -309,9 +309,9 @@
   "padoru_senku": {
     "id": 18,
     "title": "Padoru Senku",
-    "active": false,
-    "released": false,
-    "banner": false,
+    "active": true,
+    "released": true,
+    "banner": true,
     "rarity": 5,
     "raritystar": "⭐⭐⭐⭐⭐",
     "series": [
@@ -466,7 +466,7 @@
     "footer": "",
     "artist": "https://twitter.com/Nani_Mitsu",
     "image": "https://media.discordapp.net/attachments/901798915425321000/904129262863409152/padoru_shaun.png?width=586&height=586",
-    "owner": "NASAV23"
+    "owner": "Guacamole Guacahostias"
   },
   "padoru_nathan": {
     "id": 27,
