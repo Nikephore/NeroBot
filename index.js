@@ -35,4 +35,8 @@ client.once("ready", () => {
     loadCommands(client)
 })
 
+client.on('guildCreate', guild => {
+  guild.systemChannel.send('¡Hola! soy Nero, el bot de coleccionismo de Padorus. Escribe el comando ``%padoru`` para comenzar a jugar o ``%help`` para ver todos mis comandos.')
+});
+
 client.login(token)

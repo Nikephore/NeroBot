@@ -89,5 +89,21 @@
       "Hololive English",
       "HoloEN"
       ]
+  },
+  "Hanako-Kun": {
+    "name" : "hanako-kun",
+    "alias" : [
+      "Jibaku Shounen Hanako-kun",
+      "Toilet-bound Hanako-kun",
+      "Hanako-kun"
+      ]
+  },
+  "Komi-san": {
+    "name": "komi-san",
+    "alias" : [
+      "Komi-san wa, Comyushou desu.",
+      "Komi Can't Communicate",
+      "Komi-san"
+      ]
   }
 }

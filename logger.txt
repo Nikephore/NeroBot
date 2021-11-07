@@ -730,3 +730,987 @@ Guild: Nombre provisional permanente-330047503686828042
 Command: %mpp
 Date: Sat, 06 Nov 2021 15:02:49 GMT
 ----------
+----------
+User: !Juan-427478429940842506
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 16:52:07 GMT
+----------
+----------
+User: Hicron-321673787139555329
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 16:52:40 GMT
+----------
+----------
+User: Luiso2-398639989736603652
+Guild: Nombre provisional permanente-330047503686828042
+Command: %ip
+Date: Sat, 06 Nov 2021 16:53:43 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Nombre provisional permanente-330047503686828042
+Command: %stonks
+Date: Sat, 06 Nov 2021 16:54:28 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 17:03:38 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 17:16:23 GMT
+----------
+----------
+User: Rubix-253648555791613953
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 17:17:07 GMT
+----------
+----------
+User: hectorelval-337242516678115340
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 17:28:38 GMT
+----------
+----------
+User: Rena-414209806631567373
+Guild: LTE-596732011595431951
+Command: %p
+Date: Sat, 06 Nov 2021 18:21:11 GMT
+----------
+----------
+User: Rena-414209806631567373
+Guild: LTE-596732011595431951
+Command: %pc
+Date: Sat, 06 Nov 2021 18:21:34 GMT
+----------
+----------
+User: Rena-414209806631567373
+Guild: LTE-596732011595431951
+Command: %dc
+Date: Sat, 06 Nov 2021 18:21:40 GMT
+----------
+----------
+User: Rena-414209806631567373
+Guild: LTE-596732011595431951
+Command: %pc
+Date: Sat, 06 Nov 2021 18:21:46 GMT
+----------
+----------
+User: Rena-414209806631567373
+Guild: LTE-596732011595431951
+Command: %stonks
+Date: Sat, 06 Nov 2021 18:22:08 GMT
+----------
+----------
+User: Éric-325736460185632768
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 18:29:42 GMT
+----------
+----------
+User: Éric-325736460185632768
+Guild: Nombre provisional permanente-330047503686828042
+Command: %stonks
+Date: Sat, 06 Nov 2021 18:29:54 GMT
+----------
+----------
+User: Hicron-321673787139555329
+Guild: Nombre provisional permanente-330047503686828042
+Command: %pp
+Date: Sat, 06 Nov 2021 18:45:50 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %ip
+Date: Sat, 06 Nov 2021 19:04:53 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %ip
+Date: Sat, 06 Nov 2021 19:05:11 GMT
+----------
+----------
+User: Hicron-321673787139555329
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 19:05:26 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 19:06:28 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Nombre provisional permanente-330047503686828042
+Command: %mpp
+Date: Sat, 06 Nov 2021 19:06:37 GMT
+----------
+----------
+User: Hicron-321673787139555329
+Guild: Nombre provisional permanente-330047503686828042
+Command: %mpp
+Date: Sat, 06 Nov 2021 19:06:44 GMT
+----------
+----------
+User: Rubix-253648555791613953
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 20:21:29 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 20:21:39 GMT
+----------
+----------
+User: EriDBstrmr-689476190679203882
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 20:36:59 GMT
+----------
+----------
+User: Aritzzon-592806421721251890
+Guild: LTE-596732011595431951
+Command: %p
+Date: Sat, 06 Nov 2021 20:37:21 GMT
+----------
+----------
+User: Éric-325736460185632768
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 20:37:24 GMT
+----------
+----------
+User: !Juan-427478429940842506
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 20:39:30 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Nombre provisional permanente-330047503686828042
+Command: %mpp
+Date: Sat, 06 Nov 2021 20:39:50 GMT
+----------
+----------
+User: hectorelval-337242516678115340
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 20:44:56 GMT
+----------
+----------
+User: Luiso2-398639989736603652
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 22:31:41 GMT
+----------
+----------
+User: Rubix-253648555791613953
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 22:32:45 GMT
+----------
+----------
+User: Hicron-321673787139555329
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 22:37:22 GMT
+----------
+----------
+User: Éric-325736460185632768
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 22:37:31 GMT
+----------
+----------
+User: hectorelval-337242516678115340
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 23:31:57 GMT
+----------
+----------
+User: !Juan-427478429940842506
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 23:51:13 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sat, 06 Nov 2021 23:54:05 GMT
+----------
+----------
+User: Rubix-253648555791613953
+Guild: Nombre provisional permanente-330047503686828042
+Command: %mpp
+Date: Sat, 06 Nov 2021 23:54:22 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Nombre provisional permanente-330047503686828042
+Command: %ip
+Date: Sat, 06 Nov 2021 23:54:48 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 00:42:28 GMT
+----------
+----------
+User: Ansa-212745932117245953
+Guild: Hoooooolaaaaaa Luisoooooooo-614095036035891210
+Command: %p
+Date: Sun, 07 Nov 2021 01:07:23 GMT
+----------
+----------
+User: Rubix-253648555791613953
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 01:44:28 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %pp
+Date: Sun, 07 Nov 2021 02:11:56 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %pp
+Date: Sun, 07 Nov 2021 02:28:31 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %ip
+Date: Sun, 07 Nov 2021 02:29:16 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %ip
+Date: Sun, 07 Nov 2021 02:29:23 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %mpp
+Date: Sun, 07 Nov 2021 02:30:45 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Tengo Caramelos-460204224286949396
+Command: %ip
+Date: Sun, 07 Nov 2021 02:36:08 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Tengo Caramelos-460204224286949396
+Command: %p
+Date: Sun, 07 Nov 2021 02:37:58 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Tengo Caramelos-460204224286949396
+Command: %ip
+Date: Sun, 07 Nov 2021 02:38:43 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %pp
+Date: Sun, 07 Nov 2021 02:38:49 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %mpp
+Date: Sun, 07 Nov 2021 02:39:02 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %pp
+Date: Sun, 07 Nov 2021 02:41:58 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Tengo Caramelos-460204224286949396
+Command: %mpp
+Date: Sun, 07 Nov 2021 02:42:31 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Tengo Caramelos-460204224286949396
+Command: %mpp
+Date: Sun, 07 Nov 2021 02:43:25 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Tengo Caramelos-460204224286949396
+Command: %pp
+Date: Sun, 07 Nov 2021 02:46:21 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Tengo Caramelos-460204224286949396
+Command: %pp
+Date: Sun, 07 Nov 2021 02:51:47 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Tengo Caramelos-460204224286949396
+Command: %pp
+Date: Sun, 07 Nov 2021 02:51:59 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %p
+Date: Sun, 07 Nov 2021 02:54:01 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %mpp
+Date: Sun, 07 Nov 2021 02:54:15 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %mpp
+Date: Sun, 07 Nov 2021 02:54:43 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Tengo Caramelos-460204224286949396
+Command: %mpp
+Date: Sun, 07 Nov 2021 02:57:22 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %ip
+Date: Sun, 07 Nov 2021 02:57:51 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Tengo Caramelos-460204224286949396
+Command: %pp
+Date: Sun, 07 Nov 2021 03:06:19 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Tengo Caramelos-460204224286949396
+Command: %ip
+Date: Sun, 07 Nov 2021 03:06:24 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %gn
+Date: Sun, 07 Nov 2021 03:07:40 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %gn
+Date: Sun, 07 Nov 2021 03:08:24 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %ip
+Date: Sun, 07 Nov 2021 03:08:33 GMT
+----------
+----------
+User: Éric-325736460185632768
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 05:56:40 GMT
+----------
+----------
+User: Ansa-212745932117245953
+Guild: Hoooooolaaaaaa Luisoooooooo-614095036035891210
+Command: %p
+Date: Sun, 07 Nov 2021 06:27:31 GMT
+----------
+----------
+User: Hicron-321673787139555329
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 07:22:35 GMT
+----------
+----------
+User: !Juan-427478429940842506
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 08:36:15 GMT
+----------
+----------
+User: Éric-325736460185632768
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 09:58:03 GMT
+----------
+----------
+User: hectorelval-337242516678115340
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 10:18:46 GMT
+----------
+----------
+User: Ansa-212745932117245953
+Guild: Hoooooolaaaaaa Luisoooooooo-614095036035891210
+Command: %p
+Date: Sun, 07 Nov 2021 10:35:10 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 11:03:13 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %pp
+Date: Sun, 07 Nov 2021 11:03:46 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %ip
+Date: Sun, 07 Nov 2021 11:06:08 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Nombre provisional permanente-330047503686828042
+Command: %ip
+Date: Sun, 07 Nov 2021 11:41:57 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Nombre provisional permanente-330047503686828042
+Command: %ip
+Date: Sun, 07 Nov 2021 11:42:18 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Nombre provisional permanente-330047503686828042
+Command: %ip
+Date: Sun, 07 Nov 2021 11:42:28 GMT
+----------
+----------
+User: Hicron-321673787139555329
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 11:42:39 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 11:42:46 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %ip
+Date: Sun, 07 Nov 2021 11:44:01 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %ip
+Date: Sun, 07 Nov 2021 11:44:06 GMT
+----------
+----------
+User: Hicron-321673787139555329
+Guild: Nombre provisional permanente-330047503686828042
+Command: %mpp
+Date: Sun, 07 Nov 2021 11:44:46 GMT
+----------
+----------
+User: !Juan-427478429940842506
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 12:01:24 GMT
+----------
+----------
+User: Rubix-253648555791613953
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 12:06:48 GMT
+----------
+----------
+User: Éric-325736460185632768
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 12:18:36 GMT
+----------
+----------
+User: hectorelval-337242516678115340
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 13:09:54 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: LTE-596732011595431951
+Command: %p
+Date: Sun, 07 Nov 2021 13:13:58 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: LTE-596732011595431951
+Command: %dc
+Date: Sun, 07 Nov 2021 13:14:02 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: LTE-596732011595431951
+Command: %pc
+Date: Sun, 07 Nov 2021 13:14:05 GMT
+----------
+----------
+User: Aritzzon-592806421721251890
+Guild: LTE-596732011595431951
+Command: %p
+Date: Sun, 07 Nov 2021 13:14:12 GMT
+----------
+----------
+User: Aritzzon-592806421721251890
+Guild: LTE-596732011595431951
+Command: %dc
+Date: Sun, 07 Nov 2021 13:14:26 GMT
+----------
+----------
+User: Aritzzon-592806421721251890
+Guild: LTE-596732011595431951
+Command: %pc
+Date: Sun, 07 Nov 2021 13:14:36 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: LTE-596732011595431951
+Command: %ip
+Date: Sun, 07 Nov 2021 13:33:07 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: LTE-596732011595431951
+Command: %ip
+Date: Sun, 07 Nov 2021 13:33:11 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %h
+Date: Sun, 07 Nov 2021 13:37:51 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 13:55:48 GMT
+----------
+----------
+User: Cotonito ツ-764827987509903445
+Guild: LTE-596732011595431951
+Command: %p
+Date: Sun, 07 Nov 2021 14:18:22 GMT
+----------
+----------
+User: Rubix-253648555791613953
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 14:21:26 GMT
+----------
+----------
+User: wisma-308372630095003670
+Guild: LTE-596732011595431951
+Command: %p
+Date: Sun, 07 Nov 2021 14:31:08 GMT
+----------
+----------
+User: Ansa-212745932117245953
+Guild: Hoooooolaaaaaa Luisoooooooo-614095036035891210
+Command: %p
+Date: Sun, 07 Nov 2021 15:33:04 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: LTE-596732011595431951
+Command: %p
+Date: Sun, 07 Nov 2021 15:35:22 GMT
+----------
+----------
+User: Luiso2-398639989736603652
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 17:37:42 GMT
+----------
+----------
+User: Hicron-321673787139555329
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 17:40:16 GMT
+----------
+----------
+User: Rubix-253648555791613953
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 18:00:57 GMT
+----------
+----------
+User: wisma-308372630095003670
+Guild: LTE-596732011595431951
+Command: %p
+Date: Sun, 07 Nov 2021 18:21:29 GMT
+----------
+----------
+User: !Juan-427478429940842506
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 18:51:55 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 18:56:57 GMT
+----------
+----------
+User: hectorelval-337242516678115340
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 18:57:36 GMT
+----------
+----------
+User: Aritzzon-592806421721251890
+Guild: LTE-596732011595431951
+Command: %p
+Date: Sun, 07 Nov 2021 19:52:46 GMT
+----------
+----------
+User: Ansa-212745932117245953
+Guild: Hoooooolaaaaaa Luisoooooooo-614095036035891210
+Command: %p
+Date: Sun, 07 Nov 2021 20:08:48 GMT
+----------
+----------
+User: Rubix-253648555791613953
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 20:39:30 GMT
+----------
+----------
+User: Hicron-321673787139555329
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 20:45:27 GMT
+----------
+----------
+User: Hicron-321673787139555329
+Guild: Nombre provisional permanente-330047503686828042
+Command: %mpp
+Date: Sun, 07 Nov 2021 20:45:37 GMT
+----------
+----------
+User: hectorelval-337242516678115340
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 21:11:49 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 21:19:48 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 21:19:57 GMT
+----------
+----------
+User: Éric-325736460185632768
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 21:24:24 GMT
+----------
+----------
+User: Luiso2-398639989736603652
+Guild: Tengo Caramelos-460204224286949396
+Command: %ip
+Date: Sun, 07 Nov 2021 21:50:54 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %pp
+Date: Sun, 07 Nov 2021 21:55:27 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %mpp
+Date: Sun, 07 Nov 2021 21:56:02 GMT
+----------
+----------
+User: Cotonito ツ-764827987509903445
+Guild: LTE-596732011595431951
+Command: %help
+Date: Sun, 07 Nov 2021 21:57:41 GMT
+----------
+----------
+User: Cotonito ツ-764827987509903445
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 22:03:01 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %pp
+Date: Sun, 07 Nov 2021 22:06:03 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %help
+Date: Sun, 07 Nov 2021 22:07:32 GMT
+----------
+----------
+User: Hicron-321673787139555329
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 22:07:48 GMT
+----------
+----------
+User: Ansa-212745932117245953
+Guild: Hoooooolaaaaaa Luisoooooooo-614095036035891210
+Command: %p
+Date: Sun, 07 Nov 2021 22:09:45 GMT
+----------
+----------
+User: wisma-308372630095003670
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %p
+Date: Sun, 07 Nov 2021 22:17:59 GMT
+----------
+----------
+User: Rubix-253648555791613953
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 22:21:28 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %ip
+Date: Sun, 07 Nov 2021 22:21:44 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %pp
+Date: Sun, 07 Nov 2021 22:21:50 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %help
+Date: Sun, 07 Nov 2021 22:27:32 GMT
+----------
+----------
+User: wisma-308372630095003670
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %stonks
+Date: Sun, 07 Nov 2021 22:30:03 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %stonks
+Date: Sun, 07 Nov 2021 22:32:00 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %p
+Date: Sun, 07 Nov 2021 22:32:02 GMT
+----------
+----------
+User: Kramvic-365221720711495681
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %p
+Date: Sun, 07 Nov 2021 22:35:49 GMT
+----------
+----------
+User: Rubix-253648555791613953
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 22:36:49 GMT
+----------
+----------
+User: NASAV23-415986196066467840
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %p
+Date: Sun, 07 Nov 2021 22:37:01 GMT
+----------
+----------
+User: !Juan-427478429940842506
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 22:38:44 GMT
+----------
+----------
+User: wisma-308372630095003670
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %padorupedia
+Date: Sun, 07 Nov 2021 22:40:18 GMT
+----------
+----------
+User: hectorelval-337242516678115340
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 22:42:18 GMT
+----------
+----------
+User: hectorelval-337242516678115340
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Sun, 07 Nov 2021 22:42:23 GMT
+----------
+----------
+User: NASAV23-415986196066467840
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %p
+Date: Sun, 07 Nov 2021 22:43:07 GMT
+----------
+----------
+User: Kramvic-365221720711495681
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %p
+Date: Sun, 07 Nov 2021 22:43:44 GMT
+----------
+----------
+User: NASAV23-415986196066467840
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %p
+Date: Sun, 07 Nov 2021 22:44:20 GMT
+----------
+----------
+User: Kramvic-365221720711495681
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %p
+Date: Sun, 07 Nov 2021 22:44:36 GMT
+----------
+----------
+User: NASAV23-415986196066467840
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %p
+Date: Sun, 07 Nov 2021 22:45:05 GMT
+----------
+----------
+User: Kramvic-365221720711495681
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %p
+Date: Sun, 07 Nov 2021 22:45:22 GMT
+----------
+----------
+User: wisma-308372630095003670
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %mpp
+Date: Sun, 07 Nov 2021 22:45:37 GMT
+----------
+----------
+User: Kramvic-365221720711495681
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %p
+Date: Sun, 07 Nov 2021 22:45:54 GMT
+----------
+----------
+User: NASAV23-415986196066467840
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %p
+Date: Sun, 07 Nov 2021 22:46:01 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %dc
+Date: Sun, 07 Nov 2021 22:46:33 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %ip
+Date: Sun, 07 Nov 2021 22:46:57 GMT
+----------
+----------
+User: Cotonito ツ-764827987509903445
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %dc
+Date: Sun, 07 Nov 2021 22:48:58 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %ip
+Date: Sun, 07 Nov 2021 22:49:09 GMT
+----------
+----------
+User: Kramvic-365221720711495681
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %mpp
+Date: Sun, 07 Nov 2021 22:49:10 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %pp
+Date: Sun, 07 Nov 2021 22:49:19 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %pp
+Date: Sun, 07 Nov 2021 22:49:31 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %pp
+Date: Sun, 07 Nov 2021 22:49:41 GMT
+----------
+----------
+User: Cotonito ツ-764827987509903445
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %pc
+Date: Sun, 07 Nov 2021 22:50:17 GMT
+----------
+----------
+User: Cotonito ツ-764827987509903445
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %p
+Date: Sun, 07 Nov 2021 22:50:30 GMT
+----------
