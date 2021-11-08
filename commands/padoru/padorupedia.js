@@ -7,8 +7,8 @@ module.exports = {
   commands: ['padorupedia', 'pp'],
   description: 'Lista con todos los Padorus',
   callback: async (message, arguments, text) =>{
-    const padoruString = fs.readFileSync('./padoru.json')
-    const seriesString = fs.readFileSync('./series.json')
+    const padoruString = fs.readFileSync('./json/padoru.json')
+    const seriesString = fs.readFileSync('./json/series.json')
     const padoru = JSON.parse(padoruString)
     const series = JSON.parse(seriesString)
     const leyenda = ':no_entry_sign: = El Padoru no se puede rollear actualmente\n:bangbang: = Padoru disponible por tiempo limitado'

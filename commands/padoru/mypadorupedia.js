@@ -15,8 +15,8 @@ module.exports = {
     const target = message.mentions.users.first() || message.author
     const targetId = target.id
 
-    const padoruString = fs.readFileSync('./padoru.json')
-    const seriesString = fs.readFileSync('./series.json')
+    const padoruString = fs.readFileSync('./json/padoru.json')
+    const seriesString = fs.readFileSync('./json/series.json')
 
     const padoru = JSON.parse(padoruString)
     const series = JSON.parse(seriesString)

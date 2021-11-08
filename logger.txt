@@ -2218,3 +2218,135 @@ Guild: Liga Eevolution Draft España-782990846752063498
 Command: %ip
 Date: Mon, 08 Nov 2021 12:38:33 GMT
 ----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %dc
+Date: Mon, 08 Nov 2021 22:24:04 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %pc
+Date: Mon, 08 Nov 2021 22:24:23 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %p
+Date: Mon, 08 Nov 2021 22:24:31 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %p
+Date: Mon, 08 Nov 2021 22:26:00 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %p
+Date: Mon, 08 Nov 2021 22:27:07 GMT
+----------
+----------
+User: Cotonito ツ-764827987509903445
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %pc
+Date: Mon, 08 Nov 2021 22:28:27 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %pp
+Date: Mon, 08 Nov 2021 22:29:02 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %mpp
+Date: Mon, 08 Nov 2021 22:29:12 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %mpp
+Date: Mon, 08 Nov 2021 22:29:20 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %ip
+Date: Mon, 08 Nov 2021 22:29:28 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %mppi
+Date: Mon, 08 Nov 2021 22:29:44 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %mppi
+Date: Mon, 08 Nov 2021 22:32:32 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %mppi
+Date: Mon, 08 Nov 2021 22:33:05 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %mppi
+Date: Mon, 08 Nov 2021 22:34:22 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %mppi
+Date: Mon, 08 Nov 2021 22:35:02 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %mppi
+Date: Mon, 08 Nov 2021 22:35:51 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %mppi
+Date: Mon, 08 Nov 2021 22:37:45 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Tengo Caramelos-460204224286949396
+Command: %mppi
+Date: Mon, 08 Nov 2021 22:38:22 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %mppi
+Date: Mon, 08 Nov 2021 22:39:21 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %mppi
+Date: Mon, 08 Nov 2021 22:40:28 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %vote
+Date: Mon, 08 Nov 2021 22:41:41 GMT
+----------
+----------
+User: Luiso-306496475251081217
+Guild: Nombre provisional permanente-330047503686828042
+Command: %banner
+Date: Mon, 08 Nov 2021 22:41:44 GMT
+----------

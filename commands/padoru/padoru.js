@@ -15,7 +15,7 @@ module.exports = {
     var rarityArray = [1, 2, 3, 4, 5]
     var weights = [40, 31, 18, 9, 2]
 
-    const jsonString = fs.readFileSync('./padoru.json')
+    const jsonString = fs.readFileSync('./json/padoru.json')
     const padoru = JSON.parse(jsonString)
     var padoruBaseList = []
 

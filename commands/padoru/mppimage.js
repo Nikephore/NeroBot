@@ -1,6 +1,7 @@
 const fs = require('fs')
 const embed = require('../../functions/embed')
 const math = require('../../functions/math')
+const economy = require('../../economy.js')
 const argFilter = require('../../functions/filter.js')
 
 module.exports = {
@@ -11,8 +12,8 @@ module.exports = {
   callback: async (message, arguments, text) => {
     const target = message.mentions.users.first() || message.author
 
-    const jsonString = fs.readFileSync('./padoru.json')
-    const seriesString = fs.readFileSync('./series.json')
+    const jsonString = fs.readFileSync('./json/padoru.json')
+    const seriesString = fs.readFileSync('./json/series.json')
 
     const series = JSON.parse(seriesString)
     const padoru = JSON.parse(jsonString)
@@ -62,7 +63,7 @@ module.exports = {
 
     infoPadoru = padoruBaseList[idPadoru] // El índice del primer padoru de la lista del usuario
     
-    infoPadoru.footer = `${idPadoru}/${count}`
+    infoPadoru.footer = `${idPadoru+1}/${count}`
 
     result = embed.embedCreator(infoPadoru, '')
 
@@ -81,23 +82,23 @@ module.exports = {
       time: 120000,
     })
 
+    var newId = idPadoru
     collector.on('collect', (reaction) => {
-      var newId = null
-
+      
 			if (reaction.emoji.name === "⬅️") {
-				newId = idPadoru - 1
+				newId = newId - 1
       	if(newId === -1){
         	newId = count - 1
       	}
 			} else if (reaction.emoji.name === "➡️"){
-      	newId = idPadoru + 1
+      	newId = newId + 1
 				if(newId === count){
 					newId = 0
 				}
 			}
 
     	infoPadoru = padoruBaseList[newId]
-			infoPadoru.footer = `${newId}/${count}`
+			infoPadoru.footer = `${newId+1}/${count}`
       var newResult = embed.embedCreator(infoPadoru, '')
       msg.edit(newResult)
   	})

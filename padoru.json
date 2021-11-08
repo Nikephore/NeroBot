@@ -1,0 +1,561 @@
+{
+  "padoru_normal": {
+    "id": 1,
+    "title": "Padoru normal",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 1,
+    "raritystar": "⭐☆☆☆☆",
+    "series": [
+      "padoru"
+    ],
+    "description": "El padoru comun al que queremos y respetamos",
+    "color": "LIGHT_GREY",
+    "footer": "",
+    "artist": "https://www.deviantart.com/manaalchemist",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/901799120740704276/PADORUorg.png",
+    "owner": "Luiso"
+  },
+  "padoru_mirror": {
+    "id": 2,
+    "title": "Padoru espejo | ojepse urodaP",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 1,
+    "raritystar": "⭐☆☆☆☆",
+    "series": [
+      "padoru"
+    ],
+    "description": "somatepser y somereuq euq la numoc urodap lE",
+    "color": "LIGHT_GREY",
+    "footer": "",
+    "artist": "https://www.deviantart.com/manaalchemist",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/901827298918010960/PADORUMIRROR.png",
+    "owner": "wisma"
+  },
+  "padoru_mussolini": {
+    "id": 3,
+    "title": "Padoru Mussolini",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 1,
+    "raritystar": "⭐☆☆☆☆",
+    "series": [
+      "padoru"
+    ],
+    "description": "Eɼ bɑqoʁn cownu ɑɼ dnԍ dnԍʁԍwoƨ λ ʁԍƨbԍϝɑwoƨ",
+    "color": "LIGHT_GREY",
+    "footer": "",
+    "artist": "https://www.deviantart.com/manaalchemist",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/903358816295485440/PADORUorg.png",
+    "owner": "!Juan"
+  },
+  "padoru_gold": {
+    "id": 4,
+    "title": "Padoru dorado",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "description": "El padoru dorado, el comienzo de esta gran aventura padoru",
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "padoru"
+    ],
+    "color": "GOLD",
+    "footer": "",
+    "artist": "https://twitter.com/Luiso_EK",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/901799488111403018/PADORUGOLD.png",
+    "owner": "Guacamole Guacahostias"
+  },
+  "padoru_emerald": {
+    "id": 5,
+    "title": "Padoru esmeralda",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "padoru"
+    ],
+    "description": "El padoru esmeralda, puedes intercambiarlo con algún aldeano",
+    "color": "GREEN",
+    "footer": "",
+    "artist": "https://twitter.com/Luiso_EK",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/901799489998815292/PADORUEMERALD.png",
+    "owner": "Luiso"
+  },
+  "padoru_diamond": {
+    "id": 6,
+    "title": "Padoru diamante",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "padoru"
+    ],
+    "description": "El padoru diamante es muy cotizado en la aldea de los pitufos",
+    "color": "AQUA",
+    "footer": "",
+    "artist": "https://twitter.com/Luiso_EK",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/901799492683178024/PADORUDIAMOND.png",
+    "owner": "Rubix"
+  },
+  "padoru_obsidian": {
+    "id": 7,
+    "title": "Padoru obsidiana",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "padoru"
+    ],
+    "description": "El padoru de obsidiana es el resultado de años de investigacion mezclando agua y lava",
+    "color": "PURPLE",
+    "footer": "",
+    "artist": "https://twitter.com/Luiso_EK",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/901799494671302666/PADORUCHALLENGER.png",
+    "owner": "wisma"
+  },
+  "padoru_rainbow": {
+    "id": 8,
+    "title": "Padoru arcoiris",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 5,
+    "raritystar": "⭐⭐⭐⭐⭐",
+    "series": [
+      "padoru"
+    ],
+    "description": "HAS SACADO EL JODIDO PADORU ARCOIRIS, ENHORABUENA",
+    "color": "RANDOM",
+    "footer": "",
+    "artist": "https://twitter.com/Luiso_EK",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/901817700077166602/PADORURAINBOW.png",
+    "owner": "Luiso"
+  },
+  "padoru_ruby": {
+    "id": 9,
+    "title": "Padoru rubí",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "padoru"
+    ],
+    "description": "El padoru rubí tiene muchas ganas de volver a juntarse con el padoru zafiro",
+    "color": "RED",
+    "footer": "",
+    "artist": "https://twitter.com/Luiso_EK",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/901811298701041684/PADORURUBY.png",
+    "owner": "Kramvic"
+  },
+  "padoru_orange": {
+    "id": 10,
+    "title": "Padoru naranja",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "padoru"
+    ],
+    "description": "El padoru a es originario de Valencia, cuidado con lo que le echas a la paella",
+    "color": "ORANGE",
+    "footer": "",
+    "artist": "https://twitter.com/Luiso_EK",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/901818684664856616/PADORUORANGE.png",
+    "owner": "Hicron"
+  },
+  "padoru_stone": {
+    "id": 11,
+    "title": "Padoru de piedra",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "padoru",
+      "drstone"
+    ],
+    "description": "El padoru de piedra despertará en 3700 años",
+    "color": "BLACK",
+    "footer": "",
+    "artist": "https://twitter.com/Luiso_EK",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/901826199523835974/PADORUSTONE.png",
+    "owner": "Luiso"
+  },
+  "padoru_rena": {
+    "id": 12,
+    "title": "Padoru Rena",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "higurashi"
+    ],
+    "description": "Rena de Higurashi no naku koro ni",
+    "color": "ORANGE",
+    "footer": "",
+    "artist": "https://www.deviantart.com/thebloodycorvid",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/901814481481531422/padoru_rena.png",
+    "owner": "Kramvic"
+  },
+  "padoru_rika": {
+    "id": 13,
+    "title": "Padoru Rika",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "higurashi"
+    ],
+    "description": "Rika de Higurashi no naku koro ni, Nippah",
+    "color": "PURPLE",
+    "footer": "",
+    "artist": "https://twitter.com/r_jesp",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/901800428554043432/rika_padoru.png",
+    "owner": "Luiso2"
+  },
+  "padoru_satoko": {
+    "id": 14,
+    "title": "Padoru Satoko",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 5,
+    "raritystar": "⭐⭐⭐⭐⭐",
+    "series": [
+      "higurashi"
+    ],
+    "description": "Satoko de Higurashi no naku koro ni, 34",
+    "color": "GOLD",
+    "footer": "",
+    "artist": "https://twitter.com/r_jesp",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/901814273754419210/satoko_padoru.png",
+    "owner": "Hicron"
+  },
+  "padoru_ukyo": {
+    "id": 15,
+    "title": "Padoru Ukyo",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "drstone"
+    ],
+    "description": "Ukyo de Dr.Stone",
+    "color": "YELLOW",
+    "footer": "",
+    "artist": "https://twitter.com/pinkborb",
+    "image": "https://cdn.discordapp.com/attachments/901848770826887169/901969397655171162/padoru_ukyo.png",
+    "owner": "hectorelval"
+  },
+  "padoru_kohaku": {
+    "id": 16,
+    "title": "Padoru Kohaku",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "drstone"
+    ],
+    "description": "Kohaku de Dr.Stone",
+    "color": "DARK_BLUE",
+    "footer": "Le has robado el padoru a Luiso",
+    "artist": "https://twitter.com/pinkborb",
+    "image": "https://cdn.discordapp.com/attachments/901848770826887169/901969394211647488/padoru_kohaku.png",
+    "owner": "Nero"
+  },
+  "padoru_gen": {
+    "id": 17,
+    "title": "Padoru Gen",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "drstone"
+    ],
+    "description": "Gen de Dr.Stone",
+    "color": "PURPLE",
+    "footer": "",
+    "artist": "https://twitter.com/pinkborb",
+    "image": "https://cdn.discordapp.com/attachments/901848770826887169/901969393687351356/padoru_gen.png",
+    "owner": "Guacamole Guacahostias"
+  },
+  "padoru_senku": {
+    "id": 18,
+    "title": "Padoru Senku",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 5,
+    "raritystar": "⭐⭐⭐⭐⭐",
+    "series": [
+      "drstone"
+    ],
+    "description": "Senku de Dr.Stone",
+    "color": "GREEN",
+    "footer": "Le has robado el padoru a Luiso",
+    "artist": "https://twitter.com/pinkborb",
+    "image": "https://cdn.discordapp.com/attachments/901848770826887169/901969395381829692/padoru_senku.png",
+    "owner": "Nero"
+  },
+  "padoru_halloween": {
+    "id": 19,
+    "title": "Padoru Halloween",
+    "active": false,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "seasonal"
+    ],
+    "description": "Happy Halloween",
+    "color": "ORANGE",
+    "footer": "",
+    "artist": "https://www.deviantart.com/rinkusonic41",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/902966726298304563/padoru_halloween.png",
+    "owner": "hectorelval"
+  },
+  "padoru_levi": {
+    "id": 20,
+    "title": "Padoru Levi",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "snk"
+    ],
+    "description": "Levi Ackerman de Shingeki no kyojin",
+    "color": "DARK_GREEN",
+    "footer": "",
+    "artist": "https://twitter.com/pinkborb",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/902966710955556954/padoru_levi.png",
+    "owner": "Lta"
+  },
+  "padoru_hange": {
+    "id": 21,
+    "title": "Padoru Hange",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "snk"
+    ],
+    "description": "Hange Zoë de Shingeki no kyojin Hange Zoë",
+    "color": "BLACK",
+    "footer": "",
+    "artist": "https://twitter.com/pinkborb",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/903356811573329920/padoru_hange.png",
+    "owner": "Hicron"
+  },
+  "padoru_killua": {
+    "id": 22,
+    "title": "Padoru Killua",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "hxh"
+    ],
+    "description": "Killua de Hunter X Hunter",
+    "color": "BLUE",
+    "footer": "",
+    "artist": "https://weheartit.com/Aizuuh",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/903356834327457822/padoru_killua.png",
+    "owner": "Luiso"
+  },
+  "padoru_shuvi": {
+    "id": 23,
+    "title": "Padoru Shuvi",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "ngnl"
+    ],
+    "description": "Shuvi de No Game No Life 0",
+    "color": "DARK_VIVID_PINK",
+    "footer": "",
+    "artist": "Desconocido (si lo encuentras dimelo)",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/903364096055988244/padoru_shuvi.png",
+    "owner": "Guacamole Guacahostias"
+  },
+  "padoru_shiro": {
+    "id": 24,
+    "title": "Padoru Shiro",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 5,
+    "raritystar": "⭐⭐⭐⭐⭐",
+    "series": [
+      "ngnl"
+    ],
+    "description": "Shiro de No Game No Life",
+    "color": "LUMINOUS_VIVID_PINK",
+    "footer": "",
+    "artist": "Desconocido (si lo encuentras dimelo)",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/903364058818953236/padoru_shiro.png",
+    "owner": "Luiso"
+  },
+  "padoru_gura": {
+    "id": 25,
+    "title": "Padoru Gura",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "hololive"
+    ],
+    "description": "Gawr Gura de Hololive EN",
+    "color": "AQUA",
+    "footer": "",
+    "artist": "https://twitter.com/LeiCervantes1",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/904046448339988540/padoru_gura.png",
+    "owner": "Rubix"
+  },
+  "padoru_shawn": {
+    "id": 26,
+    "title": "Padoru Shawn",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "inazuma"
+    ],
+    "description": "Shawn Frost de Inazuma Eleven",
+    "color": "LIGHT_GREY",
+    "footer": "",
+    "artist": "https://twitter.com/Nani_Mitsu",
+    "image": "https://media.discordapp.net/attachments/901798915425321000/904129262863409152/padoru_shaun.png?width=586&height=586",
+    "owner": "Hicron"
+  },
+  "padoru_nathan": {
+    "id": 27,
+    "title": "Padoru Nathan",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "inazuma"
+    ],
+    "description": "Nathan Swift de Inazuma Eleven",
+    "color": "DARK_BLUE",
+    "footer": "",
+    "artist": "https://twitter.com/Nani_Mitsu",
+    "image": "https://media.discordapp.net/attachments/901798915425321000/904129227694170142/padoru_nathan.png?width=586&height=586",
+    "owner": "Cotonito ツ"
+  },
+  "padoru_celty": {
+    "id": 28,
+    "title": "Padoru Celty",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "durarara"
+    ],
+    "description": "Celty Sturluson de Durarara",
+    "color": "BLACK",
+    "footer": "",
+    "artist": "reddit.com/user/KuroJ07",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/904212092368879646/padoru_celty.png",
+    "owner": "hectorelval"
+  },
+  "padoru_hanako": {
+    "id": 29,
+    "title": "Padoru Hanako",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "hanako-kun"
+    ],
+    "description": "Hanako Kun de Jibaku Shounen Hanako-kun",
+    "color": "BLACK",
+    "footer": "",
+    "artist": "Henry Maniego",
+    "image": "https://media.discordapp.net/attachments/901798915425321000/906729394993766430/1636251518981.png?width=499&height=585",
+    "owner": "Éric"
+  },
+  "padoru_yashiro": {
+    "id": 30,
+    "title": "Padoru Yashiro",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "hanako-kun"
+    ],
+    "description": "Yashiro de Jibaku Shounen Hanako-kun",
+    "color": "LUMINOUS_VIVID_PINK",
+    "footer": "",
+    "artist": "https://twitter.com/jchama4",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/907023438458269767/padoru_yashiro.png",
+    "owner": "Éric"
+  },
+  "padoru_komi": {
+    "id": 31,
+    "title": "Padoru Komi",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 5,
+    "raritystar": "⭐⭐⭐⭐⭐",
+    "series": [
+      "Komi-san"
+    ],
+    "description": "Komi de Komi-san wa, Comyushou desu.",
+    "color": "DARK_PURPLE",
+    "footer": "",
+    "artist": "Desconocido (si lo encuentras dimelo)",
+    "image": "https://media.discordapp.net/attachments/901798915425321000/906728170378645534/1636250519716.png",
+    "owner": "Nero"
+  }
+}
