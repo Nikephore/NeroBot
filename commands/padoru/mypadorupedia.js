@@ -15,8 +15,6 @@ module.exports = {
     const target = message.mentions.users.first() || message.author
     const targetId = target.id
 
-    console.log(target.username)
-
     const padoruString = fs.readFileSync('./padoru.json')
     const seriesString = fs.readFileSync('./series.json')
 
@@ -61,52 +59,58 @@ module.exports = {
 
     const count = padoruBaseList.length
     
+    var numPage = 1
+    const page = 15
+    const totalPages = Math.ceil(count/page)
+
     // Creamos el mensaje para Discord
-    msgmpp = new Discord.MessageEmbed()
+    embed = new Discord.MessageEmbed()
       .setAuthor('Padorupedia de ' + target.username, message.author.avatarURL)
       .setColor('RED')
       .setThumbnail('https://cdn.discordapp.com/attachments/901798915425321000/901799120740704276/PADORUorg.png')
-      .setFooter(`Obtenidos ${count}/${total}`)
+      .setFooter(`Página ${numPage}/${totalPages}  |  Obtenidos ${count}/${total}`)
 
-    var numPage = 1
-    const page = 15
-    const totalPages = Math.ceil(total/page)
-    
     //Situamos los padorus en el embed y enviamos el mensaje
     var title = ''
-    //var i = 0
     
-    for(i = 0; i < count; i++){
+    var i = 0
+    while(padoruBaseList[i] !== undefined && i < page) {
       title = title + '\n`' + (padoruBaseList[i].id) + '`**' + padoruBaseList[i].title + '**' + ' ' + math.rarityConvertAscii(padoruBaseList[i].rarity)
+
+      i++
+    }
+
+    if(count === total && count > 0){
+      embed.setTitle(':sparkles::sparkles::sparkles::sparkles::sparkles:')
     }
 
     if(title !== ''){
-      msgmpp.addField('\u200B', title)
+      embed.addField('\u200B', title)
     } else {
-      msgmpp.addField('\u200B', 'cri cri')
+      embed.addField('\u200B', 'cri cri')
     }
     
-    message.channel.send(msgmpp)
+    msgmpp = await message.channel.send(embed)
     
-    if(total <= page){
+    if(count <= page){
       return
     }
-    msg.react("⬅️")
-    msg.react("➡️")
+    msgmpp.react("⬅️")
+    msgmpp.react("➡️")
 
     const filter = (reaction, user) => {
       return ["⬅️", "➡️"].includes(reaction.emoji.name) && (!user.bot)
     }
 
-    const collector = msg.createReactionCollector(filter, {
+    const collector = msgmpp.createReactionCollector(filter, {
         time: 120000,
     })
 
     collector.on('collect', (reaction) => {
 
       var newEmbed = new Discord.MessageEmbed()
-          .setTitle('Padorupedia')
-          .setColor('GOLD')
+          .setTitle('Padorupedia de ' + target.username, message.author.avatarURL)
+          .setColor('RED')
           .setThumbnail('https://cdn.discordapp.com/attachments/901798915425321000/901799120740704276/PADORUorg.png')
 
 		  if (reaction.emoji.name === "⬅️") {
@@ -129,16 +133,17 @@ module.exports = {
       let title = ''
       
       while(padoruBaseList[start] !== undefined && start < end){
-        var act = padoruBaseList[start].active === false ? ':no_entry_sign:' : ''
-        var banner = padoruBaseList[start].banner === true ? ':bangbang:' : ''
-        title = title + '\n`' + (padoruBaseList[start].id) + '`**' + padoruBaseList[start].title + '**' + ' ' + math.rarityConvertAscii(padoruBaseList[start].rarity) + ' ' + act + banner
+        title = title + '\n`' + (padoruBaseList[start].id) + '`**' + padoruBaseList[start].title + '**' + ' ' + math.rarityConvertAscii(padoruBaseList[start].rarity)
         
         start ++
       }
 
+      if(count === total && count > 0){
+      newEmbed.setTitle(':sparkles::sparkles::sparkles::sparkles::sparkles:')
+    }
+
       newEmbed.addField('\u200B', title)
-      newEmbed.addField('Leyenda de símbolos', leyenda)
-      newEmbed.setFooter(`Página ${numPage}/${totalPages}`)
+      newEmbed.setFooter(`Página ${numPage}/${totalPages}  |  Obtenidos ${count}/${total}`)
 
       msgmpp.edit(newEmbed)
       
