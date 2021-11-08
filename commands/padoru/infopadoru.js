@@ -34,7 +34,7 @@ module.exports = {
       }
     }
     
-    if(!infoPadoru.active){
+    if(!infoPadoru.released){
       message.channel.send('Este padoru aún no ha salido de forma oficial, no se puede ver su información')
       return
     }
@@ -62,6 +62,7 @@ module.exports = {
       var newId = null
 
 		  if (reaction.emoji.name === "⬅️") {
+        
         newId = (infoPadoru.id - 1) % total
         if(newId === 0){
           newId = total
@@ -71,7 +72,7 @@ module.exports = {
 		  }
 
       infoPadoru = padoruBaseList.find(e => e.id === newId)
-      if(!infoPadoru.active){
+      if(!infoPadoru.released){
         msg.edit(`El padoru con id **${newId}** aún no ha salido de forma oficial, no se puede ver su información`)
       } else {
         msg.edit('ㅤ')
