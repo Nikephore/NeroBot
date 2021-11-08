@@ -68,6 +68,10 @@ module.exports = {
       .setThumbnail('https://cdn.discordapp.com/attachments/901798915425321000/901799120740704276/PADORUorg.png')
       .setFooter(`Obtenidos ${count}/${total}`)
 
+    var numPage = 1
+    const page = 15
+    const totalPages = Math.ceil(total/page)
+    
     //Situamos los padorus en el embed y enviamos el mensaje
     var title = ''
     //var i = 0
@@ -84,5 +88,60 @@ module.exports = {
     
     message.channel.send(msgmpp)
     
+    if(total <= page){
+      return
+    }
+    msg.react("⬅️")
+    msg.react("➡️")
+
+    const filter = (reaction, user) => {
+      return ["⬅️", "➡️"].includes(reaction.emoji.name) && (!user.bot)
+    }
+
+    const collector = msg.createReactionCollector(filter, {
+        time: 120000,
+    })
+
+    collector.on('collect', (reaction) => {
+
+      var newEmbed = new Discord.MessageEmbed()
+          .setTitle('Padorupedia')
+          .setColor('GOLD')
+          .setThumbnail('https://cdn.discordapp.com/attachments/901798915425321000/901799120740704276/PADORUorg.png')
+
+		  if (reaction.emoji.name === "⬅️") {
+        if(numPage === 1){
+          numPage = totalPages
+        } else {
+          numPage--
+        }      
+		  } else if (reaction.emoji.name === "➡️"){
+        if(numPage === totalPages){
+          numPage = 1
+        } else {
+          numPage++
+        } 
+		  }
+
+      var start = (numPage - 1) * page
+      var end = numPage * page
+
+      let title = ''
+      
+      while(padoruBaseList[start] !== undefined && start < end){
+        var act = padoruBaseList[start].active === false ? ':no_entry_sign:' : ''
+        var banner = padoruBaseList[start].banner === true ? ':bangbang:' : ''
+        title = title + '\n`' + (padoruBaseList[start].id) + '`**' + padoruBaseList[start].title + '**' + ' ' + math.rarityConvertAscii(padoruBaseList[start].rarity) + ' ' + act + banner
+        
+        start ++
+      }
+
+      newEmbed.addField('\u200B', title)
+      newEmbed.addField('Leyenda de símbolos', leyenda)
+      newEmbed.setFooter(`Página ${numPage}/${totalPages}`)
+
+      msgmpp.edit(newEmbed)
+      
+    })
   }
 }
