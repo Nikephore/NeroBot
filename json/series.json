@@ -105,5 +105,11 @@
       "Komi Can't Communicate",
       "Komi-san"
       ]
+  },
+  "Undertale": {
+    "name": "undertale",
+    "alias" : [
+      "Undertale"
+      ]
   }
 }

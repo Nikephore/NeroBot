@@ -13,14 +13,17 @@ module.exports = {
 
     let reply = ''
     for(const command of commands){
-      const mainCommand = 
+      if(reply.length > 990){
+      } else {
+        const mainCommand = 
         typeof command.commands === 'string' 
-        ? command.commands 
-        : command.commands[0]
-      const args = command.expectedArgs ? ` ${command.expectedArgs}` : ''
-      const { description } = command
+          ? command.commands 
+          : command.commands[0]
+        const args = command.expectedArgs ? ` ${command.expectedArgs}` : ''
+        const { description } = command
 
-      reply += `***${prefix}${mainCommand}${args}:*** ${description}\n`
+        reply += `***${prefix}${mainCommand}${args}:*** ${description}\n`
+      } 
     }
 
     msg.setTitle('Guia de comandos de Nero')

@@ -557,5 +557,23 @@
     "artist": "Desconocido (si lo encuentras dimelo)",
     "image": "https://media.discordapp.net/attachments/901798915425321000/906728170378645534/1636250519716.png",
     "owner": "Nero"
+  },
+  "padoru_sans": {
+    "id": 32,
+    "title": "Padoru Sans",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "Undertale"
+    ],
+    "description": "https://www.youtube.com/watch?v=82DJUDS_S7Y",
+    "color": "AQUA",
+    "footer": "",
+    "artist": "https://twitter.com/r_jesp",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/907414968176115712/padoru_sans.png",
+    "owner": "Nero"
   }
 }

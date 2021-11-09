@@ -8,7 +8,7 @@ module.exports = {
   maxArgs: 1,
   expectedArgs: '<Nombre>',
   callback: async (message, arguments, text) => {
-    const jsonString = fs.readFileSync('./padoru.json')
+    const jsonString = fs.readFileSync('./json/padoru.json')
     const padoru = JSON.parse(jsonString)
     var padoruBaseList = []
 
