@@ -1,7 +1,6 @@
 const fs = require('fs')
 const embed = require('../../functions/embed')
-const math = require('../../functions/math')
-const economy = require('../../economy.js')
+const mongo = require('../../functions/mongo')
 const argFilter = require('../../functions/filter.js')
 
 module.exports = {
@@ -28,7 +27,6 @@ module.exports = {
       seriesBaseList.push(series[i])
     }
 
-    const total = padoruBaseList.length
     var infoPadoru = null
     var idPadoru = 0
 
@@ -52,7 +50,7 @@ module.exports = {
     padoruBaseList = padoruBaseList.filter(a => a.released === true)
   
     // Obtenemos la lista de Padorus del user
-    const padoruList = await economy.myPadorus(target.id)
+    const padoruList = await mongo.myPadorus(target.id)
       
     padoruList.sort((a,b) => (a > b) ? 1 : ((b > a) ? -1 : 0))
   

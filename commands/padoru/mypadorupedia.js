@@ -1,9 +1,9 @@
 const Discord = require("discord.js")
 const fs = require('fs')
-const economy = require('../../economy.js')
+const mongo = require('../../functions/mongo')
 //function files
-const math = require('../../functions/math.js')
-const argFilter = require('../../functions/filter.js')
+const math = require('../../functions/math')
+const argFilter = require('../../functions/filter')
 
 
 module.exports = {
@@ -49,7 +49,7 @@ module.exports = {
     const total = padoruBaseList.length
 
     // Obtenemos la lista de Padorus del user
-    const padoruList = await economy.myPadorus(target.id)
+    const padoruList = await mongo.myPadorus(target.id)
     
 
     padoruList.sort((a,b) => (a > b) ? 1 : ((b > a) ? -1 : 0))

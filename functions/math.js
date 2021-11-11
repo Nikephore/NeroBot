@@ -2,6 +2,19 @@ function randomNumberBetween(min, max){
   return Math.floor(Math.random() * (max - min + 1) ) + min
 }
 
+100 - 1 + 1
+
+function luckyStrike(num){
+  lucky = Math.floor(Math.random() * num)
+
+  // Probabilidad de 1/num de que devuelva true
+  if(lucky === 1){
+    return true
+  }
+
+  return false
+}
+
 function weighted_random(items, weights) {
     var i;
 
@@ -27,6 +40,7 @@ function rarityConvertAscii(rarity){
 
 module.exports = {
   randomNumberBetween,
+  luckyStrike,
   weighted_random,
   rarityConvertAscii
 }

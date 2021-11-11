@@ -1,5 +1,5 @@
-const mongo = require('./mongo')
-const profileSchema = require('./schemas/profile.js')
+const mongo = require('../mongo')
+const profileSchema = require('../schemas/profile.js')
 
 module.exports = (client) => {}
 
