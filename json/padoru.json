@@ -16,7 +16,7 @@
     "footer": "",
     "artist": "https://www.deviantart.com/manaalchemist",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901799120740704276/PADORUorg.png",
-    "owner": "Hicron"
+    "owner": "Ansa"
   },
   "padoru_mirror": {
     "id": 2,
@@ -34,7 +34,7 @@
     "footer": "",
     "artist": "https://www.deviantart.com/manaalchemist",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901827298918010960/PADORUMIRROR.png",
-    "owner": "wisma"
+    "owner": "!Juan"
   },
   "padoru_mussolini": {
     "id": 3,
@@ -507,7 +507,7 @@
     "footer": "",
     "artist": "reddit.com/user/KuroJ07",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/904212092368879646/padoru_celty.png",
-    "owner": "!Juan"
+    "owner": "Franky0"
   },
   "padoru_hanako": {
     "id": 29,
@@ -543,7 +543,7 @@
     "footer": "",
     "artist": "https://twitter.com/jchama4",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/907023438458269767/padoru_yashiro.png",
-    "owner": "Luiso"
+    "owner": "Lta"
   },
   "padoru_komi": {
     "id": 31,
@@ -581,26 +581,8 @@
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/907414968176115712/padoru_sans.png",
     "owner": "Luiso"
   },
-  "padoru_sans": {
-    "id": 32,
-    "title": "Padoru Sans",
-    "active": true,
-    "released": true,
-    "banner": false,
-    "rarity": 2,
-    "raritystar": "⭐⭐☆☆☆",
-    "series": [
-      "Undertale"
-    ],
-    "description": "https://www.youtube.com/watch?v=82DJUDS_S7Y",
-    "color": "AQUA",
-    "footer": "",
-    "artist": "https://twitter.com/r_jesp",
-    "image": "https://cdn.discordapp.com/attachments/901798915425321000/907414968176115712/padoru_sans.png",
-    "owner": "Luiso"
-  },
   "padoru_rider": {
-    "id": 32,
+    "id": 33,
     "title": "Padoru Rider",
     "active": true,
     "released": true,
@@ -615,6 +597,6 @@
     "footer": "",
     "artist": "https://twitter.com/Ratentaisou",
     "image": "https://media.discordapp.net/attachments/901798915425321000/906966930819276800/1636308144338.png",
-    "owner": "Nero"
+    "owner": "Éric"
   }
 }
