@@ -8,36 +8,42 @@ module.exports = {
   commands: ['padoru','p'],
   description: 'Padoru aleatorio ¿te ha salido el que querías?',
   cooldown: 60 * 60 * 2, // cooldown de 2 horas
-  callback: async (message, arguments, text) => {
-
-    var format = null
+  callback: async (message) => {
     var randomPadoru = null
+    var luckyPadoru = null
     var rarityArray = [1, 2, 3, 4, 5]
-    var weights = [40, 31, 18, 9, 2]
+    var weights = [1, 70, 18, 9, 2]
+    var isNew = ''
+    var luckyIsNew = ''
+    //var weights = [40, 31, 18, 9, 2]
 
     const jsonString = fs.readFileSync('./json/padoru.json')
     const padoru = JSON.parse(jsonString)
     var padoruBaseList = []
-    var padorumsg = null
 
     for(var i in padoru){
       padoruBaseList.push(padoru[i])
     }
 
-    const rarityChosen = math.weighted_random(rarityArray, weights)
+    const luck = math.luckyStrike(25)
 
-    padorumsg = message.channel.send('')
-    var star = ':star:'
-    for(i=0 ; i<rarityChosen; i++){
-      padorumsg.edit(star)
-      star = star + ':star:'
-    }
+    const rarityChosen = math.weighted_random(rarityArray, weights)
     
     padoruBaseList = padoruBaseList.filter(a => a.active === true).filter(r => r.rarity === rarityChosen)
 
     var count = padoruBaseList.length
 
     var randomPadoru = padoruBaseList[(math.randomNumberBetween(1,count))-1]
+
+    if(luck){
+      luckyPadoru = padoruBaseList[(math.randomNumberBetween(1,count))-1]
+
+      if(message.author.username !==  luckyPadoru.owner){
+        randomPadoru.footer = `Le has robado el padoru a ${luckyPadoru.owner}`
+      } else {
+        luckyPadoru.footer = `El ${luckyPadoru.title} es tuyo en estos momentos`
+      }
+    }
     
     if(message.author.username !== randomPadoru.owner){
       randomPadoru.footer = `Le has robado el padoru a ${randomPadoru.owner}`
@@ -46,35 +52,78 @@ module.exports = {
     }
       randomPadoru.owner = message.author.username
       
+      padorumsg = await stars(rarityChosen, message)
+
       //lista de los padorus del usuario
-      const myPadorus = await mongo.myPadorus(message.author.id)
+      var myPadorus = await mongo.myPadorus(message.author.id)
+      
 
-      /**
-       * si el usuario no tiene el padoru se añade a su lista.
-       * si ya lo tiene se suman monedas a su cuenta en funcion
-       * de la rareza del padoru
-       */
-      const found = myPadorus.find(e => e === randomPadoru.id)
+      isNew = await addPadoru(myPadorus, randomPadoru, rarityChosen, message)
 
-      var isNew = ''
-      const coins = [5, 10, 20, 50, 200]
+      if(luck){
+        console.log('LUCKY')
+        myPadorus = await mongo.myPadorus(message.author.id)
 
-      if(found === undefined){
-        const padoruAdd = await mongo.newPadoru(message.author.id, randomPadoru.id)
-        isNew = ':new:'
-      } else {
-        const coinsAdd = await mongo.addCoins(message.author.id, coins[rarityChosen - 1])
-        isNew = `+${coins[rarityChosen - 1]} PC`
+        luckyIsNew = await addPadoru(myPadorus, luckyPadoru, rarityChosen, message)
       }
       
       // Damos forma al mensaje y posteriormente lo enviamos
-      format = embed.embedCreator(randomPadoru, isNew)
+      pad = embed.embedCreator(randomPadoru, isNew)
       randomPadoru.footer = ''
+
+      if(luck){
+        var newPad = embed.embedCreator(luckyPadoru, luckyIsNew)
+        luckyPadoru.footer = ''
+      }
       
-      fs.writeFileSync('./padoru.json', JSON.stringify(padoru, null, 2), (err) => {
+      fs.writeFileSync('./json/padoru.json', JSON.stringify(padoru, null, 2), (err) => {
         if (err) console.log('Error writing file:', err)
       })
 
-    padorumsg.edit(format)
+    padorumsg.edit('\u200B')
+    padorumsg.edit(pad)
+
+    if(luck){
+      math.sleep(3000)
+      newpadorumsg = await message.channel.send(':sparkles:LUCKY STRIKE!!:sparkles:\n')
+      math.sleep(3000)
+      newpadorumsg.edit(newPad)
+    }
   },
 }
+
+async function stars(rarity, message){
+  padorumsg = await message.channel.send('Escogiendo padoru...')
+  await math.sleep(500)
+  var star = ''
+  for(i=0 ; i < rarity; i++){
+    star = star + ':star:'
+    padorumsg.edit(star)
+    await math.sleep(1500)
+  }
+
+  return padorumsg
+}
+
+async function addPadoru(myPadorus, randomPadoru, rarityChosen, message){
+  /**
+  * si el usuario no tiene el padoru se añade a su lista.
+  * si ya lo tiene se suman monedas a su cuenta en funcion
+  * de la rareza del padoru
+  */
+  const found = myPadorus.find(e => e === randomPadoru.id)
+
+  var isNew = ''
+  const coins = [5, 10, 20, 50, 200]
+
+  if(found === undefined){
+    const padoruAdd = await mongo.newPadoru(message.author.id, randomPadoru.id)
+    isNew = ':new:'
+  } else {
+    const coinsAdd = await mongo.addCoins(message.author.id, coins[rarityChosen - 1])
+    isNew = `+${coins[rarityChosen - 1]} PC`
+  }
+
+  return isNew
+}
+

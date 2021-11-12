@@ -1,5 +1,5 @@
-const economy = require('../../economy.js')
-const math = require('../../functions/math.js')
+const mongo = require('../../functions/mongo')
+const math = require('../../functions/math')
 
 module.exports = {
   commands: ['dailycoins', 'dc'],
@@ -10,7 +10,7 @@ module.exports = {
     const targetId = target.id
 
     var newCoins = math.randomNumberBetween(25, 50)
-    const coins = await economy.addCoins(targetId, newCoins)
+    const coins = await mongo.addCoins(targetId, newCoins)
 
     message.channel.send(`Añadidas **${newCoins}** Padoru Coins a la cuenta de ${target.username}`)
   }

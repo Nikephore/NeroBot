@@ -63,7 +63,8 @@
     "rarity": 4,
     "raritystar": "⭐⭐⭐⭐☆",
     "series": [
-      "padoru"
+      "padoru",
+      "minecraft"
     ],
     "color": "GOLD",
     "footer": "",
@@ -80,7 +81,8 @@
     "rarity": 2,
     "raritystar": "⭐⭐☆☆☆",
     "series": [
-      "padoru"
+      "padoru",
+      "minecraft"
     ],
     "description": "El padoru esmeralda, puedes intercambiarlo con algún aldeano",
     "color": "GREEN",
@@ -98,14 +100,15 @@
     "rarity": 2,
     "raritystar": "⭐⭐☆☆☆",
     "series": [
-      "padoru"
+      "padoru",
+      "minecraft"
     ],
     "description": "El padoru diamante es muy cotizado en la aldea de los pitufos",
     "color": "AQUA",
     "footer": "",
     "artist": "https://twitter.com/Luiso_EK",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901799492683178024/PADORUDIAMOND.png",
-    "owner": "Rubix"
+    "owner": "Luiso"
   },
   "padoru_obsidian": {
     "id": 7,
@@ -116,14 +119,15 @@
     "rarity": 2,
     "raritystar": "⭐⭐☆☆☆",
     "series": [
-      "padoru"
+      "padoru",
+      "minecraft"
     ],
     "description": "El padoru de obsidiana es el resultado de años de investigacion mezclando agua y lava",
     "color": "PURPLE",
     "footer": "",
     "artist": "https://twitter.com/Luiso_EK",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901799494671302666/PADORUCHALLENGER.png",
-    "owner": "wisma"
+    "owner": "Luisombrero"
   },
   "padoru_rainbow": {
     "id": 8,
@@ -159,7 +163,7 @@
     "footer": "",
     "artist": "https://twitter.com/Luiso_EK",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901811298701041684/PADORURUBY.png",
-    "owner": "Kramvic"
+    "owner": "Luiso"
   },
   "padoru_orange": {
     "id": 10,
@@ -177,7 +181,7 @@
     "footer": "",
     "artist": "https://twitter.com/Luiso_EK",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901818684664856616/PADORUORANGE.png",
-    "owner": "Hicron"
+    "owner": "Luiso"
   },
   "padoru_stone": {
     "id": 11,
@@ -268,7 +272,7 @@
     "footer": "",
     "artist": "https://twitter.com/pinkborb",
     "image": "https://cdn.discordapp.com/attachments/901848770826887169/901969397655171162/padoru_ukyo.png",
-    "owner": "hectorelval"
+    "owner": "Luiso"
   },
   "padoru_kohaku": {
     "id": 16,
@@ -283,10 +287,10 @@
     ],
     "description": "Kohaku de Dr.Stone",
     "color": "DARK_BLUE",
-    "footer": "Le has robado el padoru a Luiso",
+    "footer": "",
     "artist": "https://twitter.com/pinkborb",
     "image": "https://cdn.discordapp.com/attachments/901848770826887169/901969394211647488/padoru_kohaku.png",
-    "owner": "Nero"
+    "owner": "Luiso"
   },
   "padoru_gen": {
     "id": 17,
@@ -376,7 +380,7 @@
     "footer": "",
     "artist": "https://twitter.com/pinkborb",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/903356811573329920/padoru_hange.png",
-    "owner": "Hicron"
+    "owner": "Luiso"
   },
   "padoru_killua": {
     "id": 22,
@@ -412,7 +416,7 @@
     "footer": "",
     "artist": "Desconocido (si lo encuentras dimelo)",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/903364096055988244/padoru_shuvi.png",
-    "owner": "Guacamole Guacahostias"
+    "owner": "Luisombrero"
   },
   "padoru_shiro": {
     "id": 24,
@@ -484,7 +488,7 @@
     "footer": "",
     "artist": "https://twitter.com/Nani_Mitsu",
     "image": "https://media.discordapp.net/attachments/901798915425321000/904129227694170142/padoru_nathan.png?width=586&height=586",
-    "owner": "Cotonito ツ"
+    "owner": "Luiso"
   },
   "padoru_celty": {
     "id": 28,
@@ -520,7 +524,7 @@
     "footer": "",
     "artist": "Henry Maniego",
     "image": "https://media.discordapp.net/attachments/901798915425321000/906729394993766430/1636251518981.png?width=499&height=585",
-    "owner": "Éric"
+    "owner": "Luisombrero"
   },
   "padoru_yashiro": {
     "id": 30,
@@ -538,7 +542,7 @@
     "footer": "",
     "artist": "https://twitter.com/jchama4",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/907023438458269767/padoru_yashiro.png",
-    "owner": "Éric"
+    "owner": "Luiso"
   },
   "padoru_komi": {
     "id": 31,
@@ -574,6 +578,6 @@
     "footer": "",
     "artist": "https://twitter.com/r_jesp",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/907414968176115712/padoru_sans.png",
-    "owner": "Nero"
+    "owner": "Luiso"
   }
 }

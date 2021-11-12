@@ -38,9 +38,14 @@ function rarityConvertAscii(rarity){
   return ret
 }
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 module.exports = {
   randomNumberBetween,
   luckyStrike,
   weighted_random,
-  rarityConvertAscii
+  rarityConvertAscii,
+  sleep
 }

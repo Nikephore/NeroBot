@@ -111,5 +111,11 @@
     "alias" : [
       "Undertale"
       ]
+  },
+  "Minecraft": {
+    "name": "minecraft",
+    "alias" : [
+      "Minecraft"
+    ]
   }
 }

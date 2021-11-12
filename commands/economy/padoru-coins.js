@@ -1,4 +1,4 @@
-const economy = require('../../economy.js')
+const mongo = require('../../functions/mongo')
 
 module.exports = {
   commands: ['padorucoins', 'pc'],
@@ -8,7 +8,7 @@ module.exports = {
     const target = message.mentions.users.first() || message.author
     const targetId = target.id
 
-    const coins = await economy.getCoins(targetId)
+    const coins = await mongo.getCoins(targetId)
 
     message.channel.send(`${target.username} tiene **${coins}** Padoru Coins (PC)`)
   }
