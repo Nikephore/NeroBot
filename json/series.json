@@ -117,5 +117,12 @@
     "alias" : [
       "Minecraft"
     ]
+  },
+  "Fate": {
+    "name": "fate",
+    "alias" : [
+      "Fate",
+      "Fate/Stay Night"
+    ]
   }
 }

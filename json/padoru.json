@@ -8,14 +8,15 @@
     "rarity": 1,
     "raritystar": "⭐☆☆☆☆",
     "series": [
-      "padoru"
+      "padoru",
+      "Fate"
     ],
     "description": "El padoru comun al que queremos y respetamos",
     "color": "LIGHT_GREY",
     "footer": "",
     "artist": "https://www.deviantart.com/manaalchemist",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901799120740704276/PADORUorg.png",
-    "owner": "Emily.tsundere"
+    "owner": "Hicron"
   },
   "padoru_mirror": {
     "id": 2,
@@ -51,7 +52,7 @@
     "footer": "",
     "artist": "https://www.deviantart.com/manaalchemist",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/903358816295485440/PADORUorg.png",
-    "owner": "!Juan"
+    "owner": "wisma"
   },
   "padoru_gold": {
     "id": 4,
@@ -89,7 +90,7 @@
     "footer": "",
     "artist": "https://twitter.com/Luiso_EK",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901799489998815292/PADORUEMERALD.png",
-    "owner": "Luiso"
+    "owner": "Éric"
   },
   "padoru_diamond": {
     "id": 6,
@@ -323,10 +324,10 @@
     ],
     "description": "Senku de Dr.Stone",
     "color": "GREEN",
-    "footer": "Le has robado el padoru a Luiso",
+    "footer": "",
     "artist": "https://twitter.com/pinkborb",
     "image": "https://cdn.discordapp.com/attachments/901848770826887169/901969395381829692/padoru_senku.png",
-    "owner": "Nero"
+    "owner": "Guacamole Guacahostias"
   },
   "padoru_halloween": {
     "id": 19,
@@ -380,7 +381,7 @@
     "footer": "",
     "artist": "https://twitter.com/pinkborb",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/903356811573329920/padoru_hange.png",
-    "owner": "Luiso"
+    "owner": "Guacamole Guacahostias"
   },
   "padoru_killua": {
     "id": 22,
@@ -506,7 +507,7 @@
     "footer": "",
     "artist": "reddit.com/user/KuroJ07",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/904212092368879646/padoru_celty.png",
-    "owner": "hectorelval"
+    "owner": "!Juan"
   },
   "padoru_hanako": {
     "id": 29,
@@ -524,7 +525,7 @@
     "footer": "",
     "artist": "Henry Maniego",
     "image": "https://media.discordapp.net/attachments/901798915425321000/906729394993766430/1636251518981.png?width=499&height=585",
-    "owner": "Luisombrero"
+    "owner": "Lta"
   },
   "padoru_yashiro": {
     "id": 30,
@@ -579,5 +580,41 @@
     "artist": "https://twitter.com/r_jesp",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/907414968176115712/padoru_sans.png",
     "owner": "Luiso"
+  },
+  "padoru_sans": {
+    "id": 32,
+    "title": "Padoru Sans",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "Undertale"
+    ],
+    "description": "https://www.youtube.com/watch?v=82DJUDS_S7Y",
+    "color": "AQUA",
+    "footer": "",
+    "artist": "https://twitter.com/r_jesp",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/907414968176115712/padoru_sans.png",
+    "owner": "Luiso"
+  },
+  "padoru_rider": {
+    "id": 32,
+    "title": "Padoru Rider",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "Fate"
+    ],
+    "description": "Rider de Fate/Stay Night",
+    "color": "DARK_VIVID_PINK",
+    "footer": "",
+    "artist": "https://twitter.com/Ratentaisou",
+    "image": "https://media.discordapp.net/attachments/901798915425321000/906966930819276800/1636308144338.png",
+    "owner": "Nero"
   }
 }
