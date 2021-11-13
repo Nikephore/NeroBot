@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const fs = require('fs')
 
 //Definicion de las constantes relacionadas con Discord
 const Discord = require("discord.js")
@@ -37,6 +38,15 @@ client.once("ready", () => {
 
 client.on('guildCreate', guild => {
   guild.systemChannel.send('¡Hola! soy Nero, el bot de coleccionismo de Padorus. Escribe el comando ``%padoru`` para comenzar a jugar o ``%help`` para ver todos mis comandos.')
+
+  let data = `----------
+Guild: ${guild.name}-${guild.id}
+----------`
+
+  fs.appendFile('guilds.txt', data, (err) => {
+    if(err) throw err
+  })
+  
 });
 
 client.login(token)
