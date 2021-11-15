@@ -24,6 +24,8 @@ module.exports = {
       padoruBaseList.push(padoru[i])
     }
 
+    console.log(message.author.username)
+
     const luck = math.luckyStrike(25)
 
     const rarityChosen = math.weighted_random(rarityArray, weights)
@@ -119,7 +121,7 @@ async function addPadoru(myPadorus, randomPadoru, rarityChosen, message){
     const padoruAdd = await mongo.newPadoru(message.author.id, randomPadoru.id)
     isNew = ':new:'
   } else {
-    const coinsAdd = await mongo.addCoins(message.author.id, coins[rarityChosen - 1])
+    const coinsAdd = await mongo.addCoins(message.author.id, await coins[rarityChosen - 1])
     isNew = `+${coins[rarityChosen - 1]} PC`
   }
 

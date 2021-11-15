@@ -63,12 +63,15 @@ module.exports = {
 
 		  if (reaction.emoji.name === "⬅️") {
         
-        newId = (infoPadoru.id - 1) % total
+        newId = infoPadoru.id - 1
         if(newId === 0){
           newId = total
         }
 		  } else if (reaction.emoji.name === "➡️"){
-        newId = (infoPadoru.id + 1) % total
+        newId = infoPadoru.id + 1
+        if(newId > total){
+          newId = 1
+        }
 		  }
 
       infoPadoru = padoruBaseList.find(e => e.id === newId)

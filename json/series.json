@@ -118,11 +118,17 @@
       "Minecraft"
     ]
   },
-  "Fate": {
-    "name": "fate",
+  "Metroid": {
+    "name": "metroid",
     "alias" : [
-      "Fate",
-      "Fate/Stay Night"
+      "Metroid"
+    ]
+  },
+  "Evangelion": {
+    "name": "evangelion",
+    "alias" : [
+      "Evangelion",
+      "NGE"
     ]
   }
 }
