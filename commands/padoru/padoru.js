@@ -29,7 +29,7 @@ module.exports = {
     // lista de los padorus del usuario
     var myPadorus = await mongo.myPadorus(message.author.id)
     
-    var randomPadoru = addPadoru(message, padoruBaseList, myPadorus, rarityChosen)
+    var randomPadoru = await addPadoru(message, padoruBaseList, myPadorus, rarityChosen)
 
     if(!myPadorus.indexOf(randomPadoru.id)){
       myPadorus.push(randomPadoru.id)
@@ -39,7 +39,7 @@ module.exports = {
       math.sleep(2000)
       newpadorumsg = await message.channel.send(':sparkles:LUCKY STRIKE!!:sparkles:\n')
       math.sleep(3000)
-      addPadoru(message, padoruBaseList, myPadorus, rarityChosen + 1)
+      await addPadoru(message, padoruBaseList, myPadorus, rarityChosen + 1)
     }
 
     fs.writeFileSync('./json/padoru.json', JSON.stringify(padoru, null, 2), (err) => {
@@ -60,7 +60,7 @@ async function stars(rarity, message, onemore){
     padorumsg.edit(star)
     await math.sleep(1500)
   }
-  if(onemore && rarity > 2){
+  if(onemore){
     padorumsg.edit(star2)
   }
   
