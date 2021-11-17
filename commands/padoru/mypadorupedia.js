@@ -40,7 +40,8 @@ module.exports = {
       }
       // Filtramos los Padorus por serie
       if(text !== ''){
-        padoruBaseList = argFilter.seriesFilter(padoruBaseList, seriesBaseList, text)
+        padoruBaseList = argFilter.padoruInSeriesFilter(padoruBaseList, seriesBaseList, text)
+        seriesBaseList = argFilter.seriesFilter(seriesBaseList, text)
       }
     }
     
@@ -67,7 +68,7 @@ module.exports = {
     embed = new Discord.MessageEmbed()
       .setAuthor('Padorupedia de ' + target.username, message.author.avatarURL)
       .setColor('RED')
-      .setThumbnail('https://cdn.discordapp.com/attachments/901798915425321000/901799120740704276/PADORUorg.png')
+      .setThumbnail(seriesBaseList[0].thumbnail)
       .setFooter(`Página ${numPage}/${totalPages}  |  Obtenidos ${count}/${total}`)
 
     //Situamos los padorus en el embed y enviamos el mensaje
@@ -111,7 +112,7 @@ module.exports = {
       var newEmbed = new Discord.MessageEmbed()
           .setTitle('Padorupedia de ' + target.username, message.author.avatarURL)
           .setColor('RED')
-          .setThumbnail('https://cdn.discordapp.com/attachments/901798915425321000/901799120740704276/PADORUorg.png')
+          .setThumbnail(seriesBaseList[0].thumbnail)
 
 		  if (reaction.emoji.name === "⬅️") {
         if(numPage === 1){

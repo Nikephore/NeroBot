@@ -21,6 +21,7 @@ module.exports = {
     }
 
     console.log(message.author.username)
+    console.log(message.guild.name)
 
     const luck = math.luckyStrike(25)
 
@@ -36,16 +37,28 @@ module.exports = {
     }
 
     if(luck){
-      math.sleep(2000)
-      newpadorumsg = await message.channel.send(':sparkles:LUCKY STRIKE!!:sparkles:\n')
-      math.sleep(3000)
-      await addPadoru(message, padoruBaseList, myPadorus, rarityChosen + 1)
+      recursiveLuck(message, padoruBaseList, myPadorus, rarityChosen + 1)
     }
 
     fs.writeFileSync('./json/padoru.json', JSON.stringify(padoru, null, 2), (err) => {
       if (err) console.log('Error writing file:', err)
     })
   },
+}
+
+async function recursiveLuck(message, padoruBaseList, myPadorus, rarityChosen){
+  math.sleep(2000)
+  newpadorumsg = await message.channel.send(':sparkles:LUCKY STRIKE!!:sparkles:\n')
+  math.sleep(3000)
+  await addPadoru(message, padoruBaseList, myPadorus, rarityChosen)
+
+  var lucky = math.luckyStrike(25)
+
+  if(lucky){
+    recursiveLuck(message, padoruBaseList, myPadorus, rarityChosen + 1)
+  }
+
+  return
 }
 
 async function stars(rarity, message, onemore){
@@ -81,7 +94,7 @@ async function addPadoru(message, padoruBaseList, myPadorus, rarityChosen){
   var randomPadoru = padoruBaseList[(math.randomNumberBetween(1,count))-1]
   
   if(message.author.username !== randomPadoru.owner){
-    randomPadoru.footer = `Le has robado el padoru a ${randomPadoru.owner}`
+    randomPadoru.footer = `${message.author.username} le ha robado el padoru a ${randomPadoru.owner}`
   } else {
     randomPadoru.footer = `El ${randomPadoru.title} es tuyo en estos momentos`
   }
@@ -97,6 +110,7 @@ async function addPadoru(message, padoruBaseList, myPadorus, rarityChosen){
 
   var isNew = ''
   const coins = [5, 10, 20, 50, 200]
+  var bonus = 0
 
   if(found === undefined){
     padorumsg = await stars(rarityChosen, message, true)
@@ -104,8 +118,14 @@ async function addPadoru(message, padoruBaseList, myPadorus, rarityChosen){
     isNew = ':new:'
   } else {
     padorumsg = await stars(rarityChosen, message, false)
+
+    if(math.luckyStrike(20)){
+      bonus = coins[rarityChosen - 1] * 3
+      isNew = 'BONUS!! '
+    }
+
     await mongo.addCoins(message.author.id, coins[rarityChosen - 1])
-    isNew = `+${coins[rarityChosen - 1]} PC`
+    isNew = isNew + `+${coins[rarityChosen - 1] + bonus} PC`
   }
 
   var pad = embed.embedCreator(randomPadoru, isNew)

@@ -1,14 +1,6 @@
-function seriesFilter(padoruList, seriesList, text){
+function padoruInSeriesFilter(padoruList, seriesList, text){
 
-  function findSeries(obj){
-    if(obj.alias.find(e => e.toLowerCase() === text.toLowerCase())){
-      return true
-    }
-
-    return false
-  }
-
-  seriesList = seriesList.filter(findSeries)
+  seriesList = seriesFilter(seriesList, text)
 
   function findpadoru(obj){
     if(seriesList.some(
@@ -34,7 +26,23 @@ function rarityFilter(padoruList, rarity){
   return padoruList
 }
 
+function seriesFilter(seriesList, text){
+  
+  function findSeries(obj){
+    if(obj.alias.find(e => e.toLowerCase() === text.toLowerCase())){
+      return true
+    }
+
+    return false
+  }
+
+  seriesList = seriesList.filter(findSeries)
+
+  return seriesList
+}
+
 module.exports = {
   seriesFilter,
-  rarityFilter
+  rarityFilter,
+  padoruInSeriesFilter
 }

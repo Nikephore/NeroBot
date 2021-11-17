@@ -4,7 +4,8 @@
     "alias" : [
       "padoru",
       "original"
-      ]
+      ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/901799120740704276/PADORUorg.png"
   },
   "seasonal": {
     "name": "seasonal",
@@ -12,7 +13,8 @@
       "seasonal",
       "season",
       "event"
-    ]
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/902966726298304563/padoru_halloween.png"
   },
   "higurashi": {
     "name" : "higurashi",
@@ -22,7 +24,8 @@
       "wtc",
       "when they cry",
       "When the cicadas Cry"
-      ]
+      ],
+      "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/901814273754419210/satoko_padoru.png"
   },
   "drstone": {
     "name": "drstone",
@@ -31,7 +34,8 @@
       "Dr Stone",
       "El Piedras",
       "Doctor Stone"
-      ]
+      ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901848770826887169/901969395381829692/padoru_senku.png"
   },
   
  "snk": {
@@ -44,7 +48,8 @@
       "attack on titan",
       "ataque a los titanes",
       "el manifiesto comunista"
-      ]
+      ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/902966710955556954/padoru_levi.png"
   },
 
   "ngnl": {
@@ -54,7 +59,8 @@
       "No game No life",
       "Ese anime banneado en australia",
       "No Game No life:Zero"
-      ]
+      ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/903364058818953236/padoru_shiro.png"
   },
   
   "inazuma": {
@@ -64,14 +70,16 @@
       "Inazuma",
       "Inazuma Eleven GO",
       "Inazuma Eleven Ares"
-      ]
+      ],
+    "thumbnail": "https://media.discordapp.net/attachments/901798915425321000/904129262863409152/padoru_shaun.png?width=586&height=586"
   },
   "hxh": {
     "name" : "hxh",
     "alias" : [
       "hunter x hunter",
       "hxh"
-      ]
+      ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/903356834327457822/padoru_killua.png"
   },
   "durarara": {
     "name": "durarara",
@@ -80,7 +88,8 @@
       "drrr",
       "durarara!!",
       "drrr!!"
-      ]
+      ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/904212092368879646/padoru_celty.png"
   },
   "hololive": {
     "name" : "hololive",
@@ -88,7 +97,8 @@
       "Hololive",
       "Hololive English",
       "HoloEN"
-      ]
+      ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/910320148991344660/padoru_gura.png"
   },
   "Hanako-Kun": {
     "name" : "hanako-kun",
@@ -96,39 +106,65 @@
       "Jibaku Shounen Hanako-kun",
       "Toilet-bound Hanako-kun",
       "Hanako-kun"
-      ]
+      ],
+    "thumbnail": "https://media.discordapp.net/attachments/901798915425321000/906729394993766430/1636251518981.png?width=499&height=585"
+  },
+  "Undertale": {
+    "name": "undertale",
+    "alias" : [
+      "Undertale",
+      "Comic sans"
+      ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/907414968176115712/padoru_sans.png"
   },
   "Komi-san": {
     "name": "komi-san",
     "alias" : [
       "Komi-san wa, Comyushou desu.",
       "Komi Can't Communicate",
-      "Komi-san"
-      ]
-  },
-  "Undertale": {
-    "name": "undertale",
-    "alias" : [
-      "Undertale"
-      ]
+      "Komi-san",
+      "Komi san",
+      "Comic sans"
+      ],
+    "thumbnail": "https://media.discordapp.net/attachments/901798915425321000/906728170378645534/1636250519716.png"
   },
   "Minecraft": {
     "name": "minecraft",
     "alias" : [
       "Minecraft"
-    ]
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/901799488111403018/PADORUGOLD.png"
   },
   "Metroid": {
     "name": "metroid",
     "alias" : [
-      "Metroid"
-    ]
+      "Metroid",
+      "metroid prime"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/909792031310745660/padoru_samus.png"
   },
   "Evangelion": {
     "name": "evangelion",
     "alias" : [
       "Evangelion",
       "NGE"
-    ]
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/909797591502442516/padoru_asuka.png"
+  },
+  "Fate": {
+    "name": "fate",
+    "alias" : [
+      "Fate"
+    ],
+    "thumbnail": "https://media.discordapp.net/attachments/901798915425321000/906966930819276800/1636308144338.png"
+  },
+  "Koi to uso": {
+    "name": "Koi to Uso",
+    "alias" : [
+      "Koi to Uso",
+      "love and lies",
+      "Love & Lies"
+    ],
+    "thumbnail": "https://media.discordapp.net/attachments/901798915425321000/910322531385372772/padoru_misaki.png?width=586&height=586"
   }
 }

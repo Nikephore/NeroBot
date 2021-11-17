@@ -24,7 +24,8 @@ module.exports = {
     }
     
     if(text !== ''){
-      padoruBaseList = argFilter.seriesFilter(padoruBaseList, seriesBaseList, text)
+      padoruBaseList = argFilter.padoruInSeriesFilter(padoruBaseList, seriesBaseList, text)
+      seriesBaseList = argFilter.seriesFilter(seriesBaseList, text)
       
     } else {
       padoruBaseList = padoruBaseList.filter(a => a.released === true)
@@ -40,7 +41,7 @@ module.exports = {
     var embed = new Discord.MessageEmbed()
       .setTitle('Padorupedia')
       .setColor('GOLD')
-      .setThumbnail('https://cdn.discordapp.com/attachments/901798915425321000/901799120740704276/PADORUorg.png')
+      .setThumbnail(seriesBaseList[0].thumbnail)
 
     var numPage = 1
     const page = 15
