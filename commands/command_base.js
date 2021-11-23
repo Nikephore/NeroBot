@@ -1,4 +1,6 @@
 const fs = require('fs')
+const math = require('../functions/math')
+const ticket = require('../functions/tickets')
 const { prefix } = require('../config.json')
 const Duration = require('humanize-duration')
 
@@ -28,6 +30,10 @@ module.exports = (client, commandOptions) => {
 
   client.on('message', message => {
     const { member, content, guild } = message
+
+    if(math.luckyStrike(100)){
+      ticket.giveTicket(message, 3)
+    }
 
     //Comprobamos si nos han pasado un comando
     for (const alias of commands) {

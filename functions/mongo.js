@@ -1,4 +1,5 @@
 const mongo = require('../mongo')
+const newProfile = require('../schemas/newProfile')
 const profileSchema = require('../schemas/profile.js')
 const testSchema = require('../schemas/test.js')
 
@@ -171,48 +172,52 @@ module.exports.erase = async (userId, padorupedia) => {
   })
 }
 
-async function update (userId, count){
+module.exports.addTicket = async (userId, username, rarity) => {
   return await mongo().then(async mongoose => {
     try {
 
-      const result = await profileSchema.findOne({userId}, function (err, doc) {
-      if (err) return done(err);
-      // Create the new field if it doesn't exist yet
-      doc.padoruCount || (doc.padoruCount = count)
-
-      doc.save(done);
-      })
-/*
-      const result = await profileSchema.findOneAndUpdate({
+      if(rarity === 3){
+        await newProfileSchema.findOneAndUpdate({
           userId
         },
         {
-          $set : padoruCount
+          username,
+          $inc: {rareTickets : 1}
         },
         {
-          upsert: false,
+          upsert: true,
           new: true
         })
-*/
-      return
-      
-    } finally {
-      mongoose.connection.close()
-    }
-  })
-}
+      }
 
-module.exports.updateAll = async () => {
-  return await mongo().then(async mongoose => {
-    try {
-      const result = await profileSchema.find()
-      
-      //const test = await update(result[0].userId)
-      result.forEach(async function(e){
-        var up = await update(e.userId, e.padorupedia.length)
-      })
+      if(rarity === 4){
+        await newProfileSchema.findOneAndUpdate({
+          userId
+        },
+        {
+          username,
+          $inc: {superRareTickets : 1}
+        },
+        {
+          upsert: true,
+          new: true
+        })
+      }
 
-      return
+      if(rarity === 5){
+        await newProfileSchema.findOneAndUpdate({
+          userId
+        },
+        {
+          username,
+          $inc: {legendTickets : 1}
+        },
+        {
+          upsert: true,
+          new: true
+        })
+      }
+
       
     } finally {
       mongoose.connection.close()

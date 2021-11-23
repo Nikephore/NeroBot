@@ -11,12 +11,33 @@ const newProfileSchema = mongoose.Schema({
   },
   padoruCoins: {
     type: Number,
-    required: true
+    required: true,
+    default: 0
   },
 	rolls: {
-		type: Number,
-		required: true
+		padoruRolls: {
+      type: Number,
+      default: 0
+    },
+		rouletteRolls: {
+      type: Number,
+      default: 0
+    }  
 	},
+  tickets: {
+    rareTickets: {
+      type: Number,
+      default: 0
+    },
+    superRareTickets: {
+      type: Number,
+      default: 0
+    },
+    legendTickets: {
+      type: Number,
+      default: 0
+    }
+  },
 	numPadoru: {
     type: Number,
     required: true,
@@ -25,18 +46,6 @@ const newProfileSchema = mongoose.Schema({
     type: Array,
     required: true,
   },
-  achievements: {
-		type: Array,
-		required: true
-	},
-	numAchievements: {
-		type: Number,
-		required: true
-	},
-  skilltree: {
-    type: Object,
-    required: true,
-  }
 })
 
 module.exports = mongoose.model('newProfile', newProfileSchema)
