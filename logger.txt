@@ -6334,3 +6334,99 @@ Guild: Nombre provisional permanente-330047503686828042
 Command: %p
 Date: Tue, 23 Nov 2021 01:14:24 GMT
 ----------
+----------
+User: Luiso-306496475251081217
+Guild: Liga Eevolution Draft España-782990846752063498
+Command: %p
+Date: Tue, 23 Nov 2021 10:42:41 GMT
+----------
+----------
+User: Éric-325736460185632768
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Tue, 23 Nov 2021 11:35:14 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Tue, 23 Nov 2021 11:57:52 GMT
+----------
+----------
+User: Hicron-321673787139555329
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Tue, 23 Nov 2021 11:59:05 GMT
+----------
+----------
+User: MR NABOS-754799815212400752
+Guild: Virgenes Crew-734646051092561980
+Command: %padoru
+Date: Tue, 23 Nov 2021 12:03:06 GMT
+----------
+----------
+User: !Juan-427478429940842506
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Tue, 23 Nov 2021 12:53:41 GMT
+----------
+----------
+User: !Juan-427478429940842506
+Guild: Nombre provisional permanente-330047503686828042
+Command: %dc
+Date: Tue, 23 Nov 2021 12:53:56 GMT
+----------
+----------
+User: Hicron-321673787139555329
+Guild: Nombre provisional permanente-330047503686828042
+Command: %dc
+Date: Tue, 23 Nov 2021 12:54:06 GMT
+----------
+----------
+User: Luisombrero-398639989736603652
+Guild: Tengo Caramelos-460204224286949396
+Command: %up
+Date: Tue, 23 Nov 2021 13:29:32 GMT
+----------
+----------
+User: Luisombrero-398639989736603652
+Guild: Tengo Caramelos-460204224286949396
+Command: %up
+Date: Tue, 23 Nov 2021 13:30:26 GMT
+----------
+----------
+User: Luisombrero-398639989736603652
+Guild: Tengo Caramelos-460204224286949396
+Command: %up
+Date: Tue, 23 Nov 2021 13:32:10 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Tengo Caramelos-460204224286949396
+Command: %p
+Date: Tue, 23 Nov 2021 13:33:09 GMT
+----------
+----------
+User: Luisombrero-398639989736603652
+Guild: Tengo Caramelos-460204224286949396
+Command: %up
+Date: Tue, 23 Nov 2021 13:33:32 GMT
+----------
+----------
+User: Luisombrero-398639989736603652
+Guild: Tengo Caramelos-460204224286949396
+Command: %p
+Date: Tue, 23 Nov 2021 13:39:01 GMT
+----------
+----------
+User: Guacamole Guacahostias-298827070224728066
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Tue, 23 Nov 2021 13:39:28 GMT
+----------
+----------
+User: Éric-325736460185632768
+Guild: Nombre provisional permanente-330047503686828042
+Command: %p
+Date: Tue, 23 Nov 2021 13:40:26 GMT
+----------

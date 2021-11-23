@@ -1,5 +1,6 @@
 const mongo = require('../mongo')
 const profileSchema = require('../schemas/profile.js')
+const testSchema = require('../schemas/test.js')
 
 module.exports = (client) => {}
 
@@ -13,6 +14,10 @@ module.exports.updateProfile = async (userId, padorupedia, username) => {
       {
         padorupedia,
         username
+      },
+      {
+        upsert: true,
+        new: true
       })
 
     } finally {

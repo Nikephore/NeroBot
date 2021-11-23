@@ -7,7 +7,7 @@ module.exports = {
 
 			const padorupedia = await mongo.myPadorus(message.author.id)
 
-      await mongo.updateprofile(message.author.id, padorupedia, message.author.username)
+      await mongo.updateProfile(message.author.id, padorupedia, message.author.username)
   
       message.channel.send(`Estoy haciendo cosas`)
     },  
