@@ -2,22 +2,12 @@ const mongo = require('../functions/mongo')
 
 function giveTicket(message, rarity) {
 
-	await mongo.addTicket(message.author.id, message.author.username, rarity)
-
 	message.react('🎟️')
 
-	const filter = (reaction, user) => {
-		return ["🎟️"].includes(reaction.emoji.name) && (!user.bot)
-	}
+  mongo.addTicket(message.author.id, message.author.username, rarity)
 
-	message.awaitReactions({ filter, max: 1, time: 60000, errors: ['time'] })
-	.then(collected => {
-		const reaction = collected.first()
+	message.channel.send(`${message.author.username} ha conseguido un Ticket de Padoru de rareza ${rarity},obten toda la informacion en %ticket`)
 
-		if (reaction.emoji.name === '🎟️') {
-			message.reply('Has conseguido un Ticket de Padoru, obten toda la info usando %ticket')
-		}
-	})
 }
 
 module.exports = {

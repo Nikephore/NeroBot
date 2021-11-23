@@ -7,7 +7,8 @@ const newProfileSchema = mongoose.Schema({
   },
   username: {
     type: String,
-    required: true
+    required: true,
+    default: 'placeholder'
   },
   padoruCoins: {
     type: Number,
@@ -41,6 +42,7 @@ const newProfileSchema = mongoose.Schema({
 	numPadoru: {
     type: Number,
     required: true,
+    default: 0
   },
   padorupedia: {
     type: Array,

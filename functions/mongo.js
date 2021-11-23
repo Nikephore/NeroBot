@@ -1,5 +1,5 @@
 const mongo = require('../mongo')
-const newProfile = require('../schemas/newProfile')
+const newProfileSchema = require('../schemas/newProfile')
 const profileSchema = require('../schemas/profile.js')
 const testSchema = require('../schemas/test.js')
 
@@ -182,7 +182,7 @@ module.exports.addTicket = async (userId, username, rarity) => {
         },
         {
           username,
-          $inc: {rareTickets : 1}
+          $inc: {"tickets.rareTickets" : 1}
         },
         {
           upsert: true,
@@ -196,7 +196,7 @@ module.exports.addTicket = async (userId, username, rarity) => {
         },
         {
           username,
-          $inc: {superRareTickets : 1}
+          $inc: {"tickets.superRareTickets" : 1}
         },
         {
           upsert: true,
@@ -210,7 +210,7 @@ module.exports.addTicket = async (userId, username, rarity) => {
         },
         {
           username,
-          $inc: {legendTickets : 1}
+          $inc: {"tickets.legendTickets" : 1}
         },
         {
           upsert: true,
@@ -225,5 +225,133 @@ module.exports.addTicket = async (userId, username, rarity) => {
   })
 }
 
+module.exports.myTickets = async (userId, username) => {
+  return await mongo().then(async mongoose => {
+    try {
 
+      const profile = await profileSchema.findOne({userId})
 
+      const result = await newProfileSchema.findOneAndUpdate({userId},
+      {
+        username,
+        $set: {padorupedia : profile.padorupedia},
+        $set: {padoruCoins : profile.padoruCoins},
+        $set: {numPadoru : profile.padorupedia.length}
+      },
+      {
+        upsert: true,
+        new: true
+      })
+
+      return result.tickets
+      
+    } finally {
+      mongoose.connection.close()
+    }
+  })
+}
+
+module.exports.removeTicket = async (userId, username, rarity) => {
+  return await mongo().then(async mongoose => {
+    try {
+
+      if(rarity === 3){
+        await newProfileSchema.findOneAndUpdate({
+          userId
+        },
+        {
+          username,
+          $inc: {"tickets.rareTickets" : -1}
+        },
+        {
+          upsert: true,
+          new: true
+        })
+      }
+
+      if(rarity === 4){
+        await newProfileSchema.findOneAndUpdate({
+          userId
+        },
+        {
+          username,
+          $inc: {"tickets.superRareTickets" : -1}
+        },
+        {
+          upsert: true,
+          new: true
+        })
+      }
+
+      if(rarity === 5){
+        await newProfileSchema.findOneAndUpdate({
+          userId
+        },
+        {
+          username,
+          $inc: {"tickets.legendTickets" : -1}
+        },
+        {
+          upsert: true,
+          new: true
+        })
+      }
+
+      
+    } finally {
+      mongoose.connection.close()
+    }
+  })
+}
+
+module.exports.addRoll = async (userId, number) => {
+  return await mongo().then(async mongoose => {
+    try {
+
+      const profile = await profileSchema.findOne({userId})
+
+      const result = await newProfileSchema.findOneAndUpdate({userId},
+      {
+        $set: {padorupedia : profile.padorupedia},
+        $set: {padoruCoins : profile.padoruCoins},
+        $set: {numPadoru : profile.padorupedia.length},
+        $inc:{"rolls.padoruRolls" : number}
+      },
+      {
+        upsert: true,
+        new: true
+      })
+
+      return
+      
+    } finally {
+      mongoose.connection.close()
+    }
+  })
+}
+
+module.exports.myRolls = async (userId, username) => {
+  return await mongo().then(async mongoose => {
+    try {
+
+      const profile = await profileSchema.findOne({userId})
+
+      const result = await newProfileSchema.findOneAndUpdate({userId},
+      {
+        username,
+        $set: {padorupedia : profile.padorupedia},
+        $set: {padoruCoins : profile.padoruCoins},
+        $set: {numPadoru : profile.padorupedia.length}
+      },
+      {
+        upsert: true,
+        new: true
+      })
+
+      return result.rolls.padoruRolls
+      
+    } finally {
+      mongoose.connection.close()
+    }
+  })
+}

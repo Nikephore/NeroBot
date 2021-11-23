@@ -1,5 +1,8 @@
-const express = require('express')
+const Topgg = require("@top-gg/sdk")
+const express = require("express")
+
 const app = express()
+
 const fs = require('fs')
 
 //Definicion de las constantes relacionadas con Discord
@@ -11,17 +14,37 @@ const loadCommands = require('./commands/command_loader')
 
 const {
   token,
+  topggtoken,
+  auth
 } = require('./config.json')
+
+const webhook = new Topgg.Webhook(auth)
+
+const rolls = require('./functions/rolls')
+
+app.post("/dblwebhook", webhook.listener(vote => {
+  
+  // vote will be your vote object, e.g
+ // 395526710101278721 < user who voted\
+  rolls.addRoll(vote.user, vote.isWeekend)
+  // You can also throw an error to the listener callback in order to resend the webhook after a few seconds
+}))
+
+app.get('/dblwebhook',function (req, res) {
+  res.send('webhook')
+})
+
 
 app.get('/',function (req, res) {
   res.send('pichula')
 })
- let port = process.env.PORT || 3000;
- app.listen(port)
-  
- require('dotenv').config()
+let port = process.env.PORT || 3000;
 
- //////////////////////////////////////////////////
+app.listen(port)
+  
+require('dotenv').config()
+
+/////////////////////////////////////////////////
 
 /**
  * El bot está encendido, nice

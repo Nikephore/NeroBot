@@ -13,7 +13,7 @@ module.exports = {
 
     let reply = ''
     for(const command of commands){
-      if(reply.length > 990){
+      if(reply.length > 900){
       } else {
         const mainCommand = 
         typeof command.commands === 'string' 

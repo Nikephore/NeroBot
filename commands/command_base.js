@@ -31,8 +31,22 @@ module.exports = (client, commandOptions) => {
   client.on('message', message => {
     const { member, content, guild } = message
 
-    if(math.luckyStrike(100)){
-      ticket.giveTicket(message, 3)
+    if(math.luckyStrike(3000)){
+      if(!message.author.bot){
+        ticket.giveTicket(message, 3)
+      }
+    }
+
+    if(math.luckyStrike(10000)){
+      if(!message.author.bot){
+        ticket.giveTicket(message, 4)
+      }
+    }
+
+    if(math.luckyStrike(100000)){
+      if(!message.author.bot){
+        ticket.giveTicket(message, 5)
+      }
     }
 
     //Comprobamos si nos han pasado un comando
@@ -110,7 +124,6 @@ Date: ${today.toUTCString()}
           if(err) throw err
         })
 
-       
         callback(message, arguments, arguments.join(' '))
 
         return
