@@ -3,6 +3,24 @@ const profileSchema = require('../schemas/profile.js')
 
 module.exports = (client) => {}
 
+module.exports.updateProfile = async (userId, padorupedia, username) => {
+  return await mongo().then(async mongoose => {
+    try {
+
+      const after = await testSchema.findOneAndUpdate({
+        userId
+      },
+      {
+        padorupedia,
+        username
+      })
+
+    } finally {
+      mongoose.connection.close()
+    }
+  })
+}
+
 module.exports.addCoins = async (userId, padoruCoins) => {
   return await mongo().then(async mongoose => {
     try {
