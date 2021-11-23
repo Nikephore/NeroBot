@@ -109,7 +109,7 @@ async function addPadoru(message, padoruBaseList, myPadorus, rarityChosen){
   const found = myPadorus.find(e => e === randomPadoru.id)
 
   var isNew = ''
-  const coins = [5, 10, 20, 50, 200]
+  const coins = [10, 20, 50, 200, 500]
   var bonus = 0
 
   if(found === undefined){

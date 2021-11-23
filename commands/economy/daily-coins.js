@@ -9,7 +9,10 @@ module.exports = {
     const target = message.author
     const targetId = target.id
 
-    var newCoins = math.randomNumberBetween(25, 50)
+    var newCoins = 100
+    if(math.luckyStrike(10)){
+      newCoins += 100
+    }
     const coins = await mongo.addCoins(targetId, newCoins)
 
     message.channel.send(`Añadidas **${newCoins}** Padoru Coins a la cuenta de ${target.username}`)

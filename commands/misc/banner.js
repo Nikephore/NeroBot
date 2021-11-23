@@ -3,6 +3,6 @@ module.exports = {
   description: 'Muestra el banner en curso actualmente.',
   callback: (message) => {
 
-    message.channel.send('https://cdn.discordapp.com/attachments/903221359268745256/907024958587289640/bannerdrstone.jpg')
+    message.channel.send('https://cdn.discordapp.com/attachments/901798915425321000/912500522915876904/bannerinazuma.jpg')
   },  
 }
