@@ -29,20 +29,23 @@ module.exports = {
       return
     }
 
-    if(infopadoru.rarity < 3){
-      message.reply('No se pueden canjear Padorus de menos de 3:star:')
-      return
-    }
-
     if(!infopadoru.active){
       message.reply(`${infopadoru.title}no esta activo actualmente`)
       return
     }
 
-    if((infopadoru.rarity === 3 && tickets.rareTickets === 0) ||
-    (infopadoru.rarity === 4 && tickets.superRareTickets === 0) ||
-    (infopadoru.rarity === 5 && tickets.legendTickets === 0)){
-      message.reply('No dispones de Tickets suficientes para hacer ese canje')
+    const rarityValues = {
+      1 : 3,
+      2 : 15,
+      3 : 30,
+      4 : 60,
+      5 : 100
+    }
+
+    const tt = rarityValues[infopadoru.rarity.toString()]
+
+    if(tt > tickets){
+      message.reply(`Necesitas ${tt - tickets}🎟️ mas para canjear ese Padoru`)
       return
     }
 

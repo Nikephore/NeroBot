@@ -26,18 +26,8 @@ const newProfileSchema = mongoose.Schema({
     }  
 	},
   tickets: {
-    rareTickets: {
-      type: Number,
-      default: 0
-    },
-    superRareTickets: {
-      type: Number,
-      default: 0
-    },
-    legendTickets: {
-      type: Number,
-      default: 0
-    }
+    type: Number,
+    default: 0
   },
 	numPadoru: {
     type: Number,

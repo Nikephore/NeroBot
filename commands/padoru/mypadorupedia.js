@@ -76,7 +76,7 @@ module.exports = {
     
     var i = 0
     while(padoruBaseList[i] !== undefined && i < page) {
-      title = title + '\n`' + (padoruBaseList[i].id) + '`**' + padoruBaseList[i].title + '<:padoru_senku:912502749134987314>**' + ' ' + math.rarityConvertAscii(padoruBaseList[i].rarity)
+      title = title + '\n`' + (padoruBaseList[i].id) + '`**' + padoruBaseList[i].title + '**' + ' ' + math.rarityConvertAscii(padoruBaseList[i].rarity)
 
       i++
     }

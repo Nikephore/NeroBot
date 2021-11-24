@@ -34,6 +34,13 @@ app.get('/dblwebhook',function (req, res) {
   res.send('webhook')
 })
 
+const { AutoPoster } = require('topgg-autoposter')
+
+AutoPoster(topggtoken, client)
+  .on('posted', () => {
+    console.log('Posted stats to Top.gg!')
+  })
+
 
 app.get('/',function (req, res) {
   res.send('pichula')

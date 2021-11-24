@@ -172,52 +172,20 @@ module.exports.erase = async (userId, padorupedia) => {
   })
 }
 
-module.exports.addTicket = async (userId, username, rarity) => {
+module.exports.addTicket = async (userId, username) => {
   return await mongo().then(async mongoose => {
     try {
-
-      if(rarity === 3){
-        await newProfileSchema.findOneAndUpdate({
-          userId
-        },
-        {
-          username,
-          $inc: {"tickets.rareTickets" : 1}
-        },
-        {
-          upsert: true,
-          new: true
-        })
-      }
-
-      if(rarity === 4){
-        await newProfileSchema.findOneAndUpdate({
-          userId
-        },
-        {
-          username,
-          $inc: {"tickets.superRareTickets" : 1}
-        },
-        {
-          upsert: true,
-          new: true
-        })
-      }
-
-      if(rarity === 5){
-        await newProfileSchema.findOneAndUpdate({
-          userId
-        },
-        {
-          username,
-          $inc: {"tickets.legendTickets" : 1}
-        },
-        {
-          upsert: true,
-          new: true
-        })
-      }
-
+      await newProfileSchema.findOneAndUpdate({
+        userId
+      },
+      {
+        username,
+        $inc: {tickets : 1}
+      },
+      {
+        upsert: true,
+        new: true
+      })
       
     } finally {
       mongoose.connection.close()
@@ -251,53 +219,22 @@ module.exports.myTickets = async (userId, username) => {
   })
 }
 
-module.exports.removeTicket = async (userId, username, rarity) => {
+module.exports.removeTicket = async (userId, username, number) => {
   return await mongo().then(async mongoose => {
     try {
 
-      if(rarity === 3){
-        await newProfileSchema.findOneAndUpdate({
-          userId
-        },
-        {
-          username,
-          $inc: {"tickets.rareTickets" : -1}
-        },
-        {
-          upsert: true,
-          new: true
-        })
-      }
+      await newProfileSchema.findOneAndUpdate({
+        userId
+      },
+      {
+        username,
+        $inc: {tickets : -number}
+      },
+      {
+        upsert: true,
+        new: true
+      })
 
-      if(rarity === 4){
-        await newProfileSchema.findOneAndUpdate({
-          userId
-        },
-        {
-          username,
-          $inc: {"tickets.superRareTickets" : -1}
-        },
-        {
-          upsert: true,
-          new: true
-        })
-      }
-
-      if(rarity === 5){
-        await newProfileSchema.findOneAndUpdate({
-          userId
-        },
-        {
-          username,
-          $inc: {"tickets.legendTickets" : -1}
-        },
-        {
-          upsert: true,
-          new: true
-        })
-      }
-
-      
     } finally {
       mongoose.connection.close()
     }

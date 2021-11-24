@@ -17,6 +17,7 @@
     "express": "^4.17.1",
     "functions": "^1.0.9",
     "humanize-duration": "^3.27.0",
-    "mongoose": "^6.0.12"
+    "mongoose": "^6.0.12",
+    "topgg-autoposter": "^2.0.0"
   }
 }
