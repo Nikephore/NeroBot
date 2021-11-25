@@ -18,6 +18,7 @@
     "functions": "^1.0.9",
     "humanize-duration": "^3.27.0",
     "mongoose": "^6.0.12",
+    "node-schedule": "^2.0.0",
     "topgg-autoposter": "^2.0.0"
   }
 }

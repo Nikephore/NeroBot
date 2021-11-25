@@ -79,7 +79,7 @@ Guild: ${guild.name}-${guild.id}
   
 })
 
-import schedule from 'node-schedule'
+const schedule = require('node-schedule')
 
 schedule.scheduleJob('0 0 * * *', () => { fil.resetMidnight()  }) // run everyday at midnight
 

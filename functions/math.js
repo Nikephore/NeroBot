@@ -42,10 +42,18 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+function minsToMidnight() {
+  var now = new Date();
+  var then = new Date(now);
+  then.setHours(24, 0, 0, 0);
+  return (then - now) / 6e4;
+}
+
 module.exports = {
   randomNumberBetween,
   luckyStrike,
   weighted_random,
   rarityConvertAscii,
-  sleep
+  sleep,
+  minsToMidnight
 }
