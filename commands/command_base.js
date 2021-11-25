@@ -31,7 +31,7 @@ module.exports = (client, commandOptions) => {
   client.on('message', message => {
     const { member, content, guild } = message
 
-    if(math.randomNumberBetween(1, 5000) === 1){
+    if(math.randomNumberBetween(1, 3000) === 1){
       if(!message.author.bot){
         ticket.giveTicket(message)
       }

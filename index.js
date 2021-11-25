@@ -23,11 +23,10 @@ const webhook = new Topgg.Webhook(auth)
 const rolls = require('./functions/rolls')
 
 app.post("/dblwebhook", webhook.listener(vote => {
-  
-  // vote will be your vote object, e.g
- // 395526710101278721 < user who voted\
   rolls.addRoll(vote.user, vote.isWeekend)
-  // You can also throw an error to the listener callback in order to resend the webhook after a few seconds
+
+  console.log(`${vote.user} ha votado!`)
+
 }))
 
 app.get('/dblwebhook',function (req, res) {
