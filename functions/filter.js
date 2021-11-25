@@ -41,6 +41,10 @@ function seriesFilter(seriesList, text){
   return seriesList
 }
 
+function resetMidnight(){
+  
+}
+
 module.exports = {
   seriesFilter,
   rarityFilter,

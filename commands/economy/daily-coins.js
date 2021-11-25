@@ -1,20 +1,32 @@
 const mongo = require('../../functions/mongo')
 const math = require('../../functions/math')
 
+var claimed = []
+
+console.log("TESTEO DESDE DAILYCOINS")
+
 module.exports = {
   commands: ['dailycoins', 'dc'],
   description: 'Te da monedas una vez al día, estas se pueden usar en la tienda (tienda aun no disponible)',
-  cooldown: 86399, //cooldown de 1 dia
   callback: async (message) => {
     const target = message.author
-    const targetId = target.id
 
     var newCoins = 100
     if(math.luckyStrike(10)){
-      newCoins += 100
+      newCoins = newCoins * 2
     }
-    const coins = await mongo.addCoins(targetId, newCoins)
 
+    if(claimed.includes(target.id)){
+      message.channel.send(`Ya has reclamado tu recompensa de hoy, vuelve a intentarlo mañana`)
+      return
+    }
+
+    claimed.push(target.id)
+    
     message.channel.send(`Añadidas **${newCoins}** Padoru Coins a la cuenta de ${target.username}`)
+
+    mongo.addCoins(target.id, newCoins)
+
+    return
   }
 }

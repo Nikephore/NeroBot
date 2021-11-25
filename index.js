@@ -11,6 +11,7 @@ const client = new Discord.Client()
 client.commands = new Discord.Collection()
 
 const loadCommands = require('./commands/command_loader')
+const fil = require('./functions/filter')
 
 const {
   token,
@@ -76,6 +77,11 @@ Guild: ${guild.name}-${guild.id}
     if(err) throw err
   })
   
-});
+})
+
+import schedule from 'node-schedule'
+
+schedule.scheduleJob('0 0 * * *', () => { fil.resetMidnight()  }) // run everyday at midnight
+
 
 client.login(token)
