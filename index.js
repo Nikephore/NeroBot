@@ -79,9 +79,4 @@ Guild: ${guild.name}-${guild.id}
   
 })
 
-const schedule = require('node-schedule')
-
-schedule.scheduleJob('0 0 * * *', () => { fil.resetMidnight()  }) // run everyday at midnight
-
-
 client.login(token)

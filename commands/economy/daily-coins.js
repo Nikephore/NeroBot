@@ -4,8 +4,7 @@ const Duration = require('humanize-duration')
 const schedule = require('node-schedule')
 
 /*Todos los dias a las 00 se reinicia el array de usuarios
-que han reclamado la recompensa
-diaria*/
+que han reclamado la recompensa diaria*/
 schedule.scheduleJob('0 0 * * *', () => { claimed.length = 0 }) // run everyday at midnight
 
 var claimed = []
@@ -16,7 +15,7 @@ module.exports = {
   callback: async (message) => {
     const target = message.author
 
-    var newCoins = 100
+    var newCoins = 500
     if(math.luckyStrike(10)){
       newCoins = newCoins * 2
     }

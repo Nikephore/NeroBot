@@ -10,11 +10,6 @@ const newProfileSchema = mongoose.Schema({
     required: true,
     default: 'placeholder'
   },
-  padoruCoins: {
-    type: Number,
-    required: true,
-    default: 0
-  },
 	rolls: {
 		padoruRolls: {
       type: Number,
@@ -28,15 +23,6 @@ const newProfileSchema = mongoose.Schema({
   tickets: {
     type: Number,
     default: 0
-  },
-	numPadoru: {
-    type: Number,
-    required: true,
-    default: 0
-  },
-  padorupedia: {
-    type: Array,
-    required: true,
   },
 })
 

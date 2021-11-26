@@ -1,0 +1,55 @@
+{
+  "cooldown": {
+		"name": "cooldown",
+		"maxlv": 6,
+		"price": {
+			"lv2": 5000,
+			"lv3": 20000,
+			"lv4": 100000,
+			"lv5": 300000,
+			"lv6": 800000
+		}
+	},
+	"prolls": {
+		"name": "padorurolls",
+		"maxlv": 5,
+		"price": {
+			"lv2": 20000,
+			"lv3": 100000,
+			"lv4": 400000,
+			"lv5": 1000000
+		}
+
+	},
+	"problucky": {
+		"name": "lucky",
+		"maxlv": 6,
+		"price": {
+			"lv2": 10000,
+			"lv3": 25000,
+			"lv4": 75000,
+			"lv5": 200000,
+			"lv6": 600000
+		}
+	},
+	"dailycoins": {
+		"name": "dc",
+		"maxlv": 5,
+		"price": {
+			"lv2": 10000,
+			"lv3": 25000,
+			"lv4": 50000,
+			"lv5": 100000
+
+		}
+	},
+	"favpadoru": {
+		"name": "favpadoru",
+		"price": 20000
+	},
+	"sybarite": {
+		"name": "sybarite",
+		"price": 200000
+	}
+
+}

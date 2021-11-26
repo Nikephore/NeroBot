@@ -5,13 +5,15 @@ const profileSchema = mongoose.Schema({
     type: String,
     required: true
   },
+  username: {
+    type: String,
+  },
   padoruCoins: {
     type: Number,
-    required: true
+    default : 0
   },
   padorupedia: {
-    type: Array,
-    required: true,
+    type: Array
   }
 })
 

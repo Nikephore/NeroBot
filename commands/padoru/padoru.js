@@ -1,8 +1,8 @@
 const fs = require('fs')
 const math = require('../../functions/math')
 const embed = require('../../functions/embed')
-const argFilter = require('../../functions/filter')
 const mongo = require('../../functions/mongo')
+const Duration = require('humanize-duration')
 
 module.exports = {
   commands: ['padoru','p'],
@@ -109,7 +109,7 @@ async function addPadoru(message, padoruBaseList, myPadorus, rarityChosen){
   const found = myPadorus.find(e => e === randomPadoru.id)
 
   var isNew = ''
-  const coins = [10, 20, 50, 200, 500]
+  const coins = [25, 75, 150, 500, 2000]
   var bonus = 0
 
   if(found === undefined){
@@ -120,7 +120,7 @@ async function addPadoru(message, padoruBaseList, myPadorus, rarityChosen){
     padorumsg = await stars(rarityChosen, message, false)
 
     if(math.luckyStrike(20)){
-      bonus = coins[rarityChosen - 1] * 3
+      bonus = coins[rarityChosen - 1] * 4
       isNew = 'BONUS!! '
     }
 
