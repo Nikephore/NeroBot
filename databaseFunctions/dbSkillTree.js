@@ -120,3 +120,20 @@ module.exports.sybariteUnlock = async (userId) => {
 		}
 	})
 }
+
+module.exports.getSkillTree = async (userId) => {
+	return await mongo().then(async mongoose => {
+		try {
+			const st = skillTreeSchema.findOneAndUpdate(
+				{ userId },
+				{ userId },
+				{ newentry }
+			)
+
+			return st
+			
+		} finally {
+			mongoose.connection.close()
+		}
+	})
+}
