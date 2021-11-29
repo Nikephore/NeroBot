@@ -1,9 +1,5 @@
 const mongo = require('../mongo')
-const profileSchema = require('../schemas/profile.js')
-
-/* Constante para crear una entrada en la BD si esta
-   no existe previamente */
-const newentry = {upsert: true, new: true}
+const profileSchema = require('../schemas/profile')
 
 module.exports.addCoins = async (userId, padoruCoins, username) => {
 	return await mongo().then(async mongoose => {
@@ -16,7 +12,8 @@ module.exports.addCoins = async (userId, padoruCoins, username) => {
           username,
           $inc: {	padoruCoins },
         },
-        {	newentry })
+        {	upsert: true,
+          new: true })
     
     } finally {
       mongoose.connection.close()
@@ -33,7 +30,8 @@ module.exports.getCoins = async (userId, username) => {
       const result = await profileSchema.findOneAndUpdate(
         { userId },
         { username },
-        { newentry })
+        { upsert: true,
+          new: true })
     
         return result.padoruCoins
           
@@ -53,7 +51,10 @@ module.exports.newPadoru = async (userId, padorupedia, username) => {
           username,
           $push: { padorupedia }
         },
-        {	newentry })
+        {	
+          upsert: true,
+          new: true 
+        })
     
       return padorupedia
           
@@ -70,9 +71,10 @@ module.exports.myPadorus = async (userId, username) => {
       const result = await profileSchema.findOneAndUpdate(
         {	userId },
         {	username },
-        { newentry })
+        { upsert: true,
+          new: true })
     
-      return padorupedia
+      return result.padorupedia
           
     } finally {
       mongoose.connection.close()

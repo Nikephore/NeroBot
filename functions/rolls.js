@@ -2,7 +2,7 @@ const mongo = require('../databaseFunctions/dbNewProfile')
 const schedule = require('node-schedule')
 
 /* Cada hora se ejecuta la funcion hourly */
-schedule.scheduleJob('0 0 * * *', () => { hourly() })
+//schedule.scheduleJob('0 0 * * *', () => { hourly() })
 
 let rolled = {a : "test"}
 
@@ -17,7 +17,7 @@ async function addRoll(user, weekend) {
   await mongo.addRoll(user, 1)
 }
 
-/* Gestiona el cooldown personalizado de los usuarios */
+/* Gestiona el cooldown personalizado de los usuarios 
 function hourly(){
   for (const [key, value] of Object.entries(rolled)) {
     value--
@@ -26,10 +26,9 @@ function hourly(){
     }
   }
 }
-
+*/
 
 
 module.exports = {
   addRoll,
-  rolledPop
 }

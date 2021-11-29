@@ -15,7 +15,10 @@ module.exports.addTicket = async (userId, username) => {
         username,
         $inc: {tickets : 1}
       },
-      {	newentry })
+      {	
+        upsert: true,
+        new: true 
+      })
       
     } finally {
       mongoose.connection.close()
@@ -31,8 +34,9 @@ module.exports.myTickets = async (userId, username) => {
       {
         username,
       },
-      {
-        newentry
+      {	
+        upsert: true,
+        new: true 
       })
 
       return result.tickets
@@ -54,8 +58,9 @@ module.exports.removeTicket = async (userId, username, number) => {
         username,
         $inc: {tickets : -number}
       },
-      {
-        newentry
+      {	
+        upsert: true,
+        new: true 
       })
 
     } finally {
@@ -93,8 +98,9 @@ module.exports.myRolls = async (userId, username) => {
       {
         username,
       },
-      {
-        newentry
+      {	
+        upsert: true,
+        new: true 
       })
 
       return result.rolls.padoruRolls

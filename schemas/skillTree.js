@@ -1,15 +1,19 @@
 const mongoose = require('mongoose')
 
-const reqStr = { type: String, required: true }
-const lv = { type: Number, default: 1 }
-const bool = { type: Boolean, default: false}
 
-
-const newProfileSchema = mongoose.Schema({
-  userId: reqStr,
-  username: reqStr,
+const skillTreeSchema = mongoose.Schema({
+  userId: { 
+    type: String,
+    required: true 
+  },
+  username: {
+    type: String
+  },
 	cooldown: {
-		level: lv,
+		level: {
+      type: Number,
+      default: 1
+    },
 		time: {
 			type: Number,
 			default: 6
@@ -20,25 +24,43 @@ const newProfileSchema = mongoose.Schema({
 		}
 	},
 	prolls: {
-		level: lv,
-		numrolls: lv
+		level: {
+      type: Number,
+      default: 1
+    },
+		numrolls: {
+      type: Number,
+      default: 1
+    }
 	},
 	problucky: {
-		level: lv,
+		level: {
+      type: Number,
+      default: 1
+    },
 		prob: {
 			type: Number,
 			default: 25
 		}
 	},
 	dailyCoins: {
-		level: lv,
+		level: {
+      type: Number,
+      default: 1
+    },
 		dc: {
 			type: Number,
 			default: 500
 		}
 	},
-	favpadoru: bool,
-	sybarite: bool
+	favpadoru: {
+    type: Boolean,
+    default: false
+  },
+	sybarite: {
+    type: Boolean,
+    default: false
+  }
 })
 
 module.exports = mongoose.model('skillTree', skillTreeSchema)

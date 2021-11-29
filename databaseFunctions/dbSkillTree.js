@@ -1,21 +1,19 @@
 const mongo = require('../mongo')
 const skillTreeSchema = require('../schemas/skillTree')
 
-/* Constante para crear una entrada en la BD si esta
-   no existe previamente */
-const newentry = {upsert: true, new: true}
-
 /* Funcion que gestiona la subida de nivel del cooldown */
-module.exports.cooldownLvUp = async (userId) => {
+module.exports.cooldownLvUp = async (userId, username) => {
   return await mongo().then(async mongoose => {
     try {
       await skillTreeSchema.findOneAndUpdate(
 			{ userId },
       {
+        username,
         $inc: {"cooldown.level" : 1},
         $inc: {"cooldown.time" : -1}
       },
-      { newentry })
+      { upsert: true,
+          new: true })
         
     } finally {
       mongoose.connection.close()
@@ -39,7 +37,8 @@ module.exports.cooldownHourly = async (userIds) => {
 						}
 					}
 				},
-				{ newentry })
+				{ upsert: true,
+          new: true })
 
 		} finally {
 			mongoose.connection.close()
@@ -47,90 +46,103 @@ module.exports.cooldownHourly = async (userIds) => {
 	})
 }
 
-module.exports.prollsLvUp = async (userId) => {
+module.exports.prollsLvUp = async (userId, username) => {
 	return await mongo().then(async mongoose => { 
 		try {
 			await skillTreeSchema.findOneAndUpdate(
 				{ userId },
 				{
+          username,
 					$inc: {"prolls.level" : 1},
 					$inc: {"prolls.numrolls" : 1}
 				},
-				{ newentry })
+				{ upsert: true,
+          new: true })
 		} finally {
 			mongoose.connection.close()
 		}
 	})
 }
 
-module.exports.probluckyLvUp = async (userId) => {
+module.exports.probluckyLvUp = async (userId, username) => {
 	return await mongo().then(async mongoose => { 
 		try {
 			await skillTreeSchema.findOneAndUpdate(
 				{ userId },
 				{
+          username,
 					$inc: {"problucky.level" : 1},
 					$inc: {"problucky.prob" : -3}
 				},
-				{ newentry })
+				{ upsert: true,
+          new: true })
 		} finally {
 			mongoose.connection.close()
 		}
 	})
 }
 
-module.exports.dailycoinsLvUp = async (userId) => {
+module.exports.dailycoinsLvUp = async (userId, username) => {
 	return await mongo().then(async mongoose => { 
 		try {
 			await skillTreeSchema.findOneAndUpdate(
 				{ userId },
 				{
+          username,
 					$inc: {"dailycoins.level" : 1},
 					$inc: {"dailicoins.dc" : 500}
 				},
-				{ newentry })
+				{ upsert: true,
+          new: true })
 		} finally {
 			mongoose.connection.close()
 		}
 	})
 }
 
-module.exports.favpadoruUnlock = async (userId) => {
+module.exports.favpadoruUnlock = async (userId, username) => {
 	return await mongo().then(async mongoose => { 
 		try {
 			await skillTreeSchema.findOneAndUpdate(
 				{ userId },
-				{	$set: {favpadoru : true} },
-				{ newentry })
+				{	username,
+          $set: {favpadoru : true} },
+				{ upsert: true,
+          new: true })
 		} finally {
 			mongoose.connection.close()
 		}
 	})
 }
 
-module.exports.sybariteUnlock = async (userId) => {
+module.exports.sybariteUnlock = async (userId, username) => {
 	return await mongo().then(async mongoose => { 
 		try {
 			await skillTreeSchema.findOneAndUpdate(
 				{ userId },
-				{	$set: {sybarite : true} },
-				{ newentry })
+				{	username,
+          $set: {sybarite : true} },
+				{ upsert: true,
+          new: true })
 		} finally {
 			mongoose.connection.close()
 		}
 	})
 }
 
-module.exports.getSkillTree = async (userId) => {
+module.exports.getSkillTree = async (userId, username) => {
 	return await mongo().then(async mongoose => {
 		try {
-			const st = skillTreeSchema.findOneAndUpdate(
-				{ userId },
-				{ userId },
-				{ newentry }
-			)
 
-			return st
+      console.log(userId)
+      console.log(username)
+			const result = await skillTreeSchema.findOneAndUpdate(
+        { userId },
+        { username },
+        { upsert: true,
+          new: true })
+    
+      return result
 			
 		} finally {
 			mongoose.connection.close()

@@ -1,6 +1,6 @@
 const fs = require('fs')
 const embed = require('../../functions/embed')
-const mongo = require('../../functions/mongo')
+const mongo = require('../../databaseFunctions/dbProfile')
 const argFilter = require('../../functions/filter.js')
 
 module.exports = {

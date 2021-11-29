@@ -1,4 +1,4 @@
-const mongo = require('../../functions/mongo')
+const mongo = require('../../databaseFunctions/dbProfile')
 const math = require('../../functions/math')
 const Duration = require('humanize-duration')
 const schedule = require('node-schedule')

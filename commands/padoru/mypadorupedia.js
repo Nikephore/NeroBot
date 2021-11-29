@@ -1,6 +1,6 @@
 const Discord = require("discord.js")
 const fs = require('fs')
-const mongo = require('../../functions/mongo')
+const mongo = require('../../databaseFunctions/dbProfile')
 //function files
 const math = require('../../functions/math')
 const argFilter = require('../../functions/filter')

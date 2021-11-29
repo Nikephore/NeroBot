@@ -1,5 +1,5 @@
 const Discord = require("discord.js")
-const mongo = require("../../functions/mongo")
+const mongo = require('../../databaseFunctions/dbNewProfile')
 
 module.exports = {
     commands: ['ticket'],

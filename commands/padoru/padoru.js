@@ -28,16 +28,14 @@ module.exports = {
     console.log(message.author.username)
     console.log(message.guild.name)
 
-    const st = await st.getSkillTree(id)
+    const sk = await st.getSkillTree(id, message.author.username)
 
-    console.log(st)
-
-    const luck = math.luckyStrike(25)
+    const luck = math.luckyStrike(sk.problucky.prob)
 
     const rarityChosen = math.weighted_random(rarityArray, rarityWeights)
 
     // lista de los padorus del usuario
-    var myPadorus = await profile.myPadorus(id)
+    var myPadorus = await profile.myPadorus(id, message.author.username)
     
     var randomPadoru = await addPadoru(message, padoruBaseList, myPadorus, rarityChosen)
 
@@ -71,6 +69,7 @@ async function recursiveLuck(message, padoruBaseList, myPadorus, rarityChosen){
 }
 
 async function addPadoru(message, padoruBaseList, myPadorus, rarityChosen){
+  const id = message.author.id
     
   // control de errores
   if(rarityChosen > 5){
@@ -112,14 +111,14 @@ async function addPadoru(message, padoruBaseList, myPadorus, rarityChosen){
       isNew = 'BONUS!! '
     }
 
-    await profile.addCoins(id, coins[rarityChosen - 1])
+    await profile.addCoins(message.author.id, coins[rarityChosen - 1])
     isNew = isNew + `+${coins[rarityChosen - 1] + bonus} PC`
   }
 
   var pad = embed.embedCreator(randomPadoru, isNew)
   randomPadoru.footer = ''
 
-  channel.send.message(pad)
+  message.channel.send(pad)
 
   return randomPadoru
 }

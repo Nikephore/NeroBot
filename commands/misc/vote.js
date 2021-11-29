@@ -1,4 +1,4 @@
-const mongo = require('../../functions/mongo')
+const mongo = require('../../databaseFunctions/dbNewProfile')
 
 module.exports = {
     commands: ['vote'],

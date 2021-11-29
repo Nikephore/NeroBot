@@ -1,6 +1,6 @@
 const fs = require('fs')
 const Discord = require("discord.js")
-const mongo = require('../../functions/mongo')
+const mongo = require('../../databaseFunctions/dbNewProfile')
 const math = require('../../functions/math')
 
 module.exports = {
