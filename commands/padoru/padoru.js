@@ -4,6 +4,10 @@ const embed = require('../../functions/embed')
 const profile = require('../../databaseFunctions/dbProfile')
 const st = require('../../databaseFunctions/dbSkillTree')
 const Duration = require('humanize-duration')
+const schedule = require('node-schedule')
+
+
+schedule.scheduleJob('0 * * * *', () => { st.cooldownHourly() = 0 }) // run everyday at midnight
 
 module.exports = {
   commands: ['padoru','p'],
@@ -51,6 +55,7 @@ module.exports = {
       if (err) console.log('Error writing file:', err)
     })
   },
+  addPadoru
 }
 
 async function recursiveLuck(message, padoruBaseList, myPadorus, rarityChosen){

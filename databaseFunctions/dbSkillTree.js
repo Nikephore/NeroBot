@@ -28,17 +28,17 @@ module.exports.cooldownHourly = async (userIds) => {
 				{userId : { $in: userIds }},
 				{"cooldown.timeleft" : 
 				{ $cond: {
-						if: {
-							$eq: ["cooldown.timeleft", 1]
-						},
-						then: "cooldown.time",
-						else: {
-							$inc: {"cooldown.timeleft" : -1}}
-						}
+					if: {
+						$eq: ["cooldown.timeleft", 1]
+					},
+					then: "cooldown.time",
+					else: {
+						$inc: {"cooldown.timeleft" : -1}}
+					}
 					}
 				},
 				{ upsert: true,
-          new: true })
+          		  new: true })
 
 		} finally {
 			mongoose.connection.close()
