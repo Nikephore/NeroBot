@@ -7,7 +7,7 @@ const Duration = require('humanize-duration')
 const schedule = require('node-schedule')
 
 
-schedule.scheduleJob('0 * * * *', () => { st.cooldownHourly() = 0 }) // run everyday at midnight
+//schedule.scheduleJob('0 * * * *', () => { st.cooldownHourly() = 0 })
 
 module.exports = {
   commands: ['padoru','p'],
@@ -15,8 +15,7 @@ module.exports = {
   cooldown: 60 * 60 * 2, // cooldown de 2 horas
   callback: async (message) => {
     const id = message.author.id
-    var rarityArray = [1, 2, 3, 4, 5]
-    var rarityWeights = [40, 31, 18, 9, 2]
+    const rar = {1:0.4, 2:0.31, 3:0.18, 4:0.9, 5:0.02}
     
     var sybariteArray = [2, 3, 4, 5]
     var sybariteWeights = [60, 25, 11, 4]
@@ -36,7 +35,7 @@ module.exports = {
 
     const luck = math.luckyStrike(sk.problucky.prob)
 
-    const rarityChosen = math.weighted_random(rarityArray, rarityWeights)
+    const rarityChosen = parseInt(math.weightedRandom(rar))
 
     // lista de los padorus del usuario
     var myPadorus = await profile.myPadorus(id, message.author.username)

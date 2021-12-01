@@ -15,19 +15,13 @@ function luckyStrike(num){
   return false
 }
 
-function weighted_random(items, weights) {
-    var i;
+function weightedRandom(prob) {
+  let i, sum=0, r=Math.random();
 
-    for (i = 0; i < weights.length; i++)
-        weights[i] += weights[i - 1] || 0;
-    
-    var random = Math.random() * weights[weights.length - 1];
-    
-    for (i = 0; i < weights.length; i++)
-        if (weights[i] > random)
-            break;
-    
-    return items[i];
+  for (i in prob) {
+    sum += prob[i];
+    if (r <= sum) return i;
+  }
 }
 
 function rarityConvertAscii(rarity){
@@ -52,8 +46,8 @@ function minsToMidnight() {
 module.exports = {
   randomNumberBetween,
   luckyStrike,
-  weighted_random,
   rarityConvertAscii,
   sleep,
-  minsToMidnight
+  minsToMidnight,
+  weightedRandom
 }

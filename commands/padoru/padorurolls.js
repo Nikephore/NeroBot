@@ -1,24 +1,19 @@
+const fs = require('fs')
 const math = require('../../functions/math')
-const profile = require('../../schemas/profile')
-const pad = require('./padoru')
 const profile = require('../../databaseFunctions/dbProfile')
-const newProfile = require('../../schemas/newProfile')
+const newProfile = require('../../databaseFunctions/dbNewProfile')
+const embed = require('../../functions/embed')
 
 
 module.exports = {
   commands: ['roll', 'r'],
 	description: 'Gasta los rolls extra que has ganado votando al bot con este comando',
 	callback: async (message, arguments) => {
-		const rarityArray = [1, 2, 3, 4, 5]
-    const rarityWeights = [40, 31, 18, 9, 2]
-
-		const extraArray = [4, 5]
-		const extraWeights = [70, 30]
+    const rar = {1:0.4, 2:0.31, 3:0.18, 4:0.9, 5:0.02}
+    const extraRar = {4:0.8, 5:0.2}
 
 		const id = message.author.id
 		const un = message.author.username
-
-		
 
 		if(!arguments[0]){
 			message.reply('Escribe cuantos rolls vas a gastar. Formato: %roll <num>')
@@ -27,10 +22,17 @@ module.exports = {
 
 		const number = parseInt(arguments[0])
 
+    const rolls = await newProfile.myRolls(id, un)
+
 		if(number > 10 || number < 1){
 			message.reply('El numero de Padorus debe estar entre 1 y 10')
 			return
 		}
+
+    if(rolls < number){
+      message.reply('No tienes suficientes rolls')
+      return
+    }
 
 		const jsonString = fs.readFileSync('./json/padoru.json')
     const padoru = JSON.parse(jsonString)
@@ -40,9 +42,9 @@ module.exports = {
       padoruBaseList.push(padoru[i])
     }
 
-		padoruBaseList = padoruBaseList.filter(a => a.active === true)
+		var myPadorus = await profile.myPadorus(id, message.author.username)
 
-		var myPadorus = await profile.myPadorus(id, un)
+    padoruBaseList = padoruBaseList.filter(a => a.active === true)
 
 		var rarityChosen = []
 		var padorus = []
@@ -56,27 +58,30 @@ module.exports = {
 
 			// Aseguramos que el decimo roll sea de 4 estrellas o mas
 			if(i === 9){
-				rarityChosen.push(math.weighted_random(extraArray, extraWeights))
+        console.log('Decima ronda')
+				rarityChosen.push(parseInt(math.weightedRandom(extraRar)))
+
 			} else {
-				rarityChosen.push(math.weighted_random(rarityArray, rarityWeights))
+				rarityChosen.push(parseInt(math.weightedRandom(rar)))
+
 			}
 			
-			padoruRareList = padoruBaseList.filter(r => r.rarity === rarityChosen[i])
+			var padoruRareList = padoruBaseList.filter(r => r.rarity === rarityChosen[i])
 			
-			count = padoruRareList.length()
-			padorus.push(padoruBaseList[(math.randomNumberBetween(1,count))-1])
+			count = padoruRareList.length
+			padorus.push(padoruRareList[(math.randomNumberBetween(1,count))-1])
 
 			const found = myPadorus.find(e => e === padorus[i].id)
 
 			if(found === undefined){
 				newPadorus.push(padorus[i].id)
 				isNew.push('🆕')
+
 			} else {
 				myCoins = myCoins + coins[rarityChosen[i] - 1]
-				isNew.push(`+${coins[rarityChosen - 1]} PC`)
+				isNew.push(`+${coins[rarityChosen[i] - 1]} PC`)
 			}
 
-			await profile
 		}
 		console.log(rarityChosen)
 
@@ -85,7 +90,16 @@ module.exports = {
 		var index = 0
 		var multipad = embed.embedCreator(padorus[index], isNew[index])
 
+    multipad.setFooter(`${index+1}/${number}`)
+
 		mpmsg = await message.channel.send(multipad)
+
+    await newProfile.addRoll(id, -number)
+
+    if(number === 1){
+      return
+    }
+
 		mpmsg.react('⬅️')
 		mpmsg.react('➡️')
 
@@ -114,6 +128,7 @@ module.exports = {
 		  }
 			
 			var newMultipad = embed.embedCreator(padorus[index], isNew[index])
+      newMultipad.setFooter(`${index+1}/${number}`)
       mpmsg.edit(newMultipad)
 
     })

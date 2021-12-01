@@ -81,3 +81,23 @@ module.exports.myPadorus = async (userId, username) => {
     }
   })
 }
+
+module.exports.addAll = async (userId, pp, coin) => {
+  return await mongo().then(async mongoose => {
+    try {
+          
+      const result = await profileSchema.findOneAndUpdate(
+        {	userId },
+        {
+          $push: { padorupedia: pp },
+          $inc: { padoruCoins: coin}
+        },
+        {	
+          upsert: true,
+          new: true 
+        })   
+    } finally {
+      mongoose.connection.close()
+    }
+  })
+}
