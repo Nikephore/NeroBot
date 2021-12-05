@@ -1,4 +1,5 @@
 const loadCommands = require('../command_loader')
+const loadCategories = require('../category_loader')
 const { prefix } = require('../../config.json')
 const Discord = require("discord.js")
 
@@ -7,7 +8,10 @@ module.exports = {
   description: 'Comando que muestra todos los comandos de este bot',
   callback: (message) => {
 
+    let categories = loadCategories()
     let commands = loadCommands()
+
+    console.log(categories)
 
     let msg = new Discord.MessageEmbed()
 

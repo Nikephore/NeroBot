@@ -217,7 +217,7 @@
   "padoru_rena": {
     "id": 12,
     "title": "Padoru Rena",
-    "active": false,
+    "active": true,
     "released": true,
     "banner": false,
     "rarity": 3,
@@ -236,7 +236,7 @@
   "padoru_rika": {
     "id": 13,
     "title": "Padoru Rika",
-    "active": false,
+    "active": true,
     "released": true,
     "banner": false,
     "rarity": 4,
@@ -255,7 +255,7 @@
   "padoru_satoko": {
     "id": 14,
     "title": "Padoru Satoko",
-    "active": false,
+    "active": true,
     "released": true,
     "banner": false,
     "rarity": 5,
@@ -274,7 +274,7 @@
   "padoru_ukyo": {
     "id": 15,
     "title": "Padoru Ukyo",
-    "active": false,
+    "active": true,
     "released": true,
     "banner": false,
     "rarity": 3,
@@ -293,7 +293,7 @@
   "padoru_kohaku": {
     "id": 16,
     "title": "Padoru Kohaku",
-    "active": false,
+    "active": true,
     "released": true,
     "banner": false,
     "rarity": 4,
@@ -312,7 +312,7 @@
   "padoru_gen": {
     "id": 17,
     "title": "Padoru Gen",
-    "active": false,
+    "active": true,
     "released": true,
     "banner": false,
     "rarity": 4,
@@ -331,7 +331,7 @@
   "padoru_senku": {
     "id": 18,
     "title": "Padoru Senku",
-    "active": false,
+    "active": true,
     "released": true,
     "banner": false,
     "rarity": 5,
@@ -713,7 +713,7 @@
     "title": "Padoru Axel",
     "active": true,
     "released": true,
-    "banner": true,
+    "banner": false,
     "rarity": 4,
     "raritystar": "⭐⭐⭐⭐☆",
     "series": [
@@ -731,7 +731,7 @@
     "title": "Padoru Jude",
     "active": true,
     "released": true,
-    "banner": true,
+    "banner": false,
     "rarity": 4,
     "raritystar": "⭐⭐⭐⭐☆",
     "series": [
@@ -749,7 +749,7 @@
     "title": "Padoru Mark",
     "active": true,
     "released": true,
-    "banner": true,
+    "banner": false,
     "rarity": 5,
     "raritystar": "⭐⭐⭐⭐⭐",
     "series": [
@@ -814,7 +814,7 @@
     "footer": "",
     "artist": "https://twitter.com/Heroic0utlaw",
     "image": "https://media.discordapp.net/attachments/901798915425321000/907051776597975140/padoru_baelz.png",
-    "owner": "Nero"
+    "owner": "Guacamole Guacahostias"
   },
   "padoru_mumei": {
     "id": 45,

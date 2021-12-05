@@ -10,19 +10,18 @@ const schedule = require('node-schedule')
 //schedule.scheduleJob('0 * * * *', () => { st.cooldownHourly() = 0 })
 
 module.exports = {
-  commands: ['padoru','p', 'juanzorra'],
+  commands: ['padoru','p'],
   description: 'Padoru aleatorio ¿te ha salido el que querías?',
   cooldown: 60 * 60 * 2, // cooldown de 2 horas
   callback: async (message) => {
     const id = message.author.id
     const rar = {1:0.4, 2:0.31, 3:0.18, 4:0.9, 5:0.02}
-    
-    var sybariteArray = [2, 3, 4, 5]
-    var sybariteWeights = [60, 25, 11, 4]
+    const sybatiterar = {2:0.6, 3:0.25, 4:0.11, 5:0.04}
 
     const jsonString = fs.readFileSync('./json/padoru.json')
     const padoru = JSON.parse(jsonString)
     var padoruBaseList = []
+    var rarityChosen = null
 
     for(var i in padoru){
       padoruBaseList.push(padoru[i])
@@ -34,8 +33,15 @@ module.exports = {
     const sk = await st.getSkillTree(id, message.author.username)
 
     const luck = math.luckyStrike(sk.problucky.prob)
+    const sybarite = sk.sybarite
 
-    const rarityChosen = parseInt(math.weightedRandom(rar))
+    
+    if (sybarite){
+      rarityChosen = parseInt(math.weightedRandom(sybatiterar))
+    } else {
+      rarityChosen = parseInt(math.weightedRandom(rar))
+    }
+    
 
     // lista de los padorus del usuario
     var myPadorus = await profile.myPadorus(id, message.author.username)
