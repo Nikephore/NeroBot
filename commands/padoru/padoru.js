@@ -10,7 +10,7 @@ const schedule = require('node-schedule')
 //schedule.scheduleJob('0 * * * *', () => { st.cooldownHourly() = 0 })
 
 module.exports = {
-  commands: ['padoru','p'],
+  commands: ['padoru','p', 'juanzorra'],
   description: 'Padoru aleatorio ¿te ha salido el que querías?',
   cooldown: 60 * 60 * 2, // cooldown de 2 horas
   callback: async (message) => {
