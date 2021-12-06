@@ -9,12 +9,11 @@ module.exports = () => {
       let files = fs.readdirSync(path.join(__dirname, dir))
 
       for (let file of files){
-        let stat = fs.lstatSync(path.join(__dirname, dir, file))
 
-        if(stat.isDirectory()){
-          readCommands(path.join(dir, file))
-          let option = require(path.join(__dirname, dir, file))
-          categoryList.push(option)
+        console.log(file)
+
+        if(!file.endsWith('.js')){
+          categoryList.push(file)
         }
       }
     }

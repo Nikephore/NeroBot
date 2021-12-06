@@ -3,6 +3,13 @@ const path = require('path')
 
 module.exports = (client) => {
     let baseFile = 'command_base.js'
+    let notFiles = [
+      'command_base.js',
+      'category_loader.js',
+      'command_loader.js',
+      'category_commands.js'
+    ]
+
     let commandBase = require(`./${baseFile}`)
 
     let commandList = []
@@ -15,13 +22,13 @@ module.exports = (client) => {
 
         if(stat.isDirectory()){
           readCommands(path.join(dir, file))
-        } else if (file !== baseFile && file !== 'command_loader.js') {
+        } else if (!notFiles.includes(file)) {
           let option = require(path.join(__dirname, dir, file))
+          console.log(option.commands[0])
           commandList.push(option)
           if(client){
             commandBase(client, option)
           }
-          
         }
       }
     };
