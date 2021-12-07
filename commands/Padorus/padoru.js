@@ -10,12 +10,14 @@ const schedule = require('node-schedule')
 //schedule.scheduleJob('0 * * * *', () => { st.cooldownHourly() = 0 })
 
 module.exports = {
-  commands: ['padoru','p'],
+  commands: ['padoru'],
   description: 'Padoru aleatorio ¿te ha salido el que querías?',
   cooldown: 60 * 60 * 2, // cooldown de 2 horas
   callback: async (message) => {
     const id = message.author.id
     const rar = {1:0.4, 2:0.31, 3:0.18, 4:0.9, 5:0.02}
+    const bannerOrNot = math.randomNumberBetween(1, 100)
+    const bannerRar = {3:0.6, 4:0.3, 5:0.1}
     const sybatiterar = {2:0.6, 3:0.25, 4:0.11, 5:0.04}
 
     const jsonString = fs.readFileSync('./json/padoru.json')
@@ -35,14 +37,19 @@ module.exports = {
     const luck = math.luckyStrike(sk.problucky.prob)
     const sybarite = sk.sybarite
 
-    
-    if (sybarite){
-      rarityChosen = parseInt(math.weightedRandom(sybatiterar))
-    } else {
+    // 10 percent of chossing a banner padoru
+    if(bannerOrNot <= 90) {
+      if (sybarite){
+        rarityChosen = parseInt(math.weightedRandom(sybatiterar))
+      } else {
       rarityChosen = parseInt(math.weightedRandom(rar))
+      }
+    } else {
+      rarityChosen = parseInt(math.weightedRandom(bannerRar))
+
+      padoruBaseList = padoruBaseList.filter(a => a.banner === true)
     }
     
-
     // lista de los padorus del usuario
     var myPadorus = await profile.myPadorus(id, message.author.username)
     

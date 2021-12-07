@@ -16,6 +16,18 @@
     ],
     "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/902966726298304563/padoru_halloween.png"
   },
+  "umineko": {
+    "name" : "umineko",
+    "alias" : [
+      "umineko",
+      "uminekos",
+      "umineko no naku koro ni",
+      "wtc",
+      "when they cry",
+      "When the seagulls Cry"
+      ],
+      "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/917559979098124348/padoru_beatriche.png"
+  },
   "higurashi": {
     "name" : "higurashi",
     "alias" : [
@@ -25,7 +37,7 @@
       "when they cry",
       "When the cicadas Cry"
       ],
-      "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/901814273754419210/satoko_padoru.png"
+      "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/912507284171669514/padoru_satoko.png"
   },
   "drstone": {
     "name": "drstone",
@@ -158,13 +170,59 @@
     ],
     "thumbnail": "https://media.discordapp.net/attachments/901798915425321000/906966930819276800/1636308144338.png"
   },
+  "Jojo's Bizarre Adventure": {
+    "name": "jojo's",
+    "alias" : [
+      "JoJo's Bizarre Adventure",
+      "JoJo no Kimyou na Bouken",
+      "Jojo's",
+      "Jojos"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/917512436842643566/padoru_jolyne_viva.png"
+  },
   "Koi to uso": {
     "name": "Koi to Uso",
     "alias" : [
       "Koi to Uso",
       "love and lies",
-      "Love & Lies"
+      "Love & Lies",
+      "ktu"
     ],
     "thumbnail": "https://media.discordapp.net/attachments/901798915425321000/910322531385372772/padoru_misaki.png?width=586&height=586"
+  },
+  "Monogatari": {
+    "name": "monogatari",
+    "alias" : [
+      "Bakemonogatari",
+      "Monogatari Series",
+      "Monogatari"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/917518364946092132/padoru_shinobu.png"
+  },
+  "Chainsaw Man": {
+    "name": "chainsaw",
+    "alias" : [
+      "Chainsaw Man"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/917555428995522560/padoru_power.png"
+  },
+  "Nagatoro-san": {
+    "name": "nagatoro",
+    "alias" : [
+      "Nagatoro-san",
+      "Nagatoro",
+      "Ijiranaide, Nagatoro-san",
+      "Ijiranaide Nagatoro-san",
+      "Please Don't Toy With Me, Miss Nagatoro"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/917555428995522560/padoru_power.png"
+  },
+  "genshin": {
+    "name": "genshin",
+    "alias" : [
+      "Genshin",
+      "Genshin Impact"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/917584700430757938/padoru_paimon.png"
   }
 }

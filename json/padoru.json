@@ -1,7 +1,7 @@
 {
   "padoru_normal": {
     "id": 1,
-    "title": "Padoru normal",
+    "title": "Padoru Normal",
     "active": true,
     "released": true,
     "banner": false,
@@ -17,11 +17,11 @@
     "artist": "https://www.deviantart.com/manaalchemist",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901799120740704276/PADORUorg.png",
-    "owner": "Hicron"
+    "owner": "Ansa"
   },
   "padoru_mirror": {
     "id": 2,
-    "title": "Padoru espejo | ojepse urodaP",
+    "title": "Padoru Mirror",
     "active": true,
     "released": true,
     "banner": false,
@@ -36,7 +36,7 @@
     "artist": "https://www.deviantart.com/manaalchemist",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901827298918010960/PADORUMIRROR.png",
-    "owner": "Éric"
+    "owner": "MR NABOS"
   },
   "padoru_mussolini": {
     "id": 3,
@@ -55,11 +55,11 @@
     "artist": "https://www.deviantart.com/manaalchemist",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/903358816295485440/PADORUorg.png",
-    "owner": "Ansa"
+    "owner": "Franky0"
   },
   "padoru_gold": {
     "id": 4,
-    "title": "Padoru dorado",
+    "title": "Padoru Gold",
     "active": true,
     "released": true,
     "banner": false,
@@ -79,7 +79,7 @@
   },
   "padoru_emerald": {
     "id": 5,
-    "title": "Padoru esmeralda",
+    "title": "Padoru Emerald",
     "active": true,
     "released": true,
     "banner": false,
@@ -95,11 +95,11 @@
     "artist": "https://twitter.com/Luiso_EK",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901799489998815292/PADORUEMERALD.png",
-    "owner": "Éric"
+    "owner": "Hicron"
   },
   "padoru_diamond": {
     "id": 6,
-    "title": "Padoru diamante",
+    "title": "Padoru Diamond",
     "active": true,
     "released": true,
     "banner": false,
@@ -119,7 +119,7 @@
   },
   "padoru_obsidian": {
     "id": 7,
-    "title": "Padoru obsidiana",
+    "title": "Padoru Obsidian",
     "active": true,
     "released": true,
     "banner": false,
@@ -135,11 +135,11 @@
     "artist": "https://twitter.com/Luiso_EK",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901799494671302666/PADORUCHALLENGER.png",
-    "owner": "Luisombrero"
+    "owner": "Luiso"
   },
   "padoru_rainbow": {
     "id": 8,
-    "title": "Padoru arcoiris",
+    "title": "Padoru Rainbow",
     "active": true,
     "released": true,
     "banner": false,
@@ -158,7 +158,7 @@
   },
   "padoru_ruby": {
     "id": 9,
-    "title": "Padoru rubí",
+    "title": "Padoru Ruby",
     "active": true,
     "released": true,
     "banner": false,
@@ -173,11 +173,11 @@
     "artist": "https://twitter.com/Luiso_EK",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901811298701041684/PADORURUBY.png",
-    "owner": "Ansa"
+    "owner": "Rubix"
   },
   "padoru_orange": {
     "id": 10,
-    "title": "Padoru naranja",
+    "title": "Padoru Orange",
     "active": true,
     "released": true,
     "banner": false,
@@ -196,7 +196,7 @@
   },
   "padoru_stone": {
     "id": 11,
-    "title": "Padoru de piedra",
+    "title": "Padoru Stone",
     "active": true,
     "released": true,
     "banner": false,
@@ -216,26 +216,7 @@
   },
   "padoru_rena": {
     "id": 12,
-    "title": "Padoru Rena",
-    "active": true,
-    "released": true,
-    "banner": false,
-    "rarity": 3,
-    "raritystar": "⭐⭐⭐⭐☆",
-    "series": [
-      "higurashi"
-    ],
-    "description": "Rena de Higurashi no naku koro ni",
-    "color": "ORANGE",
-    "footer": "",
-    "artist": "https://www.deviantart.com/thebloodycorvid",
-    "emoji": "<:padoru_senku:912502749134987314>",
-    "image": "https://cdn.discordapp.com/attachments/901798915425321000/901814481481531422/padoru_rena.png",
-    "owner": "hectorelval"
-  },
-  "padoru_rika": {
-    "id": 13,
-    "title": "Padoru Rika",
+    "title": "Padoru Rena Ryuugu",
     "active": true,
     "released": true,
     "banner": false,
@@ -244,7 +225,26 @@
     "series": [
       "higurashi"
     ],
-    "description": "Rika de Higurashi no naku koro ni, Nippah",
+    "description": "Rena Ryuugu from Higurashi no naku koro ni",
+    "color": "ORANGE",
+    "footer": "",
+    "artist": "https://www.deviantart.com/thebloodycorvid",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/901814481481531422/padoru_rena.png",
+    "owner": "Rubix"
+  },
+  "padoru_rika": {
+    "id": 13,
+    "title": "Padoru Rika Furude",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "higurashi"
+    ],
+    "description": "Rika Furude from Higurashi no naku koro ni, Nippah",
     "color": "PURPLE",
     "footer": "",
     "artist": "https://twitter.com/runi_chan8",
@@ -254,7 +254,7 @@
   },
   "padoru_satoko": {
     "id": 14,
-    "title": "Padoru Satoko",
+    "title": "Padoru Satoko Hojo",
     "active": true,
     "released": true,
     "banner": false,
@@ -263,7 +263,7 @@
     "series": [
       "higurashi"
     ],
-    "description": "Satoko de Higurashi no naku koro ni, 34",
+    "description": "Satoko Hojo from Higurashi no naku koro ni, 34",
     "color": "GOLD",
     "footer": "",
     "artist": "https://twitter.com/runi_chan8",
@@ -282,13 +282,13 @@
     "series": [
       "drstone"
     ],
-    "description": "Ukyo de Dr.Stone",
+    "description": "Ukyo from Dr.Stone",
     "color": "YELLOW",
     "footer": "",
     "artist": "https://twitter.com/pinkborb",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901848770826887169/901969397655171162/padoru_ukyo.png",
-    "owner": "Hicron"
+    "owner": "TOKYO"
   },
   "padoru_kohaku": {
     "id": 16,
@@ -301,13 +301,13 @@
     "series": [
       "drstone"
     ],
-    "description": "Kohaku de Dr.Stone",
+    "description": "Kohaku from Dr.Stone",
     "color": "DARK_BLUE",
     "footer": "",
     "artist": "https://twitter.com/pinkborb",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901848770826887169/901969394211647488/padoru_kohaku.png",
-    "owner": "!Juan"
+    "owner": "Luiso"
   },
   "padoru_gen": {
     "id": 17,
@@ -320,17 +320,17 @@
     "series": [
       "drstone"
     ],
-    "description": "Gen de Dr.Stone",
+    "description": "Gen from Dr.Stone",
     "color": "PURPLE",
     "footer": "",
     "artist": "https://twitter.com/pinkborb",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901848770826887169/901969393687351356/padoru_gen.png",
-    "owner": "Ansa"
+    "owner": "Hicron"
   },
   "padoru_senku": {
     "id": 18,
-    "title": "Padoru Senku",
+    "title": "Padoru Senku Ishigami",
     "active": true,
     "released": true,
     "banner": false,
@@ -339,7 +339,7 @@
     "series": [
       "drstone"
     ],
-    "description": "Senku de Dr.Stone",
+    "description": "Senku Ishigami from Dr.Stone",
     "color": "GREEN",
     "footer": "",
     "artist": "https://twitter.com/pinkborb",
@@ -368,7 +368,7 @@
   },
   "padoru_levi": {
     "id": 20,
-    "title": "Padoru Levi",
+    "title": "Padoru Levi Ackerman",
     "active": true,
     "released": true,
     "banner": false,
@@ -377,16 +377,16 @@
     "series": [
       "snk"
     ],
-    "description": "Levi Ackerman de Shingeki no kyojin",
+    "description": "Levi Ackerman from Shingeki no kyojin",
     "color": "DARK_GREEN",
     "footer": "",
     "artist": "https://twitter.com/pinkborb",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/902966710955556954/padoru_levi.png",
-    "owner": "Éric"
+    "owner": "cesar65712"
   },
   "padoru_hange": {
     "id": 21,
-    "title": "Padoru Hange",
+    "title": "Padoru Hange Zoe",
     "active": true,
     "released": true,
     "banner": false,
@@ -395,7 +395,7 @@
     "series": [
       "snk"
     ],
-    "description": "Hange Zoë de Shingeki no kyojin Hange Zoë",
+    "description": "Hange Zoë from Shingeki no kyojin",
     "color": "BLACK",
     "footer": "",
     "artist": "https://twitter.com/pinkborb",
@@ -404,7 +404,7 @@
   },
   "padoru_killua": {
     "id": 22,
-    "title": "Padoru Killua",
+    "title": "Padoru Killua Zoldyck",
     "active": true,
     "released": true,
     "banner": false,
@@ -413,12 +413,12 @@
     "series": [
       "hxh"
     ],
-    "description": "Killua de Hunter X Hunter",
+    "description": "Killua Zoldyck from Hunter X Hunter",
     "color": "BLUE",
     "footer": "",
     "artist": "https://weheartit.com/Aizuuh",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/903356834327457822/padoru_killua.png",
-    "owner": "Kokun"
+    "owner": "Éric"
   },
   "padoru_shuvi": {
     "id": 23,
@@ -431,12 +431,12 @@
     "series": [
       "ngnl"
     ],
-    "description": "Shuvi de No Game No Life 0",
+    "description": "Shuvi from No Game No Life 0",
     "color": "DARK_VIVID_PINK",
     "footer": "",
     "artist": "Desconocido (si lo encuentras dimelo)",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/903364096055988244/padoru_shuvi.png",
-    "owner": "Ansa"
+    "owner": "Guacamole Guacahostias"
   },
   "padoru_shiro": {
     "id": 24,
@@ -449,7 +449,7 @@
     "series": [
       "ngnl"
     ],
-    "description": "Shiro de No Game No Life",
+    "description": "Shiro from No Game No Life",
     "color": "LUMINOUS_VIVID_PINK",
     "footer": "",
     "artist": "Desconocido (si lo encuentras dimelo)",
@@ -458,7 +458,7 @@
   },
   "padoru_gura": {
     "id": 25,
-    "title": "Padoru Gura",
+    "title": "Padoru Gawr Gura",
     "active": true,
     "released": true,
     "banner": false,
@@ -467,16 +467,16 @@
     "series": [
       "hololive"
     ],
-    "description": "Gawr Gura de Hololive EN",
+    "description": "Gawr Gura from Hololive EN",
     "color": "AQUA",
     "footer": "",
     "artist": "https://twitter.com/5enketsu",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/910320148991344660/padoru_gura.png",
-    "owner": "wisma"
+    "owner": "Luiso"
   },
   "padoru_shawn": {
     "id": 26,
-    "title": "Padoru Shawn",
+    "title": "Padoru Shawn Frost",
     "active": true,
     "released": true,
     "banner": false,
@@ -485,7 +485,7 @@
     "series": [
       "inazuma"
     ],
-    "description": "Shawn Frost de Inazuma Eleven",
+    "description": "Shawn Frost from Inazuma Eleven",
     "color": "LIGHT_GREY",
     "footer": "",
     "artist": "https://twitter.com/Nani_Mitsu",
@@ -494,7 +494,7 @@
   },
   "padoru_nathan": {
     "id": 27,
-    "title": "Padoru Nathan",
+    "title": "Padoru Nathan Swift",
     "active": true,
     "released": true,
     "banner": false,
@@ -503,7 +503,7 @@
     "series": [
       "inazuma"
     ],
-    "description": "Nathan Swift de Inazuma Eleven",
+    "description": "Nathan Swift from Inazuma Eleven",
     "color": "DARK_BLUE",
     "footer": "",
     "artist": "https://twitter.com/Nani_Mitsu",
@@ -512,7 +512,7 @@
   },
   "padoru_celty": {
     "id": 28,
-    "title": "Padoru Celty",
+    "title": "Padoru Celty Sturluson",
     "active": true,
     "released": true,
     "banner": false,
@@ -521,16 +521,16 @@
     "series": [
       "durarara"
     ],
-    "description": "Celty Sturluson de Durarara",
+    "description": "Celty Sturluson from Durarara",
     "color": "BLACK",
     "footer": "",
     "artist": "reddit.com/user/KuroJ07",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/904212092368879646/padoru_celty.png",
-    "owner": "RedCool356"
+    "owner": "Guacamole Guacahostias"
   },
   "padoru_hanako": {
     "id": 29,
-    "title": "Padoru Hanako",
+    "title": "Padoru Hanako-Kun",
     "active": true,
     "released": true,
     "banner": false,
@@ -539,7 +539,7 @@
     "series": [
       "hanako-kun"
     ],
-    "description": "Hanako Kun de Jibaku Shounen Hanako-kun",
+    "description": "Hanako Kun from Jibaku Shounen Hanako-kun",
     "color": "BLACK",
     "footer": "",
     "artist": "Henry Maniego",
@@ -557,12 +557,12 @@
     "series": [
       "hanako-kun"
     ],
-    "description": "Yashiro de Jibaku Shounen Hanako-kun",
+    "description": "Yashiro from Jibaku Shounen Hanako-kun",
     "color": "LUMINOUS_VIVID_PINK",
     "footer": "",
     "artist": "https://twitter.com/jchama4",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/907023438458269767/padoru_yashiro.png",
-    "owner": "Luiso"
+    "owner": "Hicron"
   },
   "padoru_komi": {
     "id": 31,
@@ -575,7 +575,7 @@
     "series": [
       "komi-san"
     ],
-    "description": "Komi de Komi-san wa, Comyushou desu.",
+    "description": "Komi from Komi-san wa, Comyushou desu.",
     "color": "DARK_PURPLE",
     "footer": "",
     "artist": "Desconocido (si lo encuentras dimelo)",
@@ -598,7 +598,7 @@
     "footer": "",
     "artist": "https://twitter.com/r_jesp",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/907414968176115712/padoru_sans.png",
-    "owner": "Éric"
+    "owner": "wisma"
   },
   "padoru_rider": {
     "id": 33,
@@ -611,12 +611,12 @@
     "series": [
       "fate"
     ],
-    "description": "Rider de Fate/Stay Night",
+    "description": "Rider from Fate/Stay Night",
     "color": "DARK_VIVID_PINK",
     "footer": "",
     "artist": "https://twitter.com/Ratentaisou",
     "image": "https://media.discordapp.net/attachments/901798915425321000/906966930819276800/1636308144338.png",
-    "owner": "Hicron"
+    "owner": "Ansa"
   },
   "padoru_samus": {
     "id": 34,
@@ -629,12 +629,12 @@
     "series": [
       "metroid"
     ],
-    "description": "Samus de Metroid",
+    "description": "Samus from Metroid",
     "color": "BLUE",
     "footer": "",
     "artist": "https://twitter.com/pinkborb",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/909792031310745660/padoru_samus.png",
-    "owner": "wisma"
+    "owner": "Ansa"
   },
   "padoru_asuka": {
     "id": 35,
@@ -647,7 +647,7 @@
     "series": [
       "evangelion"
     ],
-    "description": "Asuka de Neon Genesis Evangelion. Feliz Jueves",
+    "description": "Asuka from Neon Genesis Evangelion. Feliz Jueves",
     "color": "RED",
     "footer": "",
     "artist": "https://twitter.com/pinkborb",
@@ -656,7 +656,7 @@
   },
   "padoru_kevin": {
     "id": 36,
-    "title": "Padoru Kevin",
+    "title": "Padoru Kevin Dragonfly",
     "active": true,
     "released": true,
     "banner": false,
@@ -665,7 +665,7 @@
     "series": [
       "inazuma"
     ],
-    "description": "Kevin Dragonfly de Inazuma Eleven",
+    "description": "Kevin Dragonfly from Inazuma Eleven",
     "color": "ORANGE",
     "footer": "",
     "artist": "https://twitter.com/SBonbon21",
@@ -674,7 +674,7 @@
   },
   "padoru_ririna": {
     "id": 37,
-    "title": "Padoru Ririna",
+    "title": "Padoru Ririna Sanada",
     "active": true,
     "released": true,
     "banner": false,
@@ -683,7 +683,7 @@
     "series": [
       "Koi to Uso"
     ],
-    "description": "Ririna Sanada de Koi to Uso. URESHII.",
+    "description": "Ririna Sanada from Koi to Uso. URESHII.",
     "color": "ORANGE",
     "footer": "",
     "artist": "https://twitter.com/5enketsu",
@@ -692,7 +692,7 @@
   },
   "padoru_misaki": {
     "id": 38,
-    "title": "Padoru Misaki",
+    "title": "Padoru Misaki Takasaki",
     "active": true,
     "released": true,
     "banner": false,
@@ -701,7 +701,7 @@
     "series": [
       "Koi to Uso"
     ],
-    "description": "Misaki Takasaki de Koi to Uso. KANASHII.",
+    "description": "Misaki Takasaki from Koi to Uso. KANASHII.",
     "color": "DARK_BLUE",
     "footer": "",
     "artist": "https://twitter.com/5enketsu",
@@ -710,7 +710,7 @@
   },
   "padoru_axel": {
     "id": 39,
-    "title": "Padoru Axel",
+    "title": "Padoru Axel Blaze",
     "active": true,
     "released": true,
     "banner": false,
@@ -719,7 +719,7 @@
     "series": [
       "inazuma"
     ],
-    "description": "Axel Blaze de Inazuma Eleven",
+    "description": "Axel Blaze from Inazuma Eleven",
     "color": "ORANGE",
     "footer": "",
     "artist": "https://twitter.com/Nani_Mitsu",
@@ -728,7 +728,7 @@
   },
   "padoru_jude": {
     "id": 40,
-    "title": "Padoru Jude",
+    "title": "Padoru Jude Sharp",
     "active": true,
     "released": true,
     "banner": false,
@@ -737,16 +737,16 @@
     "series": [
       "inazuma"
     ],
-    "description": "Jude Sharp de Inazuma Eleven",
+    "description": "Jude Sharp from Inazuma Eleven",
     "color": "BLUE",
     "footer": "",
     "artist": "https://twitter.com/Nani_Mitsu",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/912499210736259102/padoru_jude.png",
-    "owner": "javilex"
+    "owner": "MR NABOS"
   },
   "padoru_mark": {
     "id": 41,
-    "title": "Padoru Mark",
+    "title": "Padoru Mark Evans",
     "active": true,
     "released": true,
     "banner": false,
@@ -755,7 +755,7 @@
     "series": [
       "inazuma"
     ],
-    "description": "Mark Evans de Inazuma Eleven",
+    "description": "Mark Evans from Inazuma Eleven",
     "color": "RED",
     "footer": "",
     "artist": "https://twitter.com/Nani_Mitsu",
@@ -764,7 +764,7 @@
   },
   "padoru_hanyuu": {
     "id": 42,
-    "title": "Padoru Hanyuu",
+    "title": "Padoru Hanyuu Furude",
     "active": true,
     "released": true,
     "banner": false,
@@ -773,12 +773,12 @@
     "series": [
       "higurashi"
     ],
-    "description": "Hanyuu Furude de Higurashi no Naku Koro Ni",
+    "description": "Hanyuu Furude from Higurashi no Naku Koro Ni",
     "color": "PURPLE",
     "footer": "",
     "artist": "https://twitter.com/runi_chan8",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/912507590565589022/padoru_hanyuu.png",
-    "owner": "Luiso"
+    "owner": "Guacamole Guacahostias"
   },
   "padoru_sana": {
     "id": 43,
@@ -791,7 +791,7 @@
     "series": [
       "hololive"
     ],
-    "description": "Tsukumo Sana de Hololive EN",
+    "description": "Tsukumo Sana from Hololive EN",
     "color": "ORANGE",
     "footer": "",
     "artist": "https://twitter.com/Heroic0utlaw",
@@ -809,7 +809,7 @@
     "series": [
       "hololive"
     ],
-    "description": "Hakos Baelz de Hololive EN",
+    "description": "Hakos Baelz from Hololive EN",
     "color": "RED",
     "footer": "",
     "artist": "https://twitter.com/Heroic0utlaw",
@@ -827,7 +827,7 @@
     "series": [
       "hololive"
     ],
-    "description": "Nanashi Mumei de Hololive EN",
+    "description": "Nanashi Mumei from Hololive EN",
     "color": "DFB27E",
     "footer": "",
     "artist": "https://twitter.com/Heroic0utlaw",
@@ -845,7 +845,7 @@
     "series": [
       "hololive"
     ],
-    "description": "Ouro Kronii de Hololive EN",
+    "description": "Ouro Kronii from Hololive EN",
     "color": "DARK_BLUE",
     "footer": "",
     "artist": "https://twitter.com/Heroic0utlaw",
@@ -863,11 +863,371 @@
     "series": [
       "hololive"
     ],
-    "description": "Ceres Fauna de Hololive EN",
+    "description": "Ceres Fauna from Hololive EN",
     "color": "GREEN",
     "footer": "",
     "artist": "https://twitter.com/Heroic0utlaw",
     "image": "https://media.discordapp.net/attachments/901798915425321000/907051781522087966/padoru_fauna.png?width=528&height=580",
-    "owner": "Ansa"
+    "owner": "DarkDrake"
+  },
+  "padoru_jonathan": {
+    "id": 48,
+    "title": "Padoru Jonathan Joestar",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "jojo's"
+    ],
+    "description": "Joseph Joestar from Jojo's Part 1: Phantom Blood",
+    "color": "DARK_BLUE",
+    "footer": "",
+    "artist": "Z.N.",
+    "image": "https://media.discordapp.net/attachments/901798915425321000/917523666529550376/padoru_jhonathan.png?width=580&height=580",
+    "owner": "Nero"
+  },
+  "padoru_joseph": {
+    "id": 49,
+    "title": "Padoru Joseph Joestar",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 5,
+    "raritystar": "⭐⭐⭐⭐⭐",
+    "series": [
+      "jojo's"
+    ],
+    "description": "Joseph Joestar from Jojo's Part 2: Battle Tendency",
+    "color": "ORANGE",
+    "footer": "",
+    "artist": "Z.N.",
+    "image": "https://media.discordapp.net/attachments/901798915425321000/917522363392856135/padoru_joseph.png?width=580&height=580",
+    "owner": "Nero"
+  },
+  "padoru_jotaro": {
+    "id": 50,
+    "title": "Padoru Jotaro Kujo",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "jojo's"
+    ],
+    "description": "Jotaro Kujo from Jojo's Part 3: Stardust Crusaders",
+    "color": "BLACK",
+    "footer": "",
+    "artist": "Z.N.",
+    "image": "https://media.discordapp.net/attachments/901798915425321000/917514801033388063/padoru_jotaro.png",
+    "owner": "Nero"
+  },
+  "padoru_josuke": {
+    "id": 51,
+    "title": "Padoru Josuke Higashikata",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "jojo's"
+    ],
+    "description": "Josuke Higashikata from Jojo's Part 4: Diamond is Unbreakeable ",
+    "color": "DARK_PURPLE",
+    "footer": "",
+    "artist": "Z.N.",
+    "image": "https://media.discordapp.net/attachments/901798915425321000/917515546977767424/padoru_josuke.png",
+    "owner": "Kokun"
+  },
+  "padoru_Giorno": {
+    "id": 52,
+    "title": "Padoru Giorno Giovanna",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "jojo's"
+    ],
+    "description": "Giorno Giovanna from Jojo's Part 5: Vento Aureo",
+    "color": "YELLOW",
+    "footer": "",
+    "artist": "https://www.reddit.com/user/Angry-Laughter/",
+    "image": "https://media.discordapp.net/attachments/901798915425321000/917520838448791612/padoru_giorno.png?width=539&height=580",
+    "owner": "wisma"
+  },
+  "padoru_jolyne": {
+    "id": 53,
+    "title": "Padoru Jolyne Kujo",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 5,
+    "raritystar": "⭐⭐⭐⭐⭐",
+    "series": [
+      "jojo's"
+    ],
+    "description": "Jolyne Kujo from Jojo's Part 6: Stone Ocean",
+    "color": "GREEN",
+    "footer": "",
+    "artist": "https://twitter.com/hoox_one",
+    "image": "https://media.discordapp.net/attachments/901798915425321000/917512436842643566/padoru_jolyne_viva.png?width=580&height=580",
+    "owner": "Nero"
+  },
+  "padoru_johnny": {
+    "id": 54,
+    "title": "Padoru Johnny Joestar",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "jojo's"
+    ],
+    "description": "Johnny Joestar from Jojo's Part 7: Steel Ball Run",
+    "color": "DARK_AQUA",
+    "footer": "",
+    "artist": "Z.N.",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/917524366806355988/padoru_jhonny.png",
+    "owner": "Nero"
+  },
+  "padoru_josuke_jjl": {
+    "id": 55,
+    "title": "Padoru Josuke Higashikata JJL",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "jojo's"
+    ],
+    "description": "Josuke Higashikata from Jojo's Part 8: Jojolion ",
+    "color": "DARK_AQUA",
+    "footer": "",
+    "artist": "Z.N.",
+    "image": "https://media.discordapp.net/attachments/901798915425321000/917519112371068928/padoru_josuke_jll.png?width=580&height=580",
+    "owner": "Nero"
+  },
+  "padoru_shinobu": {
+    "id": 56,
+    "title": "Padoru Shinobu Oshino",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "monogatari"
+    ],
+    "description": "Shinobu Oshino de Bakemonogatari ",
+    "color": "YELLOW",
+    "footer": "",
+    "artist": "https://www.pixiv.net/en/users/21823632",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/917518364946092132/padoru_shinobu.png",
+    "owner": "Rubix"
+  },
+  "padoru_power": {
+    "id": 57,
+    "title": "Padoru Power",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "chainsaw"
+    ],
+    "description": "Power from Chainsaw Man",
+    "color": "DARK_VIVID_PINK",
+    "footer": "",
+    "artist": "https://twitter.com/5enketsu",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/917555428995522560/padoru_power.png",
+    "owner": "Nero"
+  },
+  "padoru_nagatoro": {
+    "id": 58,
+    "title": "Padoru Hayase Nagatoro",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "nagatoro"
+    ],
+    "description": "Hayase Nagatoro from Ijiranaide, Nagatoro-san",
+    "color": "BROWN",
+    "footer": "",
+    "artist": "https://twitter.com/5enketsu",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/917558126679576626/padoru_nagatoro.png",
+    "owner": "Guacamole Guacahostias"
+  },
+  "padoru_bernkastel": {
+    "id": 59,
+    "title": "Padoru Frederica Bernkastel",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "umineko"
+    ],
+    "description": "Frederica Bernkastel from Umineko No Naku Koro Ni",
+    "color": "DARK_PURPLE",
+    "footer": "",
+    "artist": "https://twitter.com/Fragment_Witch",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/917559979387527248/padoru_bernkastel.png",
+    "owner": "Nero"
+  },
+  "padoru_ange": {
+    "id": 60,
+    "title": "Padoru Ange Ushiromiya",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "umineko"
+    ],
+    "description": "Ange Ushiromiya from Umineko No Naku Koro Ni",
+    "color": "BLACK",
+    "footer": "",
+    "artist": "https://twitter.com/smolmafs",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/917574254592135238/padoru_ange.png",
+    "owner": "Nero"
+  },
+  "padoru_erika": {
+    "id": 61,
+    "title": "Padoru Erika Furudo",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "umineko"
+    ],
+    "description": "Erika Furudo from Umineko No Naku Koro Ni",
+    "color": "PURPLE",
+    "footer": "",
+    "artist": "https://twitter.com/smolmafs",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/917575274168721488/padoru_erika.png",
+    "owner": "Nero"
+  },
+  "padoru_lambdadelta": {
+    "id": 62,
+    "title": "Padoru Lambdadelta",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "umineko"
+    ],
+    "description": "Lambdadelta from Umineko No Naku Koro Ni",
+    "color": "LUMINOUS_VIVID_PINK",
+    "footer": "",
+    "artist": "https://twitter.com/Fragment_Witch",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/917559979660148756/padoru_lambdadelta.png",
+    "owner": "Rubix"
+  },
+  "padoru_beatrice": {
+    "id": 63,
+    "title": "Padoru Beatrice",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 5,
+    "raritystar": "⭐⭐⭐⭐⭐",
+    "series": [
+      "umineko"
+    ],
+    "description": "Beatrice from Umineko No Naku Koro Ni. The Golden Witch",
+    "color": "GOLD",
+    "footer": "",
+    "artist": "https://twitter.com/Fragment_Witch",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/917559979098124348/padoru_beatriche.png",
+    "owner": "Nero"
+  },
+  "padoru_evabeatrice": {
+    "id": 64,
+    "title": "Padoru EVA-Beatrice",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "umineko"
+    ],
+    "description": "EVA-Beatrice from Umineko No Naku Koro Ni. The Golden Witch",
+    "color": "DARK_PURPLE",
+    "footer": "",
+    "artist": "https://twitter.com/smolmafs",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/917579829208051722/padoru_evatrice.png",
+    "owner": "Nero"
+  },
+  "padoru_clair": {
+    "id": 65,
+    "title": "Padoru Clair Vaux Bernardus",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "umineko"
+    ],
+    "description": "Clair Vaux Bernardus from Umineko No Naku Koro Ni. The Golden Witch",
+    "color": "LIGHT_GREEN",
+    "footer": "",
+    "artist": "https://twitter.com/happycricketbox",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/917581491440087081/padoru_claire.png",
+    "owner": "Nero"
+  },
+  "padoru_lion": {
+    "id": 66,
+    "title": "Padoru Lion Ushiromiya",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "umineko"
+    ],
+    "description": "Lion Ushiromiya from Umineko No Naku Koro Ni. The Golden Witch",
+    "color": "RED",
+    "footer": "",
+    "artist": "https://twitter.com/happycricketbox",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/917581491792396358/padoru_lion.png",
+    "owner": "Nero"
+  },
+  "padoru_paimon": {
+    "id": 67,
+    "title": "Padoru Paimon",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "genshin"
+    ],
+    "description": "Paimon from Genshin Impact",
+    "color": "WHITE",
+    "footer": "",
+    "artist": "https://twitter.com/5enketsu",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/917584700430757938/padoru_paimon.png",
+    "owner": "Nero"
   }
 }

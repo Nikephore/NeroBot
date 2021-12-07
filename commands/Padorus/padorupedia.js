@@ -11,7 +11,7 @@ module.exports = {
     const seriesString = fs.readFileSync('./json/series.json')
     const padoru = JSON.parse(padoruString)
     const series = JSON.parse(seriesString)
-    const leyenda = ':no_entry_sign: = El Padoru no se puede rollear actualmente\n:bangbang: = Padoru disponible por tiempo limitado'
+    const leyenda = ":no_entry_sign: = You can't roll this Padoru right now\n:bangbang: = Padoru rate up!!"
     var padoruBaseList = []
     var seriesBaseList = []
 
@@ -57,7 +57,7 @@ module.exports = {
     }
     
     embed.addField('\u200B', title)
-    embed.addField(leyenda)
+    embed.addField('Symbols', leyenda)
     embed.setFooter(`Página ${numPage}/${totalPages}`)
         
     msg = await message.channel.send(embed)
@@ -111,7 +111,7 @@ module.exports = {
       }
 
       newEmbed.addField('\u200B', title)
-      newEmbed.addField('Leyenda de símbolos', leyenda)
+      newEmbed.addField('Symbols', leyenda)
       newEmbed.setFooter(`Página ${numPage}/${totalPages}`)
 
       msg.edit(newEmbed)

@@ -49,6 +49,8 @@ module.exports = {
 
     const total = padoruBaseList.length
 
+    if (total === 0) return
+
     // Obtenemos la lista de Padorus del user
     const padoruList = await mongo.myPadorus(target.id)
     
