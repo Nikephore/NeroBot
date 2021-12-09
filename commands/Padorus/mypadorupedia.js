@@ -68,7 +68,7 @@ module.exports = {
 
     // Creamos el mensaje para Discord
     embed = new Discord.MessageEmbed()
-      .setAuthor('Padorupedia de ' + target.username, message.author.avatarURL)
+      .setAuthor(target.username + "'s Padorupedia", message.author.avatarURL)
       .setColor('RED')
       .setThumbnail(seriesBaseList[0].thumbnail)
       .setFooter(`Página ${numPage}/${totalPages}  |  Obtenidos ${count}/${total}`)

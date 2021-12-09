@@ -6,7 +6,10 @@ function giveTicket(message, rarity) {
 
   mongo.addTicket(message.author.id, message.author.username)
 
-	message.channel.send(`${message.author.username} ha conseguido un Ticket de Padoru, para mas informacion sobre como canjearlo escribe %ticket\n\nTambien puedes conseguir Padorus escribiendo el comando %padoru`)
+	message.channel.send(`**${message.author.username}** obtained a 🎟️. Use %ticket to spend it.`)
+  .then(msg => {
+    msg.delete({ timeout: 10000 /*time unitl delete in milliseconds*/});
+  })
 
 }
 

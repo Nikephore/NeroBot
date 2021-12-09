@@ -16,7 +16,7 @@ module.exports = {
 		const un = message.author.username
 
 		if(!arguments[0]){
-			message.reply('Escribe cuantos rolls vas a gastar. Formato: %roll <num>')
+			message.reply('Write how many rolls you are going to spend. Obtain more rolls with %vote\n Format: %roll <num>')
 			return
 		}
 
@@ -25,7 +25,7 @@ module.exports = {
     const rolls = await newProfile.myRolls(id, un)
 
 		if(number > 10 || number < 1){
-			message.reply('El numero de Padorus debe estar entre 1 y 10')
+			message.reply('The number must be between 1 y 10')
 			return
 		}
 

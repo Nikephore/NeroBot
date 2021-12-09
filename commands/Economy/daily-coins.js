@@ -1,4 +1,6 @@
 const mongo = require('../../databaseFunctions/dbProfile')
+const newMongo = require ('../../databaseFunctions/dbNewProfile')
+const st = require('../../databaseFunctions/dbSkillTree')
 const math = require('../../functions/math')
 const Duration = require('humanize-duration')
 const schedule = require('node-schedule')
@@ -15,12 +17,13 @@ module.exports = {
   callback: async (message) => {
     const target = message.author
 
-    var newCoins = 500
+    const sk = await st.getSkillTree(message.author.id, message.author.username)
+
+    var newCoins = sk.dailyCoins.dc
+
     if(math.luckyStrike(10)){
       newCoins = newCoins * 2
     }
-
-    console.log(claimed)
 
     let remaining = Duration(math.minsToMidnight() * 60000, {units: ['h', 'm'], maxDecimalPoints: 0, language: 'es'})
     
@@ -31,9 +34,12 @@ module.exports = {
 
     claimed.push(target.id)
     
-    message.channel.send(`Añadidas **${newCoins}** Padoru Coins a la cuenta de ${target.username}`)
+    message.channel.send(`Añadidas **${newCoins}** Padoru Coins y 1🎟️ a la cuenta de ${target.username}`)
 
     mongo.addCoins(target.id, newCoins)
+
+    newMongo.addTicket(target.id, target.username)
+
 
     return
   }

@@ -9,20 +9,6 @@ const skillTreeSchema = mongoose.Schema({
   username: {
     type: String
   },
-	cooldown: {
-		level: {
-      type: Number,
-      default: 1
-    },
-		time: {
-			type: Number,
-			default: 6
-		},
-		timeleft: {
-			type: Number,
-			default: 6
-		}
-	},
 	prolls: {
 		level: {
       type: Number,
@@ -53,10 +39,6 @@ const skillTreeSchema = mongoose.Schema({
 			default: 500
 		}
 	},
-	favpadoru: {
-    type: Boolean,
-    default: false
-  },
 	sybarite: {
     type: Boolean,
     default: false

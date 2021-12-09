@@ -43,11 +43,26 @@ function minsToMidnight() {
   return (then - now) / 6e4;
 }
 
+
+function normalizeDate(step, add = 0){
+  let now = new Date()
+	let hour = Math.floor(now.getHours() / step) * step + add
+	let then = new Date(now)
+	then.setHours(hour, 0,0,0);
+
+	return (then - now) / 6e4
+}
+
+function getPeriods(date, format = d => d){
+	return normalizeDate(date, 2, 2)
+}
+
 module.exports = {
   randomNumberBetween,
   luckyStrike,
   rarityConvertAscii,
   sleep,
   minsToMidnight,
-  weightedRandom
+  weightedRandom,
+  normalizeDate
 }

@@ -1,8 +1,6 @@
 const Topgg = require("@top-gg/sdk")
 const express = require("express")
-
 const app = express()
-
 const fs = require('fs')
 
 //Definicion de las constantes relacionadas con Discord

@@ -7,12 +7,11 @@ const Duration = require('humanize-duration')
 const schedule = require('node-schedule')
 
 
-//schedule.scheduleJob('0 * * * *', () => { st.cooldownHourly() = 0 })
+schedule.scheduleJob('0 */2 * * *', () => { resetRolls() })
 
 module.exports = {
-  commands: ['padoru'],
+  commands: ['padoru', 'p'],
   description: 'Padoru aleatorio ¿te ha salido el que querías?',
-  cooldown: 60 * 60 * 2, // cooldown de 2 horas
   callback: async (message) => {
     const id = message.author.id
     const rar = {1:0.4, 2:0.31, 3:0.18, 4:0.9, 5:0.02}
@@ -25,14 +24,23 @@ module.exports = {
     var padoruBaseList = []
     var rarityChosen = null
 
+    let remaining = Duration(math.normalizeDate(2, 2) * 60000, {units: ['h', 'm'], maxDecimalPoints: 0, language: 'en'})
+
+    const sk = await st.getSkillTree(id, message.author.username)
+
+    if(sk.prolls.numrolls === 0){
+      message.channel.send(`Your next roll is in **${remaining}**. You can vote Nero to obtain more rolls with **%vote**`)
+      return
+    }
+
+    await st.prollsMinusOne(id, message.author.username)
+
     for(var i in padoru){
       padoruBaseList.push(padoru[i])
     }
 
     console.log(message.author.username)
     console.log(message.guild.name)
-
-    const sk = await st.getSkillTree(id, message.author.username)
 
     const luck = math.luckyStrike(sk.problucky.prob)
     const sybarite = sk.sybarite
@@ -93,6 +101,8 @@ async function addPadoru(message, padoruBaseList, myPadorus, rarityChosen){
     rarityChosen = 5
   }
 
+  await stars(rarityChosen, message)
+
   padoruBaseList = padoruBaseList.filter(a => a.active === true).filter(r => r.rarity === rarityChosen)
 
   var count = padoruBaseList.length
@@ -140,3 +150,19 @@ async function addPadoru(message, padoruBaseList, myPadorus, rarityChosen){
   return randomPadoru
 }
 
+async function stars(rarity, message){
+  padorumsg = await message.channel.send('Escogiendo padoru...')
+  await math.sleep(500)
+  var star = ''
+  for(i=0 ; i < rarity; i++){
+    star = star + ':star:'
+    padorumsg.edit(star)
+    await math.sleep(1500)
+  }
+
+  padorumsg.delete()
+}
+
+async function resetRolls() {
+  await st.resetRolls()
+}
