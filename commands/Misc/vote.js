@@ -7,6 +7,6 @@ module.exports = {
 
       const rolls = await mongo.myRolls(message.author.id, message.author.username)
   
-      message.channel.send(`**Tienes ${rolls} rolls disponibles**\n\nPuedes votar por Nero en este enlace cada 12 horas\nhttps://top.gg/bot/442790194555650048/vote`)
+      message.channel.send(`**${rolls} rolls available**\n\nVote for Nero every 12 hours at the link below to obtain more rolls.\nhttps://top.gg/bot/442790194555650048/vote`)
     },  
   }

@@ -43,8 +43,6 @@ module.exports = {
     }
     else if(categories.includes(arguments[0].toLowerCase())){
 
-      cat.find
-
       let reply = ''
       let commands = cc.commandsFrom(arguments[0])
 
@@ -60,9 +58,6 @@ module.exports = {
       }
 
       msg.addField('__Commands__', reply)
-    }
-    else if(mainCommands.includes(arguments[0].toLowerCase())){
-      msg.addField('NOT FINISHED', 'Working on it')
     }
 
     msg.addField('Useful links', '[Invitation](https://discord.com/api/oauth2/authorize?client_id=442790194555650048&permissions=0&scope=bot) | [Vote](https://top.gg/bot/442790194555650048/vote)')

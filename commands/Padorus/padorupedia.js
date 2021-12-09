@@ -41,7 +41,6 @@ module.exports = {
     var embed = new Discord.MessageEmbed()
       .setTitle('Padorupedia')
       .setColor('GOLD')
-      .setThumbnail(seriesBaseList[0].thumbnail)
 
     var numPage = 1
     const page = 15
@@ -81,7 +80,6 @@ module.exports = {
       var newEmbed = new Discord.MessageEmbed()
           .setTitle('Padorupedia')
           .setColor('GOLD')
-          .setThumbnail('https://cdn.discordapp.com/attachments/901798915425321000/901799120740704276/PADORUorg.png')
 
 		  if (reaction.emoji.name === "⬅️") {
         if(numPage === 1){
