@@ -39,8 +39,10 @@ module.exports.probluckyLvUp = async (userId, username) => {
 			{ userId },
 			{
         username,
-				$inc: {"problucky.level" : 1},
-				$inc: {"problucky.prob" : -3}
+				$inc: {
+          "problucky.level" : 1,
+          "problucky.prob" : -3
+        },
 			},
 			{ upsert: true,
         new: true })
@@ -55,8 +57,10 @@ module.exports.dailycoinsLvUp = async (userId, username) => {
 			{ userId },
 			{
         username,
-				$inc: {"dailycoins.level" : 1},
-				$inc: {"dailycoins.dc" : "dailycoins.dc"}
+				$inc: {
+          "dailycoins.level" : 1,
+          "dailycoins.dc" : 1500
+        },
 				},
 			{ upsert: true,
         new: true })
@@ -67,10 +71,13 @@ module.exports.dailycoinsLvUp = async (userId, username) => {
 
 module.exports.sybariteUnlock = async (userId, username) => {
 	try {
+    console.log('IN')
 		await skillTreeSchema.findOneAndUpdate(
 			{ userId },
 			{	username,
-        $set: {sybarite : true} },
+        $inc: {"sybarite.level" : 1},
+        $set: {"sybarite.syba" : true}
+      },
 			{ upsert: true,
         new: true })
 	} catch (err) {
@@ -80,9 +87,6 @@ module.exports.sybariteUnlock = async (userId, username) => {
 
 module.exports.getSkillTree = async (userId, username) => {
 	try {
-
-    console.log(userId)
-    console.log(username)
 		const result = await skillTreeSchema.findOneAndUpdate(
       { userId },
       { username },
@@ -98,9 +102,6 @@ module.exports.getSkillTree = async (userId, username) => {
 
 module.exports.resetRolls = async () => {
 	try {
-
-    
-    
 		await skillTreeSchema.updateMany(
       {},
       [{$set:{ 

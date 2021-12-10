@@ -19,7 +19,7 @@ module.exports = {
 
     const sk = await st.getSkillTree(message.author.id, message.author.username)
 
-    var newCoins = sk.dailyCoins.dc
+    var newCoins = sk.dailycoins.dc
 
     if(math.luckyStrike(10)){
       newCoins = newCoins * 2

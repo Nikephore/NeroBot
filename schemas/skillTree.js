@@ -29,7 +29,7 @@ const skillTreeSchema = mongoose.Schema({
 			default: 25
 		}
 	},
-	dailyCoins: {
+	dailycoins: {
 		level: {
       type: Number,
       default: 1
@@ -40,8 +40,24 @@ const skillTreeSchema = mongoose.Schema({
 		}
 	},
 	sybarite: {
-    type: Boolean,
-    default: false
+    level: {
+      type: Number,
+      default: 1
+    },
+    syba: {
+      type: Boolean,
+      default: false
+    }
+  },
+  favpadoru: {
+    unlocked: {
+      type: Boolean,
+      default: false
+    },
+    padoru: {
+      type: Number,
+      default: 1
+    }
   }
 })
 

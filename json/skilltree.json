@@ -1,6 +1,7 @@
 {
 	"prolls": {
-		"name": "padorurolls",
+		"id": 1,
+    "name": "Padoru Rolls",
 		"maxlv": 5,
 		"price": [
 			0,
@@ -11,7 +12,8 @@
 		]
 	},
 	"problucky": {
-		"name": "lucky",
+		"id": 2,
+    "name": "Lucky Strike",
 		"maxlv": 6,
 		"price": [
 			0,
@@ -23,7 +25,8 @@
 		]
 	},
 	"dailycoins": {
-		"name": "dc",
+		"id": 3,
+    "name": "Daily coins",
 		"maxlv": 5,
 		"price": [
 			0,
@@ -33,13 +36,12 @@
 			250000
 		]
 	},
-	"favpadoru": {
-		"name": "favpadoru",
-		"price": 40000
-	},
 	"sybarite": {
-		"name": "sybarite",
-		"price": 2000000
+		"id": 4,
+    "name": "Sybarite mode",
+    "maxlv": 2,
+		"price": [
+      0,
+      2000000]
 	}
-
 }

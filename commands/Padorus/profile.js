@@ -26,7 +26,7 @@ module.exports = {
     var luck = 1/sktr.problucky.prob * 100
 
     var syba = 'Locked ❌'
-    if(sktr.sybarite){
+    if(sktr.sybarite.syba){
       syba = 'Unlocked ✅'
     }
 
@@ -35,7 +35,7 @@ module.exports = {
     .setColor('BLUE')
     .setThumbnail('https://cdn.discordapp.com/attachments/901798915425321000/901799120740704276/PADORUorg.png')
     .addField('\u200B',`**Padorupedia:** ${prof.padorupedia.length}/${padoruBaseList.length}\n**PadoruCoins:** ${prof.padoruCoins} :coin:`)
-    .addField('---Skills---', `**Rolls LV ${sktr.prolls.level}**\nNumber of rolls: ${sktr.prolls.numrolls}\n**Lucky Strike LV ${sktr.problucky.level}**\nProbability: ${luck}%\n**Daily Coins LV ${sktr.dailyCoins.level}**\nNumber of coins: ${sktr.dailyCoins.dc}\n**Sybarite Mode**\n${syba}`)
+    .addField('---Skills---', `**Rolls LV ${sktr.prolls.level}**\nNumber of rolls: ${sktr.prolls.numrolls}\n**Lucky Strike LV ${sktr.problucky.level}**\nProbability: ${luck}%\n**Daily Coins LV ${sktr.dailycoins.level}**\nNumber of coins: ${sktr.dailycoins.dc}\n**Sybarite Mode**\n${syba}`)
     
 
     message.channel.send(prmsg)
