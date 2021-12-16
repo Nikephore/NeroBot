@@ -7,7 +7,10 @@ module.exports.prollsLvUp = async (userId, username) => {
 			{ userId },
 			{
         username,
-				$inc: {"prolls.level" : 1},
+				$inc: {
+          "prolls.level" : 1,
+          "prolls.numrolls": 1
+        },
 			},
 			{ upsert: true,
         new: true })

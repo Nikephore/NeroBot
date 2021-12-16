@@ -224,5 +224,29 @@
       "Genshin Impact"
     ],
     "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/917584700430757938/padoru_paimon.png"
+  },
+  "hollow": {
+    "name": "hollow",
+    "alias" : [
+      "Hollow Knight",
+      "Hollow"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/920062151727656960/padoru_hornet.png"
+  },
+  "danganronpa": {
+    "name": "danganronpa",
+    "alias" : [
+      "Danganronpa"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/361225847501226006/918487401561731122/1608866621527.png"
+  },
+  "ddlc": {
+    "name": "ddlc",
+    "alias" : [
+      "ddlc",
+      "Doki Doki Literature Club",
+      "Doki Doki Literature Club!"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/921032772796166154/padoru_monika.png"
   }
 }

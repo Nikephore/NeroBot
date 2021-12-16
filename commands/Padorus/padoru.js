@@ -14,10 +14,10 @@ module.exports = {
   description: 'Padoru aleatorio ¿te ha salido el que querías?',
   callback: async (message) => {
     const id = message.author.id
-    const rar = {1:0.4, 2:0.31, 3:0.18, 4:0.9, 5:0.02}
+    const rar = {1:0.37, 2:0.3, 3:0.2, 4:0.1, 5:0.03}
     const bannerOrNot = math.randomNumberBetween(1, 100)
-    const bannerRar = {3:0.6, 4:0.3, 5:0.1}
-    const sybatiterar = {2:0.6, 3:0.25, 4:0.11, 5:0.04}
+    const bannerRar = {3:0.45, 4:0.3, 5:0.15}
+    const sybatiterar = {2:0.5, 3:0.3, 4:0.15, 5:0.05}
 
     const jsonString = fs.readFileSync('./json/padoru.json')
     const padoru = JSON.parse(jsonString)
@@ -43,13 +43,15 @@ module.exports = {
     console.log(message.guild.name)
 
     const luck = math.luckyStrike(sk.problucky.prob)
-    const sybarite = sk.sybarite
+    const sybarite = sk.sybarite.syba
 
     // 10 percent of chossing a banner padoru
     if(bannerOrNot <= 90) {
       if (sybarite){
+        console.log('syba')
         rarityChosen = parseInt(math.weightedRandom(sybatiterar))
       } else {
+        console.log('nosyba')
       rarityChosen = parseInt(math.weightedRandom(rar))
       }
     } else {
@@ -101,8 +103,6 @@ async function addPadoru(message, padoruBaseList, myPadorus, rarityChosen){
     rarityChosen = 5
   }
 
-  await stars(rarityChosen, message)
-
   padoruBaseList = padoruBaseList.filter(a => a.active === true).filter(r => r.rarity === rarityChosen)
 
   var count = padoruBaseList.length
@@ -129,10 +129,11 @@ async function addPadoru(message, padoruBaseList, myPadorus, rarityChosen){
   var bonus = 0
 
   if(found === undefined){
+    await stars(rarityChosen, message, true)
     await profile.newPadoru(id, randomPadoru.id)
     isNew = ':new:'
   } else {
-
+    await stars(rarityChosen, message, false)
     if(math.luckyStrike(20)){
       bonus = coins[rarityChosen - 1] * 4
       isNew = 'BONUS!! '
@@ -150,13 +151,18 @@ async function addPadoru(message, padoruBaseList, myPadorus, rarityChosen){
   return randomPadoru
 }
 
-async function stars(rarity, message){
+async function stars(rarity, message, isNew){
   padorumsg = await message.channel.send('Escogiendo padoru...')
   await math.sleep(500)
   var star = ''
+
   for(i=0 ; i < rarity; i++){
     star = star + ':star:'
     padorumsg.edit(star)
+    await math.sleep(1500)
+  }
+  if(isNew){
+    padorumsg.edit(':star2:'.repeat(rarity))
     await math.sleep(1500)
   }
 

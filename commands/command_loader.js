@@ -24,7 +24,6 @@ module.exports = (client) => {
           readCommands(path.join(dir, file))
         } else if (!notFiles.includes(file)) {
           let option = require(path.join(__dirname, dir, file))
-          console.log(option.commands[0])
           commandList.push(option)
           if(client){
             commandBase(client, option)

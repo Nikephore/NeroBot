@@ -8,7 +8,6 @@ const Discord = require("discord.js")
 const client = new Discord.Client()
 client.commands = new Discord.Collection()
 
-console.log("START")
 const loadCommands = require('./commands/command_loader')
 const fil = require('./functions/filter')
 
@@ -22,7 +21,6 @@ const webhook = new Topgg.Webhook(auth)
 
 const rolls = require('./functions/rolls')
 
-console.log('Antes del vote')
 
 app.post("/dblwebhook", webhook.listener(vote => {
   rolls.addRoll(vote.user, vote.isWeekend)
@@ -54,8 +52,6 @@ require('dotenv').config()
 
 /////////////////////////////////////////////////
 
-
-console.log('Antes del encendido')
 /**
  * El bot está encendido, nice
  */
@@ -83,6 +79,4 @@ Guild: ${guild.name}-${guild.id}
   
 })
 
-console.log('Antes del login')
 client.login(token)
-console.log('D')

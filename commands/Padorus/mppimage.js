@@ -39,7 +39,7 @@ module.exports = {
         }
 
         if(text !== ''){
-            padoruBaseList = argFilter.seriesFilter(padoruBaseList, seriesBaseList, text)
+            padoruBaseList = argFilter.padoruInSeriesFilter(padoruBaseList, seriesBaseList, text)
             if(padoruBaseList.length === 0){
                 message.channel.send('No hay ningún padoru que cumpla esas condiciones')
                 return

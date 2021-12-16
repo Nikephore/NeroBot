@@ -2,6 +2,7 @@ const fs = require('fs')
 const st = require('../../databaseFunctions/dbSkillTree')
 const profile = require('../../databaseFunctions/dbProfile')
 const Discord = require('discord.js')
+const fil = require('../../functions/filter')
 
 module.exports = {
 	commands: ['shop'],
@@ -22,7 +23,7 @@ module.exports = {
 		shopmsg = new Discord.MessageEmbed()
 
 		shopmsg.setAuthor('🏛️ Skills Shop')
-		shopmsg.setTitle(`Your Coins: ${pr.padoruCoins} :coin:`)
+		shopmsg.setTitle(`Your Coins: ${fil.nFormatter(pr.padoruCoins)} :coin:`)
 		shopmsg.setColor('GREEN')
 
 		shopmsg.setDescription(`To upgrade your skills use the command
@@ -31,13 +32,13 @@ module.exports = {
 		shopmsg.addField(
 			'---Skills---',
 			`**${skills.prolls.id} · Rolls LV ${sk.prolls.level}**
-${sk.prolls.level !== skills.prolls.maxlv ? 'Next level: ' + skills.prolls.price[sk.prolls.level] : 'Max level reached!'} :coin:
+${sk.prolls.level !== skills.prolls.maxlv ? 'Next level: ' + fil.nFormatter(skills.prolls.price[sk.prolls.level]) : 'Max level reached!'} :coin:
 **${skills.problucky.id} · Lucky Strike LV ${sk.problucky.level}**
-${sk.problucky.level !== skills.problucky.maxlv ? 'Next level: ' + skills.problucky.price[sk.problucky.level] : 'Max level reached!'} :coin:
+${sk.problucky.level !== skills.problucky.maxlv ? 'Next level: ' + fil.nFormatter(skills.problucky.price[sk.problucky.level]) : 'Max level reached!'} :coin:
 **${skills.dailycoins.id} · Daily Coins LV ${sk.dailycoins.level}**
-${sk.dailycoins.level !== skills.dailycoins.maxlv ? 'Next level: ' + skills.dailycoins.price[sk.dailycoins.level] : 'Max level reached'} :coin:
+${sk.dailycoins.level !== skills.dailycoins.maxlv ? 'Next level: ' + fil.nFormatter(skills.dailycoins.price[sk.dailycoins.level]) : 'Max level reached'} :coin:
 **${skills.sybarite.id} · Sybarite Mode** 
-${sk.sybarite.syba === false ? 'Unlock: ' + skills.sybarite.price[sk.problucky.level] + ' :coin:' : 'Unlocked!'}`)
+${sk.sybarite.syba === false ? 'Unlock: ' + fil.nFormatter(skills.sybarite.price[sk.problucky.level]) + ' :coin:' : 'Unlocked!'}`)
 
 		message.channel.send(shopmsg)
 

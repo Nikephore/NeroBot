@@ -32,8 +32,15 @@ module.exports = {
 
         var mySkill = skills[s]
 
+        if(skill[mySkill.id].level >= mySkill.maxlv){
+          message.channel.send('You are at max level')
+          return
+        }
+
+        const price = mySkill.price[skill[mySkill.id].level]
+
         let filter = m => m.author.id === message.author.id
-          message.channel.send(`You are going to upgrade **${skills[s].name}** to the next level. Are you sure? (yes/no)`).then(() => {
+          message.channel.send(`You are going to upgrade **${skills[s].name}** to level **${skill[mySkill.id].level}** for **${price} PC**. Are you sure? (yes/no)\n\nYou have **${pr.padoruCoins} PC**`).then(() => {
             message.channel.awaitMessages(filter, {
             max: 1,
             time: 50000,
@@ -73,7 +80,8 @@ module.exports = {
 
               profile.addCoins(target.id, -price, target.username)
 
-              message.channel.send(`Successful purchase of ${mySkill.name}`)
+              message.channel.send(`https://cdn.discordapp.com/attachments/901798915425321000/902693878501634071/stonks.jpg`)
+              
 
             } else if (message.content.toUpperCase() == 'NO' || message.content.toUpperCase() == 'N') {
               message.channel.send(`Purchase canceled`)

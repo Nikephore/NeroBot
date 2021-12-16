@@ -9,8 +9,10 @@ module.exports = {
   commands: ['roll', 'r'],
 	description: 'Gasta los rolls extra que has ganado votando al bot con este comando',
 	callback: async (message, arguments) => {
-    const rar = {1:0.4, 2:0.31, 3:0.18, 4:0.9, 5:0.02}
-    const extraRar = {4:0.8, 5:0.2}
+    const rar = {1:0.37, 2:0.3, 3:0.2, 4:0.1, 5:0.03}
+    const extraRar = {4:0.75, 5:0.25}
+
+    const sybarar = {2:0.6, 3:0.25, 4:0.11, 5:0.04}
 
 		const id = message.author.id
 		const un = message.author.username
