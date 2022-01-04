@@ -4,19 +4,16 @@ const embed = require('../../functions/embed')
 const profile = require('../../databaseFunctions/dbProfile')
 const st = require('../../databaseFunctions/dbSkillTree')
 const Duration = require('humanize-duration')
-const schedule = require('node-schedule')
-
-
-schedule.scheduleJob('0 */2 * * *', () => { resetRolls() })
+const padList = require('../../databaseFunctions/dbPadoru')
 
 module.exports = {
   commands: ['padoru', 'p'],
-  description: 'Padoru aleatorio ¿te ha salido el que querías?',
+  description: 'Padoru random. Did you get the one you wanted?. Short ver %p',
   callback: async (message) => {
     const id = message.author.id
     const rar = {1:0.37, 2:0.3, 3:0.2, 4:0.1, 5:0.03}
     const bannerOrNot = math.randomNumberBetween(1, 100)
-    const bannerRar = {3:0.45, 4:0.3, 5:0.15}
+    const bannerRar = {3:0.45, 4:0.30, 5:0.15}
     const sybatiterar = {2:0.5, 3:0.3, 4:0.15, 5:0.05}
 
     const jsonString = fs.readFileSync('./json/padoru.json')
@@ -62,113 +59,133 @@ module.exports = {
     
     // lista de los padorus del usuario
     var myPadorus = await profile.myPadorus(id, message.author.username)
-    
-    var randomPadoru = await addPadoru(message, padoruBaseList, myPadorus, rarityChosen)
 
-    if(!myPadorus.indexOf(randomPadoru.id)){
+    var randomPadoru = await addPadoru(message, padoruBaseList, myPadorus, rarityChosen, sk)
+
+    console.log(randomPadoru.title)
+
+    /*
+    if(!myPadorus.pp.indexOf(randomPadoru.id)){
       myPadorus.push(randomPadoru.id)
     }
-
+    */
+    
     if(luck){
-      recursiveLuck(message, padoruBaseList, myPadorus, rarityChosen + 1)
+      recursiveLuck(message, padoruBaseList, myPadorus, rarityChosen + 1, sk)
     }
-
-    fs.writeFileSync('./json/padoru.json', JSON.stringify(padoru, null, 2), (err) => {
-      if (err) console.log('Error writing file:', err)
-    })
+    
   },
   addPadoru
 }
 
-async function recursiveLuck(message, padoruBaseList, myPadorus, rarityChosen){
+async function recursiveLuck(message, padoruBaseList, myPadorus, rarityChosen, sk){
   math.sleep(2000)
-  newpadorumsg = await message.channel.send(':sparkles:LUCKY STRIKE!!:sparkles:\n')
+  var newpadorumsg = await message.channel.send(':sparkles:LUCKY STRIKE!!:sparkles:\n')
+
   math.sleep(3000)
-  await addPadoru(message, padoruBaseList, myPadorus, rarityChosen)
+
+  await addPadoru(message, padoruBaseList, myPadorus, rarityChosen, sk)
 
   var lucky = math.luckyStrike(25)
 
   if(lucky){
-    recursiveLuck(message, padoruBaseList, myPadorus, rarityChosen + 1)
+    recursiveLuck(message, padoruBaseList, myPadorus, rarityChosen + 1, sk)
   }
 
   return
 }
 
-async function addPadoru(message, padoruBaseList, myPadorus, rarityChosen){
+async function addPadoru(message, padoruBaseList, myPadorus, rarityChosen, sk){
   const id = message.author.id
-    
+
+  var padorumsg = await message.channel.send('Escogiendo padoru...')  
+
   // control de errores
-  if(rarityChosen > 5){
+  if(rarityChosen > 6){
     rarityChosen = 5
   }
 
-  padoruBaseList = padoruBaseList.filter(a => a.active === true).filter(r => r.rarity === rarityChosen)
+  console.log("Rarity: " + rarityChosen)
 
-  var count = padoruBaseList.length
-
-  var randomPadoru = padoruBaseList[(math.randomNumberBetween(1,count))-1]
-  
-  if(message.author.username !== randomPadoru.owner){
-    randomPadoru.footer = `${message.author.username} le ha robado el padoru a ${randomPadoru.owner}`
-  } else {
-    randomPadoru.footer = `El ${randomPadoru.title} es tuyo en estos momentos`
-  }
-
-  randomPadoru.owner = message.author.username
+  var randomPadoru = await padList.pickOne(rarityChosen)
+  console.log(randomPadoru)
 
   /**
   * si el usuario no tiene el padoru se añade a su lista.
   * si ya lo tiene se suman monedas a su cuenta en funcion
   * de la rareza del padoru
   */
-  const found = myPadorus.find(e => e === randomPadoru.id)
+  const found = myPadorus.pp.find(e => e.id === randomPadoru.id)
 
   var isNew = ''
-  const coins = [25, 75, 150, 500, 2000]
+  const coins = [50, 150, 450, 1500, 3000, 15000]
   var bonus = 0
+  var finalmsg = null
+  var extrarar = 0
 
   if(found === undefined){
-    await stars(rarityChosen, message, true)
+    finalmsg = await stars(rarityChosen, padorumsg, true)
+
     await profile.newPadoru(id, randomPadoru.id)
-    isNew = ':new:'
+    isNew = '**NEW**'
+
   } else {
-    await stars(rarityChosen, message, false)
+    finalmsg = await stars(rarityChosen, padorumsg, false)
+
+    extrarar = found.rarity
+    const finalrarity = rarityChosen + extrarar
+    
+
     if(math.luckyStrike(20)){
-      bonus = coins[rarityChosen - 1] * 4
+      bonus = coins[finalrarity - 1] * 3
       isNew = 'BONUS!! '
     }
 
-    await profile.addCoins(message.author.id, coins[rarityChosen - 1])
-    isNew = isNew + `+${coins[rarityChosen - 1] + bonus} PC`
+    await profile.addCoins(message.author.id, coins[finalrarity - 1] + bonus)
+    isNew = isNew + `+${coins[finalrarity - 1] + bonus} PC`
   }
 
-  var pad = embed.embedCreator(randomPadoru, isNew)
-  randomPadoru.footer = ''
+  var attack = 0
+  var life = 0
+  if(randomPadoru.owner.userId === message.author.id) {
+    await padList.attack(randomPadoru.id, message.author.id, message.author.username, 0.5)
+    attack = 2
+  } else{
+    if(sk.attack.value >= randomPadoru.life){
+      await padList.attackFull(randomPadoru.id, message.author.id, message.author.username, randomPadoru.rarity)
 
-  message.channel.send(pad)
+      attack = 1
+    } else {
+    
+      await padList.attack(randomPadoru.id, message.author.id, message.author.username, -sk.attack.value)
+
+      life = randomPadoru.life - sk.attack.value
+    }
+  }
+
+  const rs = math.rarityConvertEmoji(rarityChosen, extrarar)
+  
+  var pad = embed.embedCreator(randomPadoru, isNew, message.author.username, attack, life, rs)
+  
+  finalmsg.edit(pad)
 
   return randomPadoru
 }
 
 async function stars(rarity, message, isNew){
-  padorumsg = await message.channel.send('Escogiendo padoru...')
+  
   await math.sleep(500)
   var star = ''
 
   for(i=0 ; i < rarity; i++){
     star = star + ':star:'
-    padorumsg.edit(star)
-    await math.sleep(1500)
+    message.edit(star)
+    await math.sleep(1000)
   }
   if(isNew){
-    padorumsg.edit(':star2:'.repeat(rarity))
-    await math.sleep(1500)
+    message.edit(':star2:'.repeat(rarity))
+    await math.sleep(1000)
   }
-
-  padorumsg.delete()
-}
-
-async function resetRolls() {
-  await st.resetRolls()
+  message.edit('⠀')
+  return message
 }

@@ -18,7 +18,7 @@ module.exports = {
 		const un = message.author.username
 
 		if(!arguments[0]){
-			message.reply('Write how many rolls you are going to spend. Obtain more rolls with %vote\n Format: %roll <num>')
+			message.reply('Write how many rolls you are going to spend. Obtain more rolls with %vote. If you roll 10 Padorus at once the last one will be a 4 or 5 stars Padoru.\n Format: %roll <num>')
 			return
 		}
 
@@ -32,9 +32,14 @@ module.exports = {
 		}
 
     if(rolls < number){
-      message.reply('No tienes suficientes rolls')
+      message.reply(`You don't have enough rolls`)
       return
     }
+
+
+    message.reply(`Temporarily out of service`)
+    return
+
 
 		const jsonString = fs.readFileSync('./json/padoru.json')
     const padoru = JSON.parse(jsonString)
@@ -53,7 +58,7 @@ module.exports = {
 		var padoruRareList = []
 		var newPadorus = []
 		var isNew = []
-		const coins = [25, 75, 150, 500, 2000]
+		const coins = [50, 150, 450, 1500, 3000]
 		var myCoins = 0
 		
 		for(i = 0; i < number; i++){

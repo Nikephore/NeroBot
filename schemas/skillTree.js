@@ -39,6 +39,16 @@ const skillTreeSchema = mongoose.Schema({
 			default: 500
 		}
 	},
+  attack: {
+    level: {
+      type: Number,
+      default: 1
+    },
+		value: {
+			type: Number,
+			default: 0.5
+		}
+  },
 	sybarite: {
     level: {
       type: Number,

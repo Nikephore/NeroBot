@@ -3,13 +3,6 @@ const newMongo = require ('../../databaseFunctions/dbNewProfile')
 const st = require('../../databaseFunctions/dbSkillTree')
 const math = require('../../functions/math')
 const Duration = require('humanize-duration')
-const schedule = require('node-schedule')
-
-/*Todos los dias a las 00 se reinicia el array de usuarios
-que han reclamado la recompensa diaria*/
-schedule.scheduleJob('0 0 * * *', () => { claimed.length = 0 }) // run everyday at midnight
-
-var claimed = []
 
 module.exports = {
   commands: ['dailycoins', 'dc'],
@@ -25,22 +18,26 @@ module.exports = {
       newCoins = newCoins * 2
     }
 
-    let remaining = Duration(math.minsToMidnight() * 60000, {units: ['h', 'm'], maxDecimalPoints: 0, language: 'es'})
-    
-    if(claimed.includes(target.id)){
-      message.channel.send(`Ya has reclamado tu recompensa de hoy, vuelve a intentarlo mañana.\n\n**${remaining}** para el proximo reclamo.`)
+    let remaining = Duration(math.minsToMidnight() * 60000, {units: ['h', 'm'], maxDecimalPoints: 0, language: 'en'})
+
+    const claimed = await mongo.getProfile(target.id)
+
+    if(claimed.daily === 0){
+      message.channel.send(`You have already claimed your reward today, try again tomorrow.\n\n**${remaining}** for the next claim.`)
       return
     }
 
-    claimed.push(target.id)
+    console.log("DailyCoins canjeado por " + message.author.username)
+
+    await mongo.claimDaily(target.id)
     
-    message.channel.send(`Añadidas **${newCoins}** Padoru Coins y 1🎟️ a la cuenta de ${target.username}`)
+    message.channel.send(`Added **${newCoins}** Padoru Coins and **1** 🎟️ to the ${target.username}'s account`)
 
     mongo.addCoins(target.id, newCoins)
 
     newMongo.addTicket(target.id, target.username)
 
-
     return
   }
 }
+

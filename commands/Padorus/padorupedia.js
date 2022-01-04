@@ -5,7 +5,7 @@ const argFilter = require('../../functions/filter.js')
 
 module.exports = {
   commands: ['padorupedia', 'pp'],
-  description: 'Lista con todos los Padorus',
+  description: 'List with all the Padorus. Short ver. %pp',
   callback: async (message, arguments, text) =>{
     const padoruString = fs.readFileSync('./json/padoru.json')
     const seriesString = fs.readFileSync('./json/series.json')

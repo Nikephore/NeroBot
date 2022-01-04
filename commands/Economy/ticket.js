@@ -3,20 +3,22 @@ const mongo = require('../../databaseFunctions/dbNewProfile')
 
 module.exports = {
     commands: ['ticket'],
-    description: 'Comando para saber la informacion de los Tickets',
+    description: 'Command to see the info about the tickets',
     callback: async (message) => {
   
       const tickets = await mongo.myTickets(message.author.id, message.author.username)
 
       var embed = embed = new Discord.MessageEmbed()
-      .setAuthor('Canje de Tickets 🎟️')
+      .setAuthor('Ticket exchange 🎟️')
       .setColor('RED')
-      .setDescription('Usa los Tickets que consigas para intercambiarlos por tus padorus favoritos con el comando **%useticket**.\nPuedes ver la lista completa de Padorus usando el comando **%padorupedia**')
+      .setDescription(`Use tickets to upgrade your padorus or buy the ones you don't have yet. The command to upgrade is **%upgrade** and the one to buy is **%buypadoru**.\n\nYou can see the full padoru list writing **%padorupedia**`)
       .setThumbnail('https://cdn.discordapp.com/attachments/901798915425321000/903364058818953236/padoru_shiro.png')
 
-      embed.addField('Precio de los Padorus:', `Padoru 1:star: = 3 🎟️\nPadoru 2:star: = 15 🎟️\nPadoru 3:star: = 30 🎟️\nPadoru 4:star: = 60 🎟️\nPadoru 5:star: = 100 🎟️`)
+      embed.addField('Upgrade Padorus:', `Padoru 1 :star: = 5 🎟️\nPadoru 2 :star: = 7 🎟️\nPadoru 3 :star: = 10 🎟️\nPadoru 4 :star: = 15 🎟️\nPadoru 5 :star: = 25 🎟️`)
 
-      embed.addField(`Actualmente tienes **${tickets}** 🎟️`, '\u200B')
+      embed.addField('Buy Padorus:', `Padoru 1 :star: = 5 🎟️\nPadoru 2 :star: = 20 🎟️\nPadoru 3 :star: = 35 🎟️\nPadoru 4 :star: = 60 🎟️\nPadoru 5 :star: = 100 🎟️`)
+
+      embed.addField(`You currently have **${tickets}** 🎟️`, '\u200B')
 
       message.channel.send(embed)
       

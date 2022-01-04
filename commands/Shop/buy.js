@@ -11,21 +11,18 @@ module.exports = {
 		const jsonString = fs.readFileSync('./json/skilltree.json')
     const skills = JSON.parse(jsonString)
 
-		
     const toBuy = parseInt(arguments[0])
     var flag = false
 
 		const sk = await st.getSkillTree(target.id, target.username)
 
-    var skill = [null, sk.prolls, sk.problucky, sk.dailycoins, sk.sybarite]
+    var skill = [null, sk.prolls, sk.problucky, sk.dailycoins, sk.attack, sk.sybarite]
 
 		const pr = await profile.getProfile(target.id, target.username)
 
     if(!arguments[0]){
       message.channel.send('Select which upgrade you do want to buy. You can see them with **%shop**')
     }
-
-    
 
     for(var s in skills){
       if(skills[s].id === toBuy){
@@ -40,7 +37,7 @@ module.exports = {
         const price = mySkill.price[skill[mySkill.id].level]
 
         let filter = m => m.author.id === message.author.id
-          message.channel.send(`You are going to upgrade **${skills[s].name}** to level **${skill[mySkill.id].level}** for **${price} PC**. Are you sure? (yes/no)\n\nYou have **${pr.padoruCoins} PC**`).then(() => {
+          message.channel.send(`You are going to upgrade **${skills[s].name}** to level **${skill[mySkill.id].level + 1}** for **${price} PC**. Are you sure? (yes/no)\n\nYou have **${pr.padoruCoins} PC**`).then(() => {
             message.channel.awaitMessages(filter, {
             max: 1,
             time: 50000,
@@ -74,10 +71,12 @@ module.exports = {
               } else if(mySkill.id === 3){
                 st.dailycoinsLvUp(target.id, target.username)
                 
-              } else if(mySkill.id === 4){
+              } else if(mySkill.id === 5){
                 st.sybariteUnlock(target.id, target.username)
+                
+              } else if(mySkill.id === 4){
+                st.attackLvUp(target.id, target.username)
               }
-
               profile.addCoins(target.id, -price, target.username)
 
               message.channel.send(`https://cdn.discordapp.com/attachments/901798915425321000/902693878501634071/stonks.jpg`)

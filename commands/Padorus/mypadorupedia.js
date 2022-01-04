@@ -1,35 +1,32 @@
 const Discord = require("discord.js")
 const fs = require('fs')
-const mongo = require('../../databaseFunctions/dbProfile')
+const profile = require('../../databaseFunctions/dbProfile')
 //function files
 const math = require('../../functions/math')
 const argFilter = require('../../functions/filter')
+const padList = require('../../databaseFunctions/dbPadoru')
 
 
 module.exports = {
   commands: ['mypadorupedia','mpp'],
-  description: 'Muestra la lista de los Padorus que ha obtenido un usuario',
+  description: 'Shows your Padoru List on text format. Short ver. %mpp',
   maxArgs: 1,
   expectedArgs: '<@User>',
   callback: async (message, arguments, text) =>{
     const target = message.mentions.users.first() || message.author
     const targetId = target.id
 
-    const padoruString = fs.readFileSync('./json/padoru.json')
     const seriesString = fs.readFileSync('./json/series.json')
 
-    const padoru = JSON.parse(padoruString)
     const series = JSON.parse(seriesString)
-
-    var padoruBaseList = []
-    for(var i in padoru){
-      padoruBaseList.push(padoru[i])
-    }
 
     var seriesBaseList = []
     for(var i in series){
       seriesBaseList.push(series[i])
     }
+
+    var plist = await padList.getAll()
+    plist = plist.filter(a => a.released === true)
 
     /* Si el primer argumento es un usuario
     borramos su mencion del texto a filtrar */
@@ -40,45 +37,45 @@ module.exports = {
       }
       // Filtramos los Padorus por serie
       if(text !== ''){
-        padoruBaseList = argFilter.padoruInSeriesFilter(padoruBaseList, seriesBaseList, text)
+        plist = argFilter.padoruInSeriesFilter(plist, seriesBaseList, text)
         seriesBaseList = argFilter.seriesFilter(seriesBaseList, text)
       }
     }
-    
-    padoruBaseList = padoruBaseList.filter(a => a.released === true)
 
-    const total = padoruBaseList.length
+    const total = plist.length
 
     if (total === 0) return
 
     // Obtenemos la lista de Padorus del user
-    const padoruList = await mongo.myPadorus(target.id)
+    const padoruList = await profile.myPadorus(target.id)
     
+    plist.sort((a,b) => (a.id > b.id) ? 1 : ((b.id > a.id) ? -1 : 0))
+    
+    padoruList.pp.sort((a,b) => (a.id > b.id) ? 1 : ((b.id > a.id) ? -1 : 0))
+    
+    plist = plist.filter(a => padoruList.pp.some(e => e.id === a.id))
 
-    padoruList.sort((a,b) => (a > b) ? 1 : ((b > a) ? -1 : 0))
-
-    padoruBaseList = padoruBaseList
-      .filter(a => padoruList.includes(a.id))
-
-    const count = padoruBaseList.length
+    const count = plist.length
     
     var numPage = 1
     const page = 15
     const totalPages = Math.ceil(count/page)
 
+    const pr = await profile.getProfile(target.id)
+
     // Creamos el mensaje para Discord
     embed = new Discord.MessageEmbed()
       .setAuthor(target.username + "'s Padorupedia", message.author.avatarURL)
       .setColor('RED')
-      .setThumbnail(seriesBaseList[0].thumbnail)
+      .setThumbnail(pr.favpadoru)
       .setFooter(`Página ${numPage}/${totalPages}  |  Obtenidos ${count}/${total}`)
 
     //Situamos los padorus en el embed y enviamos el mensaje
     var title = ''
     
     var i = 0
-    while(padoruBaseList[i] !== undefined && i < page) {
-      title = title + '\n`' + (padoruBaseList[i].id) + '`**' + padoruBaseList[i].title + '**' + ' ' + math.rarityConvertAscii(padoruBaseList[i].rarity)
+    while(plist[i] !== undefined && i < page) {
+      title = title + '\n`' + (plist[i].id) + '`**' + plist[i].title + '**' + ' ' + math.rarityConvertAscii(plist[i].rarity)
 
       i++
     }
@@ -114,7 +111,7 @@ module.exports = {
       var newEmbed = new Discord.MessageEmbed()
           .setTitle('Padorupedia de ' + target.username, message.author.avatarURL)
           .setColor('RED')
-          .setThumbnail(seriesBaseList[0].thumbnail)
+          .setThumbnail(pr.favpadoru)
 
 		  if (reaction.emoji.name === "⬅️") {
         if(numPage === 1){
@@ -135,8 +132,8 @@ module.exports = {
 
       let title = ''
       
-      while(padoruBaseList[start] !== undefined && start < end){
-        title = title + '\n`' + (padoruBaseList[start].id) + '`**' + padoruBaseList[start].title + '**' + ' ' + math.rarityConvertAscii(padoruBaseList[start].rarity)
+      while(plist[start] !== undefined && start < end){
+        title = title + '\n`' + (plist[start].id) + '`**' + plist[start].title + '**' + ' ' + math.rarityConvertAscii(plist[start].rarity)
         
         start ++
       }

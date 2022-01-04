@@ -163,7 +163,7 @@
     ],
     "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/909797591502442516/padoru_asuka.png"
   },
-  "Fate": {
+  "fate": {
     "name": "fate",
     "alias" : [
       "Fate"
@@ -245,8 +245,95 @@
     "alias" : [
       "ddlc",
       "Doki Doki Literature Club",
-      "Doki Doki Literature Club!"
+      "Doki Doki Literature Club!",
+      "Doki Doki Literature Club Plus"
     ],
     "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/921032772796166154/padoru_monika.png"
+  },
+  "jjk": {
+    "name": "jjk",
+    "alias" : [
+      "jjk",
+      "Jujutsu Kaisen"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/921043371559104522/padoru_toge_inukami.png"
+  },
+  "gravity rush": {
+    "name": "gravity rush",
+    "alias" : [
+      "gravity rush"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/921793640030953543/padoru_kat.png"
+  },
+  "violet evergarden": {
+    "name": "violet evergarden",
+    "alias" : [
+      "violet evergarden"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/921793778271014952/padoru_violet.png"
+  },
+  "arknights": {
+    "name": "arknights",
+    "alias" : [
+      "arknights"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/923639857878798346/padoru_w.png"
+  },
+  "tate": {
+    "name": "tate no yuusha",
+    "alias" : [
+      "tate no yuusha",
+      "tate no yusha",
+      "shield hero",
+      "tny"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/923679230691246130/padoru_naofumi.png"
+  },
+  "kaguya": {
+    "name": "kaguya",
+    "alias" : [
+      "Kaguya-sama wa Kokurasetai: Tensai-tachi no Ren'ai Zunōsen",
+      "kaguya sama",
+      "kaguya-sama",
+      "love is war",
+      "Kaguya-sama: Love Is War",
+      "Kaguya sama Love Is War",
+      "Kaguya"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/924806428089286676/padoru_kaguya.png"
+  },
+  "tokyorevengers": {
+    "name": "tokyo revengers",
+    "alias" : [
+      "tokyo revengers"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/923680212431011850/padoru_german_painter.png"
+  },
+  "history": {
+    "name": "history",
+    "alias" : [
+      "historical figures",
+      "history"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/923680212431011850/padoru_german_painter.png"
+  },
+  "pokemon": {
+    "name": "pokemon",
+    "alias" : [
+      "pokemon",
+      "poket monsters"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/924107222773026836/padoru_cynthia.png"
+  },
+  "nier": {
+    "name": "nier",
+    "alias" : [
+      "nier",
+      "nier automata",
+      "nier: automata"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/924109966099480606/padoru_2B.png"
   }
+
+
 }

@@ -1,10 +1,26 @@
 {
   "files": {
+    "commands/Padorus/mppimage.js": [
+      {
+        "id": "dcd1cf30-be37-4ec6-83f2-a4db6fdae325",
+        "line": 46,
+        "version": 581,
+        "index": 1474
+      }
+    ],
+    "commands/Padorus/mypadorupedia.js": [
+      {
+        "id": "65c01f81-4e1a-409a-a5e0-50e1ae0d69ea",
+        "line": 64,
+        "version": 469,
+        "index": 1957
+      }
+    ],
     "commands/Shop/buy.js": [
       {
         "id": "53884cd6-032b-4654-9baa-044fce0a160f",
         "line": 12,
-        "version": 2590,
+        "version": 2650,
         "index": 452
       }
     ]

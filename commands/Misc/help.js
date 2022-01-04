@@ -30,14 +30,16 @@ module.exports = {
     let msg = new Discord.MessageEmbed()
 
     msg.setTitle('Nero Help')
-    msg.setDescription("**My prefix is %**\n\nI'm a Gacha-like Padoru bot. Obtain coloured Padorus and Padorus from different anime series. This bot also have some event only Padorus. Don't miss your chance to obtain them!\n\nStart playing use %padoru\n\n**To see more info use:**\n%help <category> or\n%help <command>")
+    msg.setDescription("**My prefix is %**\n\nI'm a Gacha-like Padoru bot. Obtain coloured Padorus and Padorus from different anime series. This bot also have some event only Padorus. Don't miss your chance to obtain them!\n\nStart playing use %padoru\n\n**To see more info use:**\n%help <category>")
     msg.setColor('GREEN')
 
     if(!arguments[0]){
       let reply = ''
 
       for(category of cat){
-        reply += `${category}\n`
+        if(category !== 'Admin'){
+          reply += `${category}\n`
+        }
       }
       msg.addField('__Categories__', reply)
     }

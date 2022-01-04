@@ -1,7 +1,7 @@
 {
   "padoru_normal": {
     "id": 1,
-    "title": "Padoru Normal",
+    "title": "Padoru Nero Claudius",
     "active": true,
     "released": true,
     "banner": false,
@@ -9,15 +9,13 @@
     "raritystar": "⭐☆☆☆☆",
     "series": [
       "padoru",
-      "Fate"
+      "fate",
+      "history"
     ],
     "description": "El padoru comun al que queremos y respetamos",
     "color": "LIGHT_GREY",
-    "footer": "",
     "artist": "https://www.deviantart.com/manaalchemist",
-    "emoji": "<:padoru_senku:912502749134987314>",
-    "image": "https://cdn.discordapp.com/attachments/901798915425321000/901799120740704276/PADORUorg.png",
-    "owner": "wisma"
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/901799120740704276/PADORUorg.png"
   },
   "padoru_mirror": {
     "id": 2,
@@ -35,8 +33,7 @@
     "footer": "",
     "artist": "https://www.deviantart.com/manaalchemist",
     "emoji": "<:padoru_senku:912502749134987314>",
-    "image": "https://cdn.discordapp.com/attachments/901798915425321000/901827298918010960/PADORUMIRROR.png",
-    "owner": "Éric"
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/901827298918010960/PADORUMIRROR.png"
   },
   "padoru_mussolini": {
     "id": 3,
@@ -47,7 +44,8 @@
     "rarity": 1,
     "raritystar": "⭐☆☆☆☆",
     "series": [
-      "padoru"
+      "padoru",
+      "history"
     ],
     "description": "Eɼ bɑqoʁn cownu ɑɼ dnԍ dnԍʁԍwoƨ λ ʁԍƨbԍϝɑwoƨ",
     "color": "LIGHT_GREY",
@@ -55,7 +53,7 @@
     "artist": "https://www.deviantart.com/manaalchemist",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/903358816295485440/PADORUorg.png",
-    "owner": "Éric"
+    "owner": "Kokun𝕵𝖆ッ"
   },
   "padoru_gold": {
     "id": 4,
@@ -95,7 +93,7 @@
     "artist": "https://twitter.com/Luiso_EK",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901799489998815292/PADORUEMERALD.png",
-    "owner": "Luiso"
+    "owner": "kodoku"
   },
   "padoru_diamond": {
     "id": 6,
@@ -115,7 +113,7 @@
     "artist": "https://twitter.com/Luiso_EK",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901799492683178024/PADORUDIAMOND.png",
-    "owner": "Luiso"
+    "owner": "Éric"
   },
   "padoru_obsidian": {
     "id": 7,
@@ -154,7 +152,7 @@
     "artist": "https://twitter.com/Luiso_EK",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901817700077166602/PADORURAINBOW.png",
-    "owner": "Luiso"
+    "owner": "!Juan"
   },
   "padoru_ruby": {
     "id": 9,
@@ -173,7 +171,7 @@
     "artist": "https://twitter.com/Luiso_EK",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901811298701041684/PADORURUBY.png",
-    "owner": "Ansa"
+    "owner": "Rubix"
   },
   "padoru_orange": {
     "id": 10,
@@ -192,7 +190,7 @@
     "artist": "https://twitter.com/Luiso_EK",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901818684664856616/PADORUORANGE.png",
-    "owner": "Éric"
+    "owner": "Ansa"
   },
   "padoru_stone": {
     "id": 11,
@@ -212,7 +210,7 @@
     "artist": "https://twitter.com/Luiso_EK",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901826199523835974/PADORUSTONE.png",
-    "owner": "Luisombrero"
+    "owner": "Luiso"
   },
   "padoru_rena": {
     "id": 12,
@@ -231,7 +229,7 @@
     "artist": "https://www.deviantart.com/thebloodycorvid",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/901814481481531422/padoru_rena.png",
-    "owner": "Éric"
+    "owner": "Rubix"
   },
   "padoru_rika": {
     "id": 13,
@@ -250,7 +248,7 @@
     "artist": "https://twitter.com/runi_chan8",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/912507590829817916/padoru_rika.png",
-    "owner": "javilex"
+    "owner": "TOKYO"
   },
   "padoru_satoko": {
     "id": 14,
@@ -269,7 +267,7 @@
     "artist": "https://twitter.com/runi_chan8",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/912507284171669514/padoru_satoko.png",
-    "owner": "Ansa"
+    "owner": "not grafika dzifors"
   },
   "padoru_ukyo": {
     "id": 15,
@@ -288,7 +286,7 @@
     "artist": "https://twitter.com/pinkborb",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901848770826887169/901969397655171162/padoru_ukyo.png",
-    "owner": "Éric"
+    "owner": "TOKYO"
   },
   "padoru_kohaku": {
     "id": 16,
@@ -307,7 +305,7 @@
     "artist": "https://twitter.com/pinkborb",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901848770826887169/901969394211647488/padoru_kohaku.png",
-    "owner": "Guacamole Guacahostias"
+    "owner": "Sussy Baka"
   },
   "padoru_gen": {
     "id": 17,
@@ -326,7 +324,7 @@
     "artist": "https://twitter.com/pinkborb",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901848770826887169/901969393687351356/padoru_gen.png",
-    "owner": "Ansa"
+    "owner": "Rubix"
   },
   "padoru_senku": {
     "id": 18,
@@ -345,7 +343,7 @@
     "artist": "https://twitter.com/pinkborb",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901848770826887169/901969395381829692/padoru_senku.png",
-    "owner": "Lta"
+    "owner": "Rubix"
   },
   "padoru_halloween": {
     "id": 19,
@@ -382,7 +380,7 @@
     "footer": "",
     "artist": "https://twitter.com/pinkborb",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/902966710955556954/padoru_levi.png",
-    "owner": "Guacamole Guacahostias"
+    "owner": "Ansa"
   },
   "padoru_hange": {
     "id": 21,
@@ -400,7 +398,7 @@
     "footer": "",
     "artist": "https://twitter.com/pinkborb",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/903356811573329920/padoru_hange.png",
-    "owner": "Luiso"
+    "owner": "🥭 //Dishei\\\\ 🥭"
   },
   "padoru_killua": {
     "id": 22,
@@ -418,7 +416,7 @@
     "footer": "",
     "artist": "https://weheartit.com/Aizuuh",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/903356834327457822/padoru_killua.png",
-    "owner": "hectorelval"
+    "owner": "zetoriks"
   },
   "padoru_shuvi": {
     "id": 23,
@@ -436,7 +434,7 @@
     "footer": "",
     "artist": "Desconocido (si lo encuentras dimelo)",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/903364096055988244/padoru_shuvi.png",
-    "owner": "TOKYO"
+    "owner": "Ansa"
   },
   "padoru_shiro": {
     "id": 24,
@@ -472,7 +470,7 @@
     "footer": "",
     "artist": "https://twitter.com/5enketsu",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/910320148991344660/padoru_gura.png",
-    "owner": "Éric"
+    "owner": "Luiso"
   },
   "padoru_shawn": {
     "id": 26,
@@ -508,7 +506,7 @@
     "footer": "",
     "artist": "https://twitter.com/Nani_Mitsu",
     "image": "https://media.discordapp.net/attachments/901798915425321000/904129227694170142/padoru_nathan.png?width=586&height=586",
-    "owner": "Luisombrero"
+    "owner": "Rubix"
   },
   "padoru_celty": {
     "id": 28,
@@ -526,7 +524,7 @@
     "footer": "",
     "artist": "reddit.com/user/KuroJ07",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/904212092368879646/padoru_celty.png",
-    "owner": "zetoriks"
+    "owner": "Luiso"
   },
   "padoru_hanako": {
     "id": 29,
@@ -544,7 +542,7 @@
     "footer": "",
     "artist": "Henry Maniego",
     "image": "https://media.discordapp.net/attachments/901798915425321000/906729394993766430/1636251518981.png?width=499&height=585",
-    "owner": "Emtiaz"
+    "owner": "Lta"
   },
   "padoru_yashiro": {
     "id": 30,
@@ -562,7 +560,7 @@
     "footer": "",
     "artist": "https://twitter.com/jchama4",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/907023438458269767/padoru_yashiro.png",
-    "owner": "Luisombrero"
+    "owner": "Ansa"
   },
   "padoru_komi": {
     "id": 31,
@@ -580,7 +578,7 @@
     "footer": "",
     "artist": "Desconocido (si lo encuentras dimelo)",
     "image": "https://media.discordapp.net/attachments/901798915425321000/906728170378645534/1636250519716.png",
-    "owner": "jadecum"
+    "owner": "SarcasticallyCold"
   },
   "padoru_sans": {
     "id": 32,
@@ -598,7 +596,7 @@
     "footer": "",
     "artist": "https://twitter.com/r_jesp",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/907414968176115712/padoru_sans.png",
-    "owner": "Ascended𐍉ne"
+    "owner": "Rubix"
   },
   "padoru_rider": {
     "id": 33,
@@ -616,7 +614,7 @@
     "footer": "",
     "artist": "https://twitter.com/Ratentaisou",
     "image": "https://media.discordapp.net/attachments/901798915425321000/906966930819276800/1636308144338.png",
-    "owner": "Luisombrero"
+    "owner": "DarkDrake"
   },
   "padoru_samus": {
     "id": 34,
@@ -634,7 +632,7 @@
     "footer": "",
     "artist": "https://twitter.com/pinkborb",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/909792031310745660/padoru_samus.png",
-    "owner": "DemonInCrimson"
+    "owner": "Guacamole Guacahostias"
   },
   "padoru_asuka": {
     "id": 35,
@@ -652,7 +650,7 @@
     "footer": "",
     "artist": "https://twitter.com/pinkborb",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/909797591502442516/padoru_asuka.png",
-    "owner": "Ansa"
+    "owner": "Kokun"
   },
   "padoru_kevin": {
     "id": 36,
@@ -670,7 +668,7 @@
     "footer": "",
     "artist": "https://twitter.com/SBonbon21",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/910297258581458944/padoru_kevin.png",
-    "owner": "Luisombrero"
+    "owner": "RayleighYee"
   },
   "padoru_ririna": {
     "id": 37,
@@ -688,7 +686,7 @@
     "footer": "",
     "artist": "https://twitter.com/5enketsu",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/912501323692392448/padoru_ririna.png",
-    "owner": "KenichiTerror46"
+    "owner": "Guacamole Guacahostiase"
   },
   "padoru_misaki": {
     "id": 38,
@@ -724,7 +722,7 @@
     "footer": "",
     "artist": "https://twitter.com/Nani_Mitsu",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/912497248221397042/padoru_axel.png",
-    "owner": "Hicron"
+    "owner": "Rubix"
   },
   "padoru_jude": {
     "id": 40,
@@ -742,7 +740,7 @@
     "footer": "",
     "artist": "https://twitter.com/Nani_Mitsu",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/912499210736259102/padoru_jude.png",
-    "owner": "Luisombrero"
+    "owner": "Ansa"
   },
   "padoru_mark": {
     "id": 41,
@@ -760,7 +758,7 @@
     "footer": "",
     "artist": "https://twitter.com/Nani_Mitsu",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/912499210950152202/padoru_mark.png",
-    "owner": "DarkDrake"
+    "owner": "Luiso"
   },
   "padoru_hanyuu": {
     "id": 42,
@@ -778,7 +776,7 @@
     "footer": "",
     "artist": "https://twitter.com/runi_chan8",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/912507590565589022/padoru_hanyuu.png",
-    "owner": "Éric"
+    "owner": "DarkDrake"
   },
   "padoru_sana": {
     "id": 43,
@@ -796,7 +794,7 @@
     "footer": "",
     "artist": "https://twitter.com/Heroic0utlaw",
     "image": "https://media.discordapp.net/attachments/901798915425321000/907051784109981696/padoru_sana.png?width=649&height=580",
-    "owner": "Sussy Baka"
+    "owner": "!Juan"
   },
   "padoru_bae": {
     "id": 44,
@@ -814,7 +812,7 @@
     "footer": "",
     "artist": "https://twitter.com/Heroic0utlaw",
     "image": "https://media.discordapp.net/attachments/901798915425321000/907051776597975140/padoru_baelz.png",
-    "owner": "DarkDrake"
+    "owner": "TOKYO"
   },
   "padoru_mumei": {
     "id": 45,
@@ -832,7 +830,7 @@
     "footer": "",
     "artist": "https://twitter.com/Heroic0utlaw",
     "image": "https://media.discordapp.net/attachments/901798915425321000/907051783380164668/padoru_mumei.png?width=663&height=580",
-    "owner": "Luisombrero"
+    "owner": "DemonInCrimson"
   },
   "padoru_kronii": {
     "id": 46,
@@ -868,14 +866,14 @@
     "footer": "",
     "artist": "https://twitter.com/Heroic0utlaw",
     "image": "https://media.discordapp.net/attachments/901798915425321000/907051781522087966/padoru_fauna.png?width=528&height=580",
-    "owner": "Luisombrero"
+    "owner": "Rubix"
   },
   "padoru_jonathan": {
     "id": 48,
     "title": "Padoru Jonathan Joestar",
     "active": true,
     "released": true,
-    "banner": true,
+    "banner": false,
     "rarity": 3,
     "raritystar": "⭐⭐⭐☆☆",
     "series": [
@@ -886,14 +884,14 @@
     "footer": "",
     "artist": "Z.N.",
     "image": "https://media.discordapp.net/attachments/901798915425321000/917523666529550376/padoru_jhonathan.png?width=580&height=580",
-    "owner": "Ash356X"
+    "owner": "🥭 //Dishei\\\\ 🥭"
   },
   "padoru_joseph": {
     "id": 49,
     "title": "Padoru Joseph Joestar",
     "active": true,
     "released": true,
-    "banner": true,
+    "banner": false,
     "rarity": 5,
     "raritystar": "⭐⭐⭐⭐⭐",
     "series": [
@@ -904,14 +902,14 @@
     "footer": "",
     "artist": "Z.N.",
     "image": "https://media.discordapp.net/attachments/901798915425321000/917522363392856135/padoru_joseph.png?width=580&height=580",
-    "owner": "DarkDrake"
+    "owner": "Guacamole Guacahostias"
   },
   "padoru_jotaro": {
     "id": 50,
     "title": "Padoru Jotaro Kujo",
     "active": true,
     "released": true,
-    "banner": true,
+    "banner": false,
     "rarity": 4,
     "raritystar": "⭐⭐⭐⭐☆",
     "series": [
@@ -922,14 +920,14 @@
     "footer": "",
     "artist": "Z.N.",
     "image": "https://media.discordapp.net/attachments/901798915425321000/917514801033388063/padoru_jotaro.png",
-    "owner": "zetoriks"
+    "owner": "Ascended𐍉ne"
   },
   "padoru_josuke": {
     "id": 51,
     "title": "Padoru Josuke Higashikata",
     "active": true,
     "released": true,
-    "banner": true,
+    "banner": false,
     "rarity": 3,
     "raritystar": "⭐⭐⭐☆☆",
     "series": [
@@ -940,14 +938,14 @@
     "footer": "",
     "artist": "https://twitter.com/PinkBorb",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/919367638042411138/padoru_josuke.png",
-    "owner": "!Juan"
+    "owner": "Guacamole Guacahostias"
   },
   "padoru_Giorno": {
     "id": 52,
     "title": "Padoru Giorno Giovanna",
     "active": true,
     "released": true,
-    "banner": true,
+    "banner": false,
     "rarity": 4,
     "raritystar": "⭐⭐⭐⭐☆",
     "series": [
@@ -958,14 +956,14 @@
     "footer": "",
     "artist": "https://twitter.com/PinkBorb",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/919367637774004304/padoru_giorno.png",
-    "owner": "Ascended𐍉ne"
+    "owner": "Kokun"
   },
   "padoru_jolyne": {
     "id": 53,
     "title": "Padoru Jolyne Kujo",
     "active": true,
     "released": true,
-    "banner": true,
+    "banner": false,
     "rarity": 5,
     "raritystar": "⭐⭐⭐⭐⭐",
     "series": [
@@ -976,14 +974,14 @@
     "footer": "",
     "artist": "https://twitter.com/hoox_one",
     "image": "https://media.discordapp.net/attachments/901798915425321000/917512436842643566/padoru_jolyne_viva.png?width=580&height=580",
-    "owner": "Éric"
+    "owner": "Luiso"
   },
   "padoru_johnny": {
     "id": 54,
     "title": "Padoru Johnny Joestar",
     "active": true,
     "released": true,
-    "banner": true,
+    "banner": false,
     "rarity": 4,
     "raritystar": "⭐⭐⭐⭐☆",
     "series": [
@@ -994,14 +992,14 @@
     "footer": "",
     "artist": "Z.N.",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/917524366806355988/padoru_jhonny.png",
-    "owner": "Hicron"
+    "owner": "DarkDrakex"
   },
   "padoru_josuke_jjl": {
     "id": 55,
     "title": "Padoru Josuke Higashikata JJL",
     "active": true,
     "released": true,
-    "banner": true,
+    "banner": false,
     "rarity": 3,
     "raritystar": "⭐⭐⭐☆☆",
     "series": [
@@ -1012,7 +1010,7 @@
     "footer": "",
     "artist": "Z.N.",
     "image": "https://media.discordapp.net/attachments/901798915425321000/917519112371068928/padoru_josuke_jll.png?width=580&height=580",
-    "owner": "Luisombrero"
+    "owner": "✿₊˚ ❀┊  ✧O̶̽͠T̸̓͊Okii ꔫ ‧₊˚sa"
   },
   "padoru_shinobu": {
     "id": 56,
@@ -1030,7 +1028,7 @@
     "footer": "",
     "artist": "https://www.pixiv.net/en/users/21823632",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/917518364946092132/padoru_shinobu.png",
-    "owner": "Hicron"
+    "owner": "MR NABOS"
   },
   "padoru_power": {
     "id": 57,
@@ -1048,7 +1046,7 @@
     "footer": "",
     "artist": "https://twitter.com/5enketsu",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/917555428995522560/padoru_power.png",
-    "owner": "Luiso"
+    "owner": "Éric"
   },
   "padoru_nagatoro": {
     "id": 58,
@@ -1056,7 +1054,7 @@
     "active": true,
     "released": true,
     "banner": false,
-    "rarity": 2,
+    "rarity": 3,
     "raritystar": "⭐⭐⭐☆☆",
     "series": [
       "nagatoro"
@@ -1066,7 +1064,7 @@
     "footer": "",
     "artist": "https://twitter.com/5enketsu",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/917558126679576626/padoru_nagatoro.png",
-    "owner": "Luiso"
+    "owner": "DemonInCrimson"
   },
   "padoru_bernkastel": {
     "id": 59,
@@ -1084,7 +1082,7 @@
     "footer": "",
     "artist": "https://twitter.com/Fragment_Witch",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/917559979387527248/padoru_bernkastel.png",
-    "owner": "DemonInCrimson"
+    "owner": "!Juan"
   },
   "padoru_ange": {
     "id": 60,
@@ -1138,7 +1136,7 @@
     "footer": "",
     "artist": "https://twitter.com/Fragment_Witch",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/917559979660148756/padoru_lambdadelta.png",
-    "owner": "Guacamole Guacahostias"
+    "owner": "MR NABOS"
   },
   "padoru_beatrice": {
     "id": 63,
@@ -1156,7 +1154,7 @@
     "footer": "",
     "artist": "https://twitter.com/Fragment_Witch",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/917559979098124348/padoru_beatriche.png",
-    "owner": "DarkDrake"
+    "owner": "lord pirrón"
   },
   "padoru_evabeatrice": {
     "id": 64,
@@ -1174,7 +1172,7 @@
     "footer": "",
     "artist": "https://twitter.com/smolmafs",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/917579829208051722/padoru_evatrice.png",
-    "owner": "Luisombrero"
+    "owner": "Ansa"
   },
   "padoru_clair": {
     "id": 65,
@@ -1192,7 +1190,7 @@
     "footer": "",
     "artist": "https://twitter.com/happycricketbox",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/917581491440087081/padoru_claire.png",
-    "owner": "Éric"
+    "owner": "Nomadic the War!"
   },
   "padoru_lion": {
     "id": 66,
@@ -1210,7 +1208,7 @@
     "footer": "",
     "artist": "https://twitter.com/happycricketbox",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/917581491792396358/padoru_lion.png",
-    "owner": "Ansa"
+    "owner": "!Juan"
   },
   "padoru_paimon": {
     "id": 67,
@@ -1228,7 +1226,7 @@
     "footer": "",
     "artist": "https://twitter.com/5enketsu",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/917584700430757938/padoru_paimon.png",
-    "owner": "Luisombrero"
+    "owner": "not grafika dzifors"
   },
   "padoru_alluka": {
     "id": 68,
@@ -1246,7 +1244,7 @@
     "footer": "",
     "artist": "https://old.reddit.com/user/NotSMatheusBlack",
     "image": "https://cdn.discordapp.com/attachments/460204224857243649/917596782547071056/8bwuqntfzl161.png",
-    "owner": "Guacamole Guacahostias"
+    "owner": "rocky"
   },
   "padoru_miu_iruma": {
     "id": 69,
@@ -1264,7 +1262,7 @@
     "footer": "",
     "artist": "Unknown",
     "image": "https://cdn.discordapp.com/attachments/361225847501226006/918487401561731122/1608866621527.png",
-    "owner": "Éric"
+    "owner": "lord pirrón"
   },
   "padoru_christmas": {
     "id": 70,
@@ -1282,7 +1280,7 @@
     "footer": "",
     "artist": "https://www.deviantart.com/manaalchemist",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/919374141335953458/padoru_christmas.png",
-    "owner": "Nero"
+    "owner": "Hicron"
   },
   "padoru_knight": {
     "id": 71,
@@ -1300,7 +1298,7 @@
     "footer": "",
     "artist": "https://twitter.com/Luiso_EK",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/920062084119670844/padoru_hollow.png",
-    "owner": "TOKYO"
+    "owner": "KenichiTerror466"
   },
   "padoru_hornet": {
     "id": 72,
@@ -1318,7 +1316,7 @@
     "footer": "",
     "artist": "https://twitter.com/Luiso_EK",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/920062151727656960/padoru_hornet.png",
-    "owner": "Luisombrero"
+    "owner": "DarkDrake"
   },
   "padoru_ryusui": {
     "id": 73,
@@ -1337,7 +1335,7 @@
     "artist": "https://twitter.com/pinkborb",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/921026916604055552/padoru_ryusui.png",
-    "owner": "Nero"
+    "owner": "Luiso"
   },
   "padoru_kurapika": {
     "id": 74,
@@ -1356,7 +1354,7 @@
     "artist": "https://twitter.com/pinkborb",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/921028537819996170/padoru_kurapika.png",
-    "owner": "Nero"
+    "owner": "Ansa"
   },
   "padoru_monika": {
     "id": 75,
@@ -1375,6 +1373,511 @@
     "artist": "https://twitter.com/Zeronashh",
     "emoji": "<:padoru_senku:912502749134987314>",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/921032772796166154/padoru_monika.png",
+    "owner": "rocky"
+  },
+  "padoru_toge_inumaki": {
+    "id": 76,
+    "title": "Padoru Toge Inumaki",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "jjk"
+    ],
+    "description": "Toge Inumaki from Jujutsu Kaisen. Sake.",
+    "color": "LIGHT_GREY",
+    "footer": "",
+    "artist": "https://twitter.com/simp_plant",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/921043371559104522/padoru_toge_inukami.png",
+    "owner": "cesar65712"
+  },
+  "padoru_amber": {
+    "id": 77,
+    "title": "Padoru Amber",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "genshin"
+    ],
+    "description": "Amber from Genshin Impact.",
+    "color": "RED",
+    "footer": "",
+    "artist": "https://twitter.com/5enketsu",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/921793713829720134/padoru_amber.png",
+    "owner": "zetoriks"
+  },
+  "padoru_kat": {
+    "id": 78,
+    "title": "Padoru Kat",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "gravity rush"
+    ],
+    "description": "Kat from Gravity Rush",
+    "color": "GOLD",
+    "footer": "",
+    "artist": "https://twitter.com/5enketsu",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/921793640030953543/padoru_kat.png",
+    "owner": "clickbait"
+  },
+  "padoru_violet_evergarden": {
+    "id": 79,
+    "title": "Padoru Violet Evergarden",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "violet evergarden"
+    ],
+    "description": "Violet Evergarden form Violet Evergarden",
+    "color": "AQUA",
+    "footer": "",
+    "artist": "https://twitter.com/eviethepixie",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/921793778271014952/padoru_violet.png",
+    "owner": "Éric"
+  },
+  "padoru_negative": {
+    "id": 80,
+    "title": "Padoru Negative",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 1,
+    "raritystar": "⭐☆☆☆☆",
+    "series": [
+      "padoru"
+    ],
+    "description": "Este padoru desprende negatividad por todos y cada uno de sus poros",
+    "color": "LIGHT_GREY",
+    "footer": "",
+    "artist": "https://www.deviantart.com/manaalchemist",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/921799321458999356/padoru_negative.png",
+    "owner": "Rubix"
+  },
+  "padoru_w": {
+    "id": 81,
+    "title": "Padoru W",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "arknights"
+    ],
+    "description": "W from Arknights",
+    "color": "BLACK",
+    "footer": "",
+    "artist": "http////twitter.com/5enketsu",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/923639857878798346/padoru_w.png",
+    "owner": "MR NABOS"
+  },
+  "padoru_surtr": {
+    "id": 82,
+    "title": "Padoru Surtr",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "arknights"
+    ],
+    "description": "Surtr from Arknights",
+    "color": "RED",
+    "footer": "",
+    "artist": "https://twitter.com/5enketsu",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/923640729031557161/padoru_surtr.png",
+    "owner": "Guacamole Guacahostias"
+  },
+  "padoru_exusiai": {
+    "id": 83,
+    "title": "Padoru Exusiai",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "arknights"
+    ],
+    "description": "Exusiai from Arknights",
+    "color": "PURPLE",
+    "footer": "",
+    "artist": "https://twitter.com/5enketsu",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/923640694566973460/padoru_exusiai.png",
+    "owner": "RayleighYee"
+  },
+  "padoru_raphtalia": {
+    "id": 84,
+    "title": "Padoru Raphtalia",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "tate"
+    ],
+    "description": "Raphtalia from Tate no Yuusha",
+    "color": "GREEN",
+    "footer": "",
+    "artist": "https://twitter.com/5enketsu",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/923680169066135562/padoru_raphtalia.png",
+    "owner": "SarcasticallyCold"
+  },
+  "padoru_naofumi": {
+    "id": 85,
+    "title": "Padoru Naofumi",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "tate"
+    ],
+    "description": "Naofumi from Tate no Yuusha",
+    "color": "DARK_GREEN",
+    "footer": "",
+    "artist": "https://twitter.com/5enketsu",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/923679230691246130/padoru_naofumi.png",
+    "owner": "Guacamole Guacahostias"
+  },
+  "padoru_ishigami": {
+    "id": 86,
+    "title": "Padoru Yu Ishigami",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "kaguya"
+    ],
+    "description": "Yu Ishigami from Kaguya-Sama: Love is war",
+    "color": "BLACK",
+    "footer": "",
+    "artist": "https://twitter.com/5enketsu",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/923679834507464714/padoru_yu_ishigami.png",
+    "owner": "Rubix"
+  },
+  "padoru_shirogane": {
+    "id": 87,
+    "title": "Padoru Miyuki Shirogane",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "kaguya"
+    ],
+    "description": "Miyuki shirogane from Kaguya-Sama: Love is war",
+    "color": "BLACK",
+    "footer": "",
+    "artist": "https://twitter.com/5enketsu",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/923679880175054888/shirogane_miyuki_padoru.png",
     "owner": "Nero"
+  },
+  "padoru_austrian_painter": {
+    "id": 88,
+    "title": "Padoru Austrian Painter",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "tokyorevengers",
+      "history"
+    ],
+    "description": "An austrian painter from Tokyo Revengers",
+    "color": "DARKER_GREY",
+    "footer": "",
+    "artist": "https://twitter.com/5enketsu",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/923680212431011850/padoru_german_painter.png",
+    "owner": "Nero"
+  },
+  "padoru_kaguya": {
+    "id": 89,
+    "title": "Padoru Kaguya Shinomiya",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "kaguya"
+    ],
+    "description": "Kaguya Shinomiya from Kaguya-Sama: Love is war",
+    "color": "BLACK",
+    "footer": "",
+    "artist": "https://divergenceart999.tumblr.com/",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/924806428089286676/padoru_kaguya.png",
+    "owner": "DarkDrake"
+  },
+  "padoru_chika": {
+    "id": 90,
+    "title": "Padoru Chika Fujiwara",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "kaguya"
+    ],
+    "description": "Chika Fujiwara from Kaguya-Sama: Love is war",
+    "color": "BLACK",
+    "footer": "",
+    "artist": "https://twitter.com/SlyAliceArt",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/923700194707652628/padoru_chika.png",
+    "owner": "Nero"
+  },
+  "padoru_kei": {
+    "id": 91,
+    "title": "Padoru Kei Shirogane",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "kaguya"
+    ],
+    "description": "Kei Shirogane from Kaguya-Sama: Love is war",
+    "color": "BLACK",
+    "footer": "",
+    "artist": "https://www.reddit.com/user/how-dee",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/923702862872203264/padoru_kei_shirogane.png",
+    "owner": "Luiso"
+  },
+  "padoru_hayasaka": {
+    "id": 92,
+    "title": "Padoru Ai Hayasaka",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 5,
+    "raritystar": "⭐⭐⭐⭐⭐",
+    "series": [
+      "kaguya"
+    ],
+    "description": "Ai Hayasaka from Kaguya-Sama: Love is war. HEY HEY Shinomiya-san",
+    "color": "BLACK",
+    "footer": "",
+    "artist": "https://www.deviantart.com/ioriuchiha",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/923704028863561728/padoru_ai_hayasaka.png",
+    "owner": "Nero"
+  },
+  "padoru_diluc": {
+    "id": 93,
+    "title": "Padoru Diluc",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "genshin"
+    ],
+    "description": "Diluc from Genshin Impact",
+    "color": "RED",
+    "footer": "",
+    "artist": "https://twitter.com/5enketsu",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/924105011510804480/padoru_diluc.png",
+    "owner": "Nero"
+  },
+  "padoru_marnie": {
+    "id": 94,
+    "title": "Padoru Marnie",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "pokemon"
+    ],
+    "description": "Marnie from Pokémon",
+    "color": "LUMINOUS_VIVID_PINK",
+    "footer": "",
+    "artist": "https://twitter.com/5enketsu",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/924107173548683344/padoru_marnie.png",
+    "owner": "Éric"
+  },
+  "padoru_rosa": {
+    "id": 95,
+    "title": "Padoru Rosa",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "pokemon"
+    ],
+    "description": "Rosa from Pokémon",
+    "color": "LUMINOUS_VIVID_PINK",
+    "footer": "",
+    "artist": "https://twitter.com/tifa_says_hi",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/924107648394211378/padoru_rosa.png",
+    "owner": "✿₊˚ ❀┊  ✧O̶̽͠T̸̓͊Okii ꔫ ‧₊˚o"
+  },
+  "padoru_cynthia": {
+    "id": 96,
+    "title": "Padoru Cynthia",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "pokemon"
+    ],
+    "description": "Cynthia from Pokémon",
+    "color": "GOLD",
+    "footer": "",
+    "artist": "https://twitter.com/tifa_says_hi",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/924107222773026836/padoru_cynthia.png",
+    "owner": "Nero"
+  },
+  "padoru_mori_calliope": {
+    "id": 97,
+    "title": "Padoru Mori Calliope",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "hololive"
+    ],
+    "description": "Mori Calliope from Hololive EN",
+    "color": "DARK_VIVID_PINK",
+    "footer": "",
+    "artist": "https://twitter.com/tifa_says_hi",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/924110476487565362/padoru_mori_calliope.png",
+    "owner": "Rubix"
+  },
+  "padoru_2b": {
+    "id": 98,
+    "title": "Padoru 2B",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "nier"
+    ],
+    "description": "2B from Nier: Automata",
+    "color": "BLACK",
+    "footer": "",
+    "artist": "https://twitter.com/tifa_says_hi",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/924109966099480606/padoru_2B.png",
+    "owner": "Nero"
+  },
+  "padoru_artoria_lancer": {
+    "id": 99,
+    "title": "Padoru Artoria Pendragon Lancer",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "fate"
+    ],
+    "description": "Artoria Pendragon Lancer from Fate/Grand Order",
+    "color": "BLUE",
+    "footer": "",
+    "artist": "https://twitter.com/tifa_says_hi",
+    "emoji": "<:padoru_senku:912502749134987314>",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/924114555540471868/padoru_artoria_pendragon.png",
+    "owner": "Nero"
+  },
+  "padoru_parade": {
+    "id": 100,
+    "title": "Padoru Parade",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 6,
+    "raritystar": "⭐⭐⭐⭐⭐🌟",
+    "series": [
+      "padoru"
+    ],
+    "description": "PADORU PADORU PADORU PADORU",
+    "color": "RANDOM",
+    "artist": "https://www.youtube.com/watch?v=ZERLhQglkEY",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/924117784554774579/PadoruPadoru_Parade.gif"
+  },
+  "padoru_artoria_saber_lily": {
+    "id": 101,
+    "title": "Padoru Artoria Pendragon Saber Lily",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "fate"
+    ],
+    "description": "Artoria Pendragon Lancer from Fate/Grand Order",
+    "color": "DARKER_GREY",
+    "artist": "https://twitter.com/tifa_says_hi",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/924755060104261682/padoru_artoria_saber.png"
+  },
+  "padoru_año_nuevo": {
+    "id": 102,
+    "title": "Padoru New Year 2022",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 1,
+    "raritystar": "⭐☆☆☆☆",
+    "series": [
+      "seasonal"
+    ],
+    "description": "Happy New Year",
+    "color": "PURPLE",
+    "artist": "https://www.deviantart.com/manaalchemist",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/926470086993268757/padoru_2022.png"
   }
 }

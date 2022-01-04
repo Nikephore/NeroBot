@@ -72,6 +72,45 @@ module.exports.dailycoinsLvUp = async (userId, username) => {
   }
 }
 
+module.exports.dumpattack = async () => {
+	try {
+		await skillTreeSchema.updateMany(
+      {},
+      [{
+        $addFields:
+        {
+          "attack":
+            {
+              level: 1,
+              value: 0.5
+            }
+        }
+      }],
+      {multi : true})
+
+	} catch (err) {
+    console.log(err)
+  }
+}
+
+module.exports.attackLvUp = async (userId, username) => {
+	try {
+		await skillTreeSchema.findOneAndUpdate(
+			{ userId },
+			{
+        username,
+				$inc: {
+          "attack.level" : 1,
+          "attack.value" : 0.5
+        },
+				},
+			{ upsert: true,
+        new: true })
+	} catch (err) {
+    console.log(err)
+  }
+}
+
 module.exports.sybariteUnlock = async (userId, username) => {
 	try {
     console.log('IN')

@@ -37,10 +37,11 @@ ${sk.prolls.level !== skills.prolls.maxlv ? 'Next level: ' + fil.nFormatter(skil
 ${sk.problucky.level !== skills.problucky.maxlv ? 'Next level: ' + fil.nFormatter(skills.problucky.price[sk.problucky.level]) : 'Max level reached!'} :coin:
 **${skills.dailycoins.id} · Daily Coins LV ${sk.dailycoins.level}**
 ${sk.dailycoins.level !== skills.dailycoins.maxlv ? 'Next level: ' + fil.nFormatter(skills.dailycoins.price[sk.dailycoins.level]) : 'Max level reached'} :coin:
+**${skills.attack.id} · Attack LV ${sk.attack.level}**
+${sk.attack.level !== skills.attack.maxlv ? 'Next level: ' + fil.nFormatter(skills.attack.price[sk.attack.level]) : 'Max level reached'} :coin:
 **${skills.sybarite.id} · Sybarite Mode** 
-${sk.sybarite.syba === false ? 'Unlock: ' + fil.nFormatter(skills.sybarite.price[sk.problucky.level]) + ' :coin:' : 'Unlocked!'}`)
+${sk.sybarite.syba === false ? 'Unlock: ' + fil.nFormatter(skills.sybarite.price[sk.sybarite.level]) + ' :coin:' : 'Unlocked!'}`)
 
 		message.channel.send(shopmsg)
-
 	}
 }

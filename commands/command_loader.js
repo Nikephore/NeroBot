@@ -30,9 +30,11 @@ module.exports = (client) => {
           }
         }
       }
-    };
+    }
 
     readCommands('.')
+
+    console.log(commandList)
 
     return commandList
 }

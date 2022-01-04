@@ -32,6 +32,35 @@ function rarityConvertAscii(rarity){
   return ret
 }
 
+function rarityConvertEmoji(rarity, add){
+  var ret = ""
+  
+  for(var i = 0; i < rarity; i++){
+      ret += ":star:"
+  }
+
+  for(var i = 0; i < add; i++){
+      ret += ":star2:"
+  }
+
+  return ret
+}
+
+function lifeConvertEmoji(life){
+  
+  var ret = ""
+
+  for(var i = 1; i <= life; i++){
+      ret += "❤️"
+  }
+
+  if(life % 1 !== 0){
+    ret += "💔"
+  }
+
+  return ret
+}
+
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -61,6 +90,8 @@ module.exports = {
   randomNumberBetween,
   luckyStrike,
   rarityConvertAscii,
+  rarityConvertEmoji,
+  lifeConvertEmoji,
   sleep,
   minsToMidnight,
   weightedRandom,
