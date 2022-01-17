@@ -3,6 +3,7 @@ const pr = require ('../../databaseFunctions/dbProfile')
 const Discord = require("discord.js")
 const mongo = require('../../databaseFunctions/dbNewProfile')
 const math = require('../../functions/math')
+const padList = require('../../databaseFunctions/dbPadoru')
 
 module.exports = {
   commands: ['buypadoru', 'bp'],
@@ -13,29 +14,23 @@ module.exports = {
       return
     }
 
-    const jsonString = fs.readFileSync('./json/padoru.json')
-    const padoru = JSON.parse(jsonString)
-    var padoruBaseList = []
+    const id = parseInt(arguments[0])
 
-    for(var i in padoru){
-      padoruBaseList.push(padoru[i])
-    }
+    const padorus = await padList.getAll()
 
-    const tickets = await mongo.myTickets(message.author.id, message.author.username)
-
-    infopadoru = padoruBaseList.find(e => e.id === parseInt(arguments[0]))
+    infopadoru = await padList.pick(id)
 
     if(infopadoru === undefined){
-      message.reply('No se reconoce el padoru elegido')
+      message.reply('Unknown Padoru')
       return
     }
 
     const rarityValues = {
-      1 : 5,
-      2 : 20,
-      3 : 35,
-      4 : 60,
-      5 : 100,
+      1 : 10,
+      2 : 25,
+      3 : 50,
+      4 : 75,
+      5 : 150,
       6 : -1
     }
 
@@ -47,24 +42,26 @@ module.exports = {
 
     mypadorus = await pr.myPadorus(message.author.id, message.author.username)
 
-    finalpadoru = mypadorus.find(e => e === infopadoru.id)
+    finalpadoru = mypadorus.pp.find(e => e.id === infopadoru.id)
 
     if(finalpadoru !== undefined){
       message.reply(`You already have **${infopadoru.title}**`)
       return
     }
 
-    if(!finalpadoru.active){
+    if(!infopadoru.active){
       message.reply(`**${infopadoru.title}** isn't active right now`)
       return
     }
+
+    const tickets = await mongo.myTickets(message.author.id, message.author.username)
 
     if(tt > tickets){
       message.reply(`You need **${tt - tickets}** 🎟️ more to buy **${infopadoru.title}**`)
       return
     }
 
-    message.channel.send(`You have excahnge **${tt} tickets for **${infopadoru.title}**`)
+    message.channel.send(`You have excahnge **${tt}** tickets for **${infopadoru.title}**`)
 
     await pr.newPadoru(message.author.id, infopadoru.id)
 

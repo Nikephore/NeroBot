@@ -5,6 +5,18 @@ const profile = require('../../databaseFunctions/dbProfile')
 const st = require('../../databaseFunctions/dbSkillTree')
 const Duration = require('humanize-duration')
 const padList = require('../../databaseFunctions/dbPadoru')
+const schedule = require('node-schedule')
+
+/**
+ * Se ejecuta cada 2 horas
+ * Reseteo de %padoru
+ */
+schedule.scheduleJob('0 */2 * * *', () => { resetRolls() })
+
+async function resetRolls() {
+  await st.resetRolls()
+  console.log("Reseteando rolls")
+}
 
 module.exports = {
   commands: ['padoru', 'p'],
@@ -13,28 +25,23 @@ module.exports = {
     const id = message.author.id
     const rar = {1:0.37, 2:0.3, 3:0.2, 4:0.1, 5:0.03}
     const bannerOrNot = math.randomNumberBetween(1, 100)
-    const bannerRar = {3:0.45, 4:0.30, 5:0.15}
-    const sybatiterar = {2:0.5, 3:0.3, 4:0.15, 5:0.05}
+    const bannerRar = {3:0.40, 4:0.35, 5:0.25}
+    const sybariterar = {2:0.5, 3:0.3, 4:0.15, 5:0.05}
 
-    const jsonString = fs.readFileSync('./json/padoru.json')
-    const padoru = JSON.parse(jsonString)
-    var padoruBaseList = []
     var rarityChosen = null
 
     let remaining = Duration(math.normalizeDate(2, 2) * 60000, {units: ['h', 'm'], maxDecimalPoints: 0, language: 'en'})
 
     const sk = await st.getSkillTree(id, message.author.username)
 
-    if(sk.prolls.numrolls === 0){
+    var padorus = await padList.getAll()
+
+    if(sk.prolls.numrolls <= 0){
       message.channel.send(`Your next roll is in **${remaining}**. You can vote Nero to obtain more rolls with **%vote**`)
       return
     }
 
     await st.prollsMinusOne(id, message.author.username)
-
-    for(var i in padoru){
-      padoruBaseList.push(padoru[i])
-    }
 
     console.log(message.author.username)
     console.log(message.guild.name)
@@ -46,7 +53,7 @@ module.exports = {
     if(bannerOrNot <= 90) {
       if (sybarite){
         console.log('syba')
-        rarityChosen = parseInt(math.weightedRandom(sybatiterar))
+        rarityChosen = parseInt(math.weightedRandom(sybariterar))
       } else {
         console.log('nosyba')
       rarityChosen = parseInt(math.weightedRandom(rar))
@@ -54,24 +61,18 @@ module.exports = {
     } else {
       rarityChosen = parseInt(math.weightedRandom(bannerRar))
 
-      padoruBaseList = padoruBaseList.filter(a => a.banner === true)
+      padorus = padorus.filter(a => a.banner === true)
     }
     
     // lista de los padorus del usuario
-    var myPadorus = await profile.myPadorus(id, message.author.username)
+    var myPadorus = await profile.myPadorus(id, message.author.username) 
 
-    var randomPadoru = await addPadoru(message, padoruBaseList, myPadorus, rarityChosen, sk)
+    var randomPadoru = await addPadoru(message, padorus, myPadorus, rarityChosen, sk)
 
     console.log(randomPadoru.title)
-
-    /*
-    if(!myPadorus.pp.indexOf(randomPadoru.id)){
-      myPadorus.push(randomPadoru.id)
-    }
-    */
     
     if(luck){
-      recursiveLuck(message, padoruBaseList, myPadorus, rarityChosen + 1, sk)
+      recursiveLuck(message, padorus, myPadorus, rarityChosen + 1, sk)
     }
     
   },
@@ -98,11 +99,11 @@ async function recursiveLuck(message, padoruBaseList, myPadorus, rarityChosen, s
 async function addPadoru(message, padoruBaseList, myPadorus, rarityChosen, sk){
   const id = message.author.id
 
-  var padorumsg = await message.channel.send('Escogiendo padoru...')  
+  var padorumsg = await message.channel.send('Choosing Padoru...')  
 
   // control de errores
   if(rarityChosen > 6){
-    rarityChosen = 5
+    rarityChosen = 6
   }
 
   console.log("Rarity: " + rarityChosen)
@@ -127,7 +128,7 @@ async function addPadoru(message, padoruBaseList, myPadorus, rarityChosen, sk){
     finalmsg = await stars(rarityChosen, padorumsg, true)
 
     await profile.newPadoru(id, randomPadoru.id)
-    isNew = '**NEW**'
+    isNew = '[ 🇳 🇪 🇼 ]'
 
   } else {
     finalmsg = await stars(rarityChosen, padorumsg, false)

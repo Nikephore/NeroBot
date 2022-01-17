@@ -2,38 +2,40 @@ const fs = require('fs')
 const math = require('../../functions/math')
 const Discord = require("discord.js")
 const argFilter = require('../../functions/filter.js')
+const padList = require('../../databaseFunctions/dbPadoru')
 
 module.exports = {
   commands: ['padorupedia', 'pp'],
   description: 'List with all the Padorus. Short ver. %pp',
   callback: async (message, arguments, text) =>{
-    const padoruString = fs.readFileSync('./json/padoru.json')
     const seriesString = fs.readFileSync('./json/series.json')
-    const padoru = JSON.parse(padoruString)
     const series = JSON.parse(seriesString)
     const leyenda = ":no_entry_sign: = You can't roll this Padoru right now\n:bangbang: = Padoru rate up!!"
-    var padoruBaseList = []
     var seriesBaseList = []
 
-    for(let i in padoru){
-      padoruBaseList.push(padoru[i])
-    }
+    var numPage = 1
+    
+    padorus = await padList.getAll()
 
     for(let i in series){
       seriesBaseList.push(series[i])
     }
     
     if(text !== ''){
-      padoruBaseList = argFilter.padoruInSeriesFilter(padoruBaseList, seriesBaseList, text)
-      seriesBaseList = argFilter.seriesFilter(seriesBaseList, text)
+      if(isNaN(parseInt(arguments[0]))){
+          plist = argFilter.padoruInSeriesFilter(plist, seriesBaseList, text)
+          seriesBaseList = argFilter.seriesFilter(seriesBaseList, text)
+        } else {
+          numPage = parseInt(arguments[0])
+        }
       
     } else {
-      padoruBaseList = padoruBaseList.filter(a => a.released === true)
+      padorus = padorus.filter(a => a.released === true)
     }
 
-    total = padoruBaseList.length
+    total = padorus.length
 
-    if(padoruBaseList.length === 0) {
+    if(padorus.length === 0) {
       message.channel.send("No se han encontrado padorus con esas condiciones")
       return
     }
@@ -42,16 +44,19 @@ module.exports = {
       .setTitle('Padorupedia')
       .setColor('GOLD')
 
-    var numPage = 1
     const page = 15
     const totalPages = Math.ceil(total/page)
 
+    if(numPage > totalPages){
+      numPage = totalPages
+    }
+
     var title = ''
-    var i = 0
-    while(padoruBaseList[i] !== undefined && i < page){
-      var act = padoruBaseList[i].active ? '' : ':no_entry_sign:'
-      var banner = padoruBaseList[i].banner ? ':bangbang:' : ''
-      title = title + '\n`' + (padoruBaseList[i].id) + '`**' + padoruBaseList[i].title + '**' + ' ' + math.rarityConvertAscii(padoruBaseList[i].rarity) + ' ' + act + banner
+    var i = page * (numPage - 1)
+    while(padorus[i] !== undefined && i < page * numPage){
+      var act = padorus[i].active ? '' : ':no_entry_sign:'
+      var banner = padorus[i].banner ? ':bangbang:' : ''
+      title = title + '\n`' + (padorus[i].id) + '`**' + padorus[i].title + '**' + ' ' + math.rarityConvertAscii(padorus[i].rarity) + ' ' + act + banner
       i++
     }
     
@@ -67,53 +72,57 @@ module.exports = {
     msg.react("⬅️")
     msg.react("➡️")
 
-    const filter = (reaction, user) => {
-      return ["⬅️", "➡️"].includes(reaction.emoji.name) && (!user.bot)
-    }
-
-    const collector = msg.createReactionCollector(filter, {
-        time: 120000,
-    })
-
-    collector.on('collect', (reaction) => {
-
-      var newEmbed = new Discord.MessageEmbed()
-          .setTitle('Padorupedia')
-          .setColor('GOLD')
-
-		  if (reaction.emoji.name === "⬅️") {
-        if(numPage === 1){
-          numPage = totalPages
-        } else {
-          numPage--
-        }      
-		  } else if (reaction.emoji.name === "➡️"){
-        if(numPage === totalPages){
-          numPage = 1
-        } else {
-          numPage++
-        } 
-		  }
-
-      var start = (numPage - 1) * page
-      var end = numPage * page
-
-      let title = ''
-      
-      while(padoruBaseList[start] !== undefined && start < end){
-        var act = padoruBaseList[start].active === false ? ':no_entry_sign:' : ''
-        var banner = padoruBaseList[start].banner === true ? ':bangbang:' : ''
-        title = title + '\n`' + (padoruBaseList[start].id) + '`**' + padoruBaseList[start].title + '**' + ' ' + math.rarityConvertAscii(padoruBaseList[start].rarity) + ' ' + act + banner
-        
-        start ++
-      }
-
-      newEmbed.addField('\u200B', title)
-      newEmbed.addField('Symbols', leyenda)
-      newEmbed.setFooter(`Página ${numPage}/${totalPages}`)
-
-      msg.edit(newEmbed)
-      
-    })
+    await editMessage(msg, numPage, totalPages, page, padorus, leyenda)
   }
+}
+
+async function editMessage(msg, numPage, totalPages, page, padorus, leyenda){
+  const filter = (reaction, user) => {
+    return ["⬅️", "➡️"].includes(reaction.emoji.name) && (!user.bot)
+  }
+
+  const collector = msg.createReactionCollector(filter, {
+    time: 120000,
+  })
+
+  collector.on('collect', (reaction) => {
+
+  var newEmbed = new Discord.MessageEmbed()
+    .setTitle('Padorupedia')
+    .setColor('GOLD')
+
+	if (reaction.emoji.name === "⬅️") {
+    if(numPage === 1){
+      numPage = totalPages
+    } else {
+      numPage--
+    }      
+	} else if (reaction.emoji.name === "➡️"){
+    if(numPage === totalPages){
+      numPage = 1
+    } else {
+      numPage++
+    } 
+	}
+
+  var start = (numPage - 1) * page
+  var end = numPage * page
+
+  let title = ''
+      
+  while(padorus[start] !== undefined && start < end){
+    var act = padorus[start].active === false ? ':no_entry_sign:' : ''
+    var banner = padorus[start].banner === true ? ':bangbang:' : ''
+    title = title + '\n`' + (padorus[start].id) + '`**' + padorus[start].title + '**' + ' ' + math.rarityConvertAscii(padorus[start].rarity, 0) + ' ' + act + banner
+        
+    start ++
+  }
+
+  newEmbed.addField('\u200B', title)
+  newEmbed.addField('Symbols', leyenda)
+  newEmbed.setFooter(`Página ${numPage}/${totalPages}`)
+
+  msg.edit(newEmbed)
+
+  })
 }

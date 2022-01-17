@@ -11,9 +11,25 @@
     "commands/Padorus/mypadorupedia.js": [
       {
         "id": "65c01f81-4e1a-409a-a5e0-50e1ae0d69ea",
-        "line": 64,
-        "version": 469,
-        "index": 1957
+        "line": 105,
+        "version": 1616,
+        "index": 2914
+      }
+    ],
+    "commands/Padorus/padoru.js": [
+      {
+        "id": "8f53d398-3aaa-445b-9996-04a8157d8886",
+        "line": 70,
+        "version": 2891,
+        "index": 2280
+      }
+    ],
+    "commands/Padorus/topowner.js": [
+      {
+        "id": "92abcd30-c528-443b-b905-6fdc44cdc427",
+        "line": 21,
+        "version": 3058,
+        "index": 624
       }
     ],
     "commands/Shop/buy.js": [

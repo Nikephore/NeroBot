@@ -3,6 +3,18 @@ const newMongo = require ('../../databaseFunctions/dbNewProfile')
 const st = require('../../databaseFunctions/dbSkillTree')
 const math = require('../../functions/math')
 const Duration = require('humanize-duration')
+const schedule = require('node-schedule')
+
+/**
+ * Se ejecuta cada medianoche
+ * Reseteo de %dailycoins
+ */
+schedule.scheduleJob('0 0 * * *', () => { resetDaily() })
+
+async function resetDaily() {
+  mongo.resetDaily()
+}
+
 
 module.exports = {
   commands: ['dailycoins', 'dc'],
@@ -35,7 +47,7 @@ module.exports = {
 
     mongo.addCoins(target.id, newCoins)
 
-    newMongo.addTicket(target.id, target.username)
+    newMongo.addTicket(target.id, 1)
 
     return
   }

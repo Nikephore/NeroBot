@@ -9,15 +9,10 @@ module.exports = {
   maxArgs: 1,
   expectedArgs: '<Id>',
   callback: async (message, arguments, text) => {
-    const jsonString = fs.readFileSync('./json/padoru.json')
-    const padoru = JSON.parse(jsonString)
-    var padoruBaseList = []
 
-    for(var i in padoru){
-      padoruBaseList.push(padoru[i])
-    }
+    pad = await padList.getAll()
 
-    const total = padoruBaseList.length
+    const total = pad.length
     var info = parseInt(arguments[0])
     var name = text
     var infoPadoru = null

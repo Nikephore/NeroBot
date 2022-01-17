@@ -24,11 +24,17 @@ function weightedRandom(prob) {
   }
 }
 
-function rarityConvertAscii(rarity){
+function rarityConvertAscii(rarity, add){
   var ret = ""
+
   for(var i = 0; i < rarity; i++){
+      ret += "★"
+  }
+
+  for(var i = 0; i < add; i++){
       ret += "☆"
   }
+
   return ret
 }
 

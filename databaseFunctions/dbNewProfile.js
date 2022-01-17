@@ -1,13 +1,34 @@
 const newProfileSchema = require('../schemas/newProfile')
 
 /* Funciones para gestionar los Tickets */
-module.exports.addTicket = async (userId, username) => {
+module.exports.addTicket = async (userId, num) => {
   try {
     await newProfileSchema.findOneAndUpdate(
 		{	userId },
     {
-      username,
-      $inc: {tickets : 1}
+      $inc: {tickets : num}
+    },
+    {	
+      upsert: true,
+      new: true 
+    })
+      
+  } catch (err) {
+    console.log(err)
+  }
+}
+
+module.exports.addTickets = async (uid, num) => {
+  try {
+
+    if(uid === []){
+      return
+    }
+    
+    await newProfileSchema.updateMany(
+		{	userId: uid },
+    {
+      $inc: {tickets : num}
     },
     {	
       upsert: true,

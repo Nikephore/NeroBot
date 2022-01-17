@@ -1,9 +1,9 @@
-const fs = require('fs')
 const math = require('../../functions/math')
 const profile = require('../../databaseFunctions/dbProfile')
 const newProfile = require('../../databaseFunctions/dbNewProfile')
 const embed = require('../../functions/embed')
-
+const padList = require('../../databaseFunctions/dbPadoru')
+const st = require('../../databaseFunctions/dbSkillTree')
 
 module.exports = {
   commands: ['roll', 'r'],
@@ -22,9 +22,12 @@ module.exports = {
 			return
 		}
 
+    const sk = await st.getSkillTree(id, un)
+
 		const number = parseInt(arguments[0])
 
     const rolls = await newProfile.myRolls(id, un)
+
 
 		if(number > 10 || number < 1){
 			message.reply('The number must be between 1 y 10')
@@ -36,29 +39,19 @@ module.exports = {
       return
     }
 
-
-    message.reply(`Temporarily out of service`)
-    return
-
-
-		const jsonString = fs.readFileSync('./json/padoru.json')
-    const padoru = JSON.parse(jsonString)
-    var padoruBaseList = []
-
-    for(var i in padoru){
-      padoruBaseList.push(padoru[i])
-    }
+		var pad = await padList.getAll()
 
 		var myPadorus = await profile.myPadorus(id, message.author.username)
 
-    padoruBaseList = padoruBaseList.filter(a => a.active === true)
+    pad = pad.filter(a => a.active === true)
 
 		var rarityChosen = []
 		var padorus = []
 		var padoruRareList = []
 		var newPadorus = []
 		var isNew = []
-		const coins = [50, 150, 450, 1500, 3000]
+    var extra = []
+		const coins = [50, 150, 450, 1500, 3000, 15000]
 		var myCoins = 0
 		
 		for(i = 0; i < number; i++){
@@ -73,29 +66,33 @@ module.exports = {
 
 			}
 			
-			var padoruRareList = padoruBaseList.filter(r => r.rarity === rarityChosen[i])
+			var padoruRareList = pad.filter(r => r.rarity === rarityChosen[i])
 			
 			count = padoruRareList.length
 			padorus.push(padoruRareList[(math.randomNumberBetween(1,count))-1])
 
-			const found = myPadorus.find(e => e === padorus[i].id)
+			const found = myPadorus.pp.find(e => e.id === padorus[i].id)
 
 			if(found === undefined){
 				newPadorus.push(padorus[i].id)
 				isNew.push('🆕')
+        extra.push(0)
 
 			} else {
-				myCoins = myCoins + coins[rarityChosen[i] - 1]
-				isNew.push(`+${coins[rarityChosen[i] - 1]} PC`)
+        extra.push(found.rarity)
+				myCoins = myCoins + coins[rarityChosen[i] - 1 + found.rarity]
+				isNew.push(`+${coins[rarityChosen[i] - 1 + found.rarity]} PC`)
 			}
 
 		}
 		console.log(rarityChosen)
 
-		await profile.addAll(id, newPadorus, myCoins)
+    await profile.newPadorus(id, newPadorus)
+		await profile.addCoins(id, myCoins)
 
 		var index = 0
-		var multipad = embed.embedCreator(padorus[index], isNew[index])
+    const rs = math.rarityConvertEmoji(rarityChosen[index], extra[index])
+		var multipad = embed.embedCreator(padorus[index], isNew[index], null, -1, null, rs)
 
     multipad.setFooter(`${index+1}/${number}`)
 
@@ -110,35 +107,43 @@ module.exports = {
 		mpmsg.react('⬅️')
 		mpmsg.react('➡️')
 
-		const filter = (reaction, user) => {
-      return ["⬅️", "➡️"].includes(reaction.emoji.name) && (!user.bot)
-    }
 
-    const collector = mpmsg.createReactionCollector(filter, {
-        time: 120000,
-    })
-
-    collector.on('collect', (reaction) => {
-
-		  if (reaction.emoji.name === "⬅️") {
-        
-        index--
-        if(index === -1){
-          index = number - 1
-        }
-		  } else if (reaction.emoji.name === "➡️"){
-
-				index++
-        if(index === number){
-          index = 0
-        }
-		  }
-			
-			var newMultipad = embed.embedCreator(padorus[index], isNew[index])
-      newMultipad.setFooter(`${index+1}/${number}`)
-      mpmsg.edit(newMultipad)
-
-    })
+    editMessage(mpmsg, padorus, index, isNew, extra, number)
 
 	}
+}
+
+async function editMessage(mpmsg, padorus, index, isNew, extra, number){
+
+  const filter = (reaction, user) => {
+    return ["⬅️", "➡️"].includes(reaction.emoji.name) && (!user.bot)
+  }
+
+  const collector = mpmsg.createReactionCollector(filter, {
+      time: 120000,
+  })
+
+  collector.on('collect', (reaction) => {
+
+	  if (reaction.emoji.name === "⬅️") {
+        
+      index--
+      if(index === -1){
+        index = number - 1
+      }
+		} else if (reaction.emoji.name === "➡️"){
+
+			index++
+      if(index === number){
+        index = 0
+      }
+		}
+
+    const rs = math.rarityConvertEmoji(padorus[index].rarity, extra[index])
+
+		var newMultipad = embed.embedCreator(padorus[index], isNew[index], null, -1, null, rs)
+    newMultipad.setFooter(`${index+1}/${number}`)
+
+    mpmsg.edit(newMultipad)
+    })
 }

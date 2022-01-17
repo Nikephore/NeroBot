@@ -1,12 +1,10 @@
 const profileSchema = require('../schemas/profile')
 
-module.exports.addCoins = async (userId, padoruCoins, username) => {
+module.exports.addCoins = async (userId, padoruCoins) => {
   try { 
     await profileSchema.findOneAndUpdate(
       {	userId },
       {
-        userId,
-        username,
         $inc: {	padoruCoins },
       },
       {	upsert: true,
@@ -15,8 +13,6 @@ module.exports.addCoins = async (userId, padoruCoins, username) => {
   } catch (err) {
     console.log(err)
   }
-    
-  return padoruCoins
 }
     
 module.exports.getCoins = async (userId, username) => {
@@ -87,35 +83,31 @@ module.exports.myPadorus = async (userId, username) => {
   }
 }
 
-module.exports.addAll = async (userId, pp, coin) => {
-  try {        
-    const result = await profileSchema.findOneAndUpdate(
+module.exports.newPadorus = async (userId, pid) => {
+  try {   
+
+    if (pid.length === 0){
+      return
+    }
+
+    pid.forEach(add)
+
+    async function add(element){
+
+      await profileSchema.findOneAndUpdate(
       {	userId },
       {
-        $push: { padorupedia: pp },
-        $inc: { padoruCoins: coin}
+        $push: { pp: {id: element, rarity: 0}}
       },
       {	
         upsert: true,
         new: true 
-      })   
+      })
+    }
+
+    
+
   } catch (err) {
-    console.log(err)
-  }
-}
-
-module.exports.getProfile = async (userId, username) => {
-	try {
-
-		const result = await profileSchema.findOneAndUpdate(
-      { userId },
-      { username },
-      { upsert: true,
-        new: true })
-
-    return result
-		
-	} catch (err) {
     console.log(err)
   }
 }

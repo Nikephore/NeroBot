@@ -151,7 +151,10 @@
     "name": "metroid",
     "alias" : [
       "Metroid",
-      "metroid prime"
+      "metroid prime",
+      "Smash",
+      "Super Smash Brothers",
+      "ssb"
     ],
     "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/909792031310745660/padoru_samus.png"
   },
@@ -333,7 +336,89 @@
       "nier: automata"
     ],
     "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/924109966099480606/padoru_2B.png"
+  },
+  "Shadows": {
+    "name": "shadows",
+    "alias" : [
+      "shadows house",
+      "chadous jaus",
+      "shadows"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/928089255887110144/emilico.png"
+  },
+  "SSSS.DYNAZENON": {
+    "name": "SSSS.DYNAZENON",
+    "alias" : [
+      "SSSS.DYNAZENON",
+      "SSSS.",
+      "DYNAZENON"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/928375779782451260/20220105_205332.jpg"
+  },
+  "kirby": {
+    "name": "Kirby",
+    "alias" : [
+      "Kirby",
+      "Smash",
+      "Super Smash Brothers",
+      "ssb"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/930221813533933588/padoru_kirby.png"
+  },
+  "zelda": {
+    "name": "Zelda",
+    "alias" : [
+      "The Legend of Zelda",
+      "Zelda",
+      "Tloz",
+      "Smash",
+      "Super Smash Brothers",
+      "ssb"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/930226333181677630/padoru_zelda.png"
+  },
+  "yuru camp": {
+    "name": "yuru camp",
+    "alias" : [
+      "Yuru Camp",
+      "Winter Camp",
+      "Heya Camp",
+      "Laid-Back Camp"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/930229888634470430/padoru_nadeshiko.png"
+  },
+  "tales": {
+    "name": "tales",
+    "alias" : [
+      "Tales of",
+      "Tales"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/930232033786068992/padoru_magilou.png"
+  },
+  "plastic": {
+    "name": "plastic",
+    "alias" : [
+      "Plastic Memories"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/932301245572603974/padoru_isla.png"
+  },
+  "fruits": {
+    "name": "fruits",
+    "alias" : [
+      "Fruits Basket",
+      "Furuba"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/932301207542853702/fruits-basket-tooru-honda.png"
+  },
+  "bunny": {
+    "name": "bunny",
+    "alias" : [
+      "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+      "Cerdos Cuanticos",
+      "AoButa",
+      "Bunny Girl Senpai",
+      "Rascal Does Not Dream of Bunny Girl Senpai"
+    ],
+    "thumbnail": "https://cdn.discordapp.com/attachments/901798915425321000/932300664091058256/padoru_mai.png"
   }
-
-
 }

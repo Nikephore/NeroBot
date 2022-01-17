@@ -14,8 +14,8 @@ const schedule = require('node-schedule')
 schedule.scheduleJob('0 0 * * 3', () => { endSeason() })
 
 module.exports = {
-    commands: ['topowner', 'to'],
-    description: 'Comando para votar por Nero en la página top.gg',
+    commands: ['top'],
+    description: 'Command to see the global padorupedia top',
     callback: async (message) => {
 
       const total = await obtainOwners()
@@ -23,10 +23,12 @@ module.exports = {
       const position = total.findIndex(e => e.ow.userId === message.author.id) + 1
 
       embed = new Discord.MessageEmbed()
-        .setAuthor("🏆 Top 20 Padoru Owners 🏆")
+        .setAuthor("🏆 Top PadoruPedia 🏆")
         .setColor('AQUA')
+        .setTitle('On process...')
 
       //Situamos los padorus en el embed y enviamos el mensaje
+      /*
       var title = ''
     
       for(i = 0; (i<20) && (total[i] !== undefined); i++) {
@@ -43,7 +45,7 @@ module.exports = {
       }
 
       embed.setFooter(footer)
-
+      */
       message.channel.send(embed)
     },  
 }

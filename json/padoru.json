@@ -1879,5 +1879,614 @@
     "color": "PURPLE",
     "artist": "https://www.deviantart.com/manaalchemist",
     "image": "https://cdn.discordapp.com/attachments/901798915425321000/926470086993268757/padoru_2022.png"
+  },
+  "padoru_rum": {
+    "id": 103,
+    "title": "Padoru Rum",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆",
+    "series": [
+      "shadows"
+    ],
+    "description": "Rum from Shadows House",
+    "color": "DARK_BLUE",
+    "artist": "https://twitter.com/padoru_szn",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/928087353413746788/rum.png"
+  },
+  "padoru_shirley": {
+    "id": 104,
+    "title": "Padoru Shirley Shadow",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐",
+    "series": [
+      "shadows"
+    ],
+    "description": "Shirley Shadow from Shadows House",
+    "color": "BLACK",
+    "artist": "https://twitter.com/padoru_szn",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/928087499379712000/shirley.png"
+  },
+  "padoru_ricky": {
+    "id": 105,
+    "title": "Padoru Ricky",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "shadows"
+    ],
+    "description": "Ricky from Shadows House",
+    "color": "YELLOW",
+    "artist": "https://twitter.com/padoru_szn",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/928087781811585044/ricky.png"
+  },
+  "padoru_patrick": {
+    "id": 106,
+    "title": "Padoru Patrick Shadow",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "shadows"
+    ],
+    "description": "Patrick Shadow from Shadows House",
+    "color": "BLACK",
+    "artist": "https://twitter.com/padoru_szn",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/928087948547751986/patrick.png"
+  },
+  "padoru_lou": {
+    "id": 107,
+    "title": "Padoru Lou",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "shadows"
+    ],
+    "description": "Lou from Shadows House",
+    "color": "DARK_VIVID_PINK",
+    "artist": "https://twitter.com/padoru_szn",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/928088287694958612/padoru_lou.png"
+  },
+  "padoru_louise": {
+    "id": 108,
+    "title": "Padoru Louise Shadow",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "shadows"
+    ],
+    "description": "Louise Shadow from Shadows House",
+    "color": "BLACK",
+    "artist": "https://twitter.com/padoru_szn",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/928088526728364032/louise.png"
+  },
+  "padoru_shaun": {
+    "id": 109,
+    "title": "Padoru Shaun",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "shadows"
+    ],
+    "description": "Shaun from Shadows House",
+    "color": "DARK_GREEN",
+    "artist": "https://twitter.com/padoru_szn",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/928089008322510868/shaun.png"
+  },
+  "padoru_john": {
+    "id": 110,
+    "title": "Padoru John Shadow",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "shadows"
+    ],
+    "description": "John Shadow from Shadows House",
+    "color": "BLACK",
+    "artist": "https://twitter.com/padoru_szn",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/928089029738647603/john.png"
+  },
+  "padoru_emilico": {
+    "id": 111,
+    "title": "Padoru Emilico",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 5,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "shadows"
+    ],
+    "description": "Emilico from Shadows House",
+    "color": "GOLD",
+    "artist": "https://twitter.com/padoru_szn",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/928089255887110144/emilico.png"
+  },
+  "padoru_kate": {
+    "id": 112,
+    "title": "Padoru Kate Shadow",
+    "active": true,
+    "released": true,
+    "banner": true,
+    "rarity": 5,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "shadows"
+    ],
+    "description": "Kate Shadow from Shadows House",
+    "color": "BLACK",
+    "artist": "https://twitter.com/padoru_szn",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/928089277399695380/kate.png"
+  },
+  "padoru_barbie": {
+    "id": 113,
+    "title": "Padoru Barbie",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐",
+    "series": [
+      "shadows"
+    ],
+    "description": "Barbie from Shadows House",
+    "color": "GREEN",
+    "artist": "https://twitter.com/padoru_szn",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/928103248919945336/barbie.png"
+  },
+  "padoru_barbara": {
+    "id": 114,
+    "title": "Padoru Barbara Shadow",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐",
+    "series": [
+      "shadows"
+    ],
+    "description": "Barbara Shadow from Shadows House",
+    "color": "BLACK",
+    "artist": "https://twitter.com/padoru_szn",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/928103568551071824/barbara.png"
+  },
+  "padoru_hutao": {
+    "id": 115,
+    "title": "Padoru Hu Tao",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "genshin"
+    ],
+    "description": "Hu Tao from Genshin Impact",
+    "color": "DARK_RED",
+    "artist": "https://twitter.com/5enketsu",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/928093663207231518/padoru_hutao.png"
+  },
+  "padoru_yomogi": {
+    "id": 116,
+    "title": "Padoru Yomogi Asanaka",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "SSSS.DYNAZENON"
+    ],
+    "description": "Yomogi Asanaka from SSSS.DYNAZENON",
+    "color": "DARK_BLUE",
+    "artist": "https://twitter.com/CianuroArts",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/928375779782451260/20220105_205332.jpg"
+  },
+  "padoru_gauma": {
+    "id": 117,
+    "title": "Padoru Gauma",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "SSSS.DYNAZENON"
+    ],
+    "description": "Gauma from SSSS.DYNAZENON",
+    "color": "RED",
+    "artist": "https://twitter.com/CianuroArts",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/928375779459497984/20220105_205329.jpg"
+  },
+  "padoru_kirby": {
+    "id": 118,
+    "title": "Padoru Kirby",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "kirby"
+    ],
+    "description": "Kirby from Kirby",
+    "color": "LUMINOUS_VIVID_PINK",
+    "artist": "https://www.tumgir.com/haremfucker87",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/930221813533933588/padoru_kirby.png"
+  },
+  "padoru_link": {
+    "id": 119,
+    "title": "Padoru Link",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "zelda"
+    ],
+    "description": "Link from The Legend of Zelda",
+    "color": "BLUE",
+    "artist": "https://www.reddit.com/user/how-dee/",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/930224196028596235/padoru_linkBOTW.png"
+  },
+  "padoru_zelda": {
+    "id": 120,
+    "title": "Padoru Zelda",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "zelda"
+    ],
+    "description": "Zelda from The Legend of Zelda",
+    "color": "LUMINOUS_VIVID_PINK",
+    "artist": "https://www.facebook.com/JDSparkleArt/",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/930226333181677630/padoru_zelda.png"
+  },
+  "padoru_aoi": {
+    "id": 121,
+    "title": "Padoru Aoi Inuyama",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "yuru camp"
+    ],
+    "description": "Aoi Inuyama from Yuru Camp",
+    "color": "D6BA5E",
+    "artist": "https://twitter.com/realbohbinschi",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/930228282195071006/padoru_aoi.png"
+  },
+  "padoru_oogaki": {
+    "id": 122,
+    "title": "Padoru Chiaki Oogaki",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "yuru camp"
+    ],
+    "description": "Chiaki Oogaki from Yuru Camp",
+    "color": "PURPLE",
+    "artist": "https://twitter.com/realbohbinschi",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/930230560545194014/padoru_ogaki.png"
+  },
+  "padoru_nadeshiko": {
+    "id": 123,
+    "title": "Padoru Nadeshiko Kagamihara",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "yuru camp"
+    ],
+    "description": "Nadeshiko Kagamihara from Yuru Camp",
+    "color": "LUMINOUS_VIVID_PINK",
+    "artist": "https://twitter.com/realbohbinschi",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/930229888634470430/padoru_nadeshiko.png"
+  },
+  "padoru_rin": {
+    "id": 124,
+    "title": "Padoru Rin Shima",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐☆☆☆",
+    "series": [
+      "yuru camp"
+    ],
+    "description": "Rin Shima from Yuru Camp",
+    "color": "DARK_BLUE",
+    "artist": "https://twitter.com/realbohbinschi",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/930230581197946890/padoru_rin.png"
+  },
+  "padoru_law": {
+    "id": 125,
+    "title": "Padoru Law",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "tales"
+    ],
+    "description": "Law from Tales of Arise",
+    "color": "PURPLE",
+    "artist": "https://www.deviantart.com/thenameisnoname",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/930234880862851114/padoru_law.png"
+  },
+  "padoru_rinwell": {
+    "id": 126,
+    "title": "Padoru Rinwell",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "tales"
+    ],
+    "description": "Rinwell from Tales of Arise",
+    "color": "DARK_BLUE",
+    "artist": "https://www.deviantart.com/thenameisnoname",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/930236168941993994/padoru_rinwell.png"
+  },
+  "padoru_kisara": {
+    "id": 127,
+    "title": "Padoru Kisara",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "tales"
+    ],
+    "description": "Kisara from Tales of Arise",
+    "color": "340306",
+    "artist": "https://www.deviantart.com/thenameisnoname",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/930239987142783026/padoru_kisara.png"
+  },
+  "padoru_dohalim": {
+    "id": 128,
+    "title": "Padoru Dohalim il Qaras",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐☆☆",
+    "series": [
+      "tales"
+    ],
+    "description": "Dohalim il Qaras from Tales of Arise",
+    "color": "f36551",
+    "artist": "https://www.deviantart.com/thenameisnoname",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/930242105186594826/padoru_dohalim.png"
+  },
+  "padoru_shionne": {
+    "id": 129,
+    "title": "Padoru Shionne",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "tales"
+    ],
+    "description": "Shionne Vymer Imeris Daymore from Tales of Arise",
+    "color": "c78b80",
+    "artist": "https://www.deviantart.com/thenameisnoname",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/930236421258768414/padoru_shionne.png"
+  },
+  "padoru_alphen": {
+    "id": 130,
+    "title": "Padoru Alphen",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐☆",
+    "series": [
+      "tales"
+    ],
+    "description": "Alphen from Tales of Arise",
+    "color": "2c264c",
+    "artist": "https://www.deviantart.com/thenameisnoname",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/930237679344418936/padoru_alphen.png"
+  },
+  "padoru_magilou": {
+    "id": 131,
+    "title": "Padoru Magilou Mayvin",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 5,
+    "raritystar": "⭐⭐⭐⭐⭐",
+    "series": [
+      "tales"
+    ],
+    "description": "Magilou Mayvin from Tales of Berseria",
+    "color": "LUMINOUS_VIVID_PINK",
+    "artist": "https://twitter.com/realbohbinschi",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/930232033786068992/padoru_magilou.png"
+  },
+  "padoru_featherine": {
+    "id": 132,
+    "title": "Padoru Featherine",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐",
+    "series": [
+      "umineko"
+    ],
+    "description": "Featherine Augustus Aurora from Umineko no naku koro ni",
+    "color": "PURPLE",
+    "artist": "https://twitter.com/realbohbinschi",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/930254082759856218/padoru_featherine.png"
+  },
+  "padoru_furfur": {
+    "id": 133,
+    "title": "Padoru Furfur",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐",
+    "series": [
+      "umineko"
+    ],
+    "description": "Furfur from Umineko no naku koro ni",
+    "color": "bae177",
+    "artist": "https://vk.com/art_ari_san",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/932307824841723914/padoru_furfur.png"
+  },
+  "padoru_zepar": {
+    "id": 134,
+    "title": "Padoru Zepar",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐",
+    "series": [
+      "umineko"
+    ],
+    "description": "Zepar from Umineko no naku koro ni",
+    "color": "9c6caa",
+    "artist": "https://vk.com/art_ari_san",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/932307956597407744/padoru_zepar.png"
+  },
+  "padoru_battler": {
+    "id": 135,
+    "title": "Padoru Battler Ushiromiya",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 5,
+    "raritystar": "⭐⭐⭐⭐⭐",
+    "series": [
+      "umineko"
+    ],
+    "description": "Battler Ushiromiya from Umineko no naku koro ni",
+    "color": "WHITE",
+    "artist": "https://vk.com/art_ari_san",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/932307976616828958/padoru_battler.png"
+  },
+  "padoru_neferpitou": {
+    "id": 136,
+    "title": "Padoru Neferpitou",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 2,
+    "raritystar": "⭐⭐",
+    "series": [
+      "hxh"
+    ],
+    "description": "Neferpitou from Hunter X Hunter",
+    "color": "WHITE",
+    "artist": "https://boketto-nero.tumblr.com/",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/932301543053615174/padoru_neferpitou.png"
+  },
+  "padoru_isla": {
+    "id": 137,
+    "title": "Padoru Isla",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐",
+    "series": [
+      "plastic"
+    ],
+    "description": "Isla from Plastic Memories",
+    "color": "WHITE",
+    "artist": "https://twitter.com/tifa_says_hi",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/932301245572603974/padoru_isla.png"
+  },
+  "padoru_tooru": {
+    "id": 138,
+    "title": "Padoru Tooru Honda",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐",
+    "series": [
+      "fruits"
+    ],
+    "description": "Tooru Honda from Fruits Basket",
+    "color": "3a4b98",
+    "artist": "https://twitter.com/tifa_says_hi",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/932301207542853702/fruits-basket-tooru-honda.png"
+  },
+  "padoru_rio_futaba": {
+    "id": 139,
+    "title": "Padoru Rio Futaba",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 3,
+    "raritystar": "⭐⭐⭐",
+    "series": [
+      "bunny"
+    ],
+    "description": "Rio Futaba from Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+    "color": "b4a299",
+    "artist": "https://twitter.com/tifa_says_hi",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/932300610747891762/padoru_rio_futaba.png"
+  },
+  "padoru_mai": {
+    "id": 140,
+    "title": "Padoru Sakurajima Mai",
+    "active": true,
+    "released": true,
+    "banner": false,
+    "rarity": 4,
+    "raritystar": "⭐⭐⭐⭐",
+    "series": [
+      "bunny"
+    ],
+    "description": "Sakurajima Mai from Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+    "color": "BLACK",
+    "artist": "https://twitter.com/tifa_says_hi",
+    "image": "https://cdn.discordapp.com/attachments/901798915425321000/932300664091058256/padoru_mai.png"
   }
 }
+

@@ -10,11 +10,11 @@ const padList = require('../../databaseFunctions/dbPadoru')
 module.exports = {
   commands: ['mypadorupedia','mpp'],
   description: 'Shows your Padoru List on text format. Short ver. %mpp',
-  maxArgs: 1,
   expectedArgs: '<@User>',
   callback: async (message, arguments, text) =>{
     const target = message.mentions.users.first() || message.author
-    const targetId = target.id
+    var targetId = target.id
+    var numPage = 1
 
     const seriesString = fs.readFileSync('./json/series.json')
 
@@ -37,17 +37,36 @@ module.exports = {
       }
       // Filtramos los Padorus por serie
       if(text !== ''){
-        plist = argFilter.padoruInSeriesFilter(plist, seriesBaseList, text)
-        seriesBaseList = argFilter.seriesFilter(seriesBaseList, text)
+
+        if(isNaN(parseInt(arguments[0]))){
+          plist = argFilter.padoruInSeriesFilter(plist, seriesBaseList, text)
+          seriesBaseList = argFilter.seriesFilter(seriesBaseList, text)
+        } else {
+          numPage = parseInt(arguments[0])
+
+          if(numPage.toString().length > 2){
+            numPage = 1
+            targetId = arguments[0]
+          }
+        }
       }
     }
 
     const total = plist.length
 
-    if (total === 0) return
+    if(total === 0) {
+      message.channel.send("No Padorus found")
+      return
+    }
+
+    const pr = await profile.getProfile(targetId)
+    if(pr === undefined){
+      message.channel.send('There is no user with the id **' + targetId + '**')
+      return
+    }
 
     // Obtenemos la lista de Padorus del user
-    const padoruList = await profile.myPadorus(target.id)
+    const padoruList = await profile.myPadorus(targetId)
     
     plist.sort((a,b) => (a.id > b.id) ? 1 : ((b.id > a.id) ? -1 : 0))
     
@@ -55,27 +74,48 @@ module.exports = {
     
     plist = plist.filter(a => padoruList.pp.some(e => e.id === a.id))
 
+    function toFindDuplicates(arry) {
+      const uniqueElements = new Set(arry);
+      const filteredElements = arry.filter(item => {
+        if (uniqueElements.has(item.id)) {
+            uniqueElements.delete(item.id);
+        } else {
+            return item;
+        }
+      });
+
+    return [...new Set(uniqueElements)]
+    }
+
+    const duplicateElements = toFindDuplicates(padoruList.pp);
+
     const count = plist.length
     
-    var numPage = 1
     const page = 15
     const totalPages = Math.ceil(count/page)
 
-    const pr = await profile.getProfile(target.id)
+    // Control de errores del numero de pagina
+    if(numPage > totalPages){
+      numPage = totalPages
+    }
+
+    if(numPage < 1){
+      numPage = 1
+    }
 
     // Creamos el mensaje para Discord
     embed = new Discord.MessageEmbed()
-      .setAuthor(target.username + "'s Padorupedia", message.author.avatarURL)
+      .setAuthor(pr.username + "'s Padorupedia", message.author.avatarURL)
       .setColor('RED')
       .setThumbnail(pr.favpadoru)
-      .setFooter(`Página ${numPage}/${totalPages}  |  Obtenidos ${count}/${total}`)
+      .setFooter(`Page ${numPage}/${totalPages}  |  Obtained ${count}/${total}`)
 
     //Situamos los padorus en el embed y enviamos el mensaje
     var title = ''
     
-    var i = 0
-    while(plist[i] !== undefined && i < page) {
-      title = title + '\n`' + (plist[i].id) + '`**' + plist[i].title + '**' + ' ' + math.rarityConvertAscii(plist[i].rarity)
+    var i = page * (numPage - 1)
+    while(plist[i] !== undefined && i < page * numPage) {
+      title = title + '\n`' + (plist[i].id) + '`**' + plist[i].title + '**' + ' | ' + math.rarityConvertAscii(plist[i].rarity, padoruList.pp[i].rarity)
 
       i++
     }
@@ -109,7 +149,7 @@ module.exports = {
     collector.on('collect', (reaction) => {
 
       var newEmbed = new Discord.MessageEmbed()
-          .setTitle('Padorupedia de ' + target.username, message.author.avatarURL)
+          .setAuthor(pr.username + `'s Padorupedia`, message.author.avatarURL)
           .setColor('RED')
           .setThumbnail(pr.favpadoru)
 
@@ -133,7 +173,7 @@ module.exports = {
       let title = ''
       
       while(plist[start] !== undefined && start < end){
-        title = title + '\n`' + (plist[start].id) + '`**' + plist[start].title + '**' + ' ' + math.rarityConvertAscii(plist[start].rarity)
+        title = title + '\n`' + (plist[start].id) + '`**' + plist[start].title + '**' + ' | ' + math.rarityConvertAscii(plist[start].rarity, padoruList.pp[start].rarity)
         
         start ++
       }
@@ -143,7 +183,7 @@ module.exports = {
     }
 
       newEmbed.addField('\u200B', title)
-      newEmbed.setFooter(`Página ${numPage}/${totalPages}  |  Obtenidos ${count}/${total}`)
+      newEmbed.setFooter(`Page ${numPage}/${totalPages}  |  Obtained ${count}/${total}`)
 
       msgmpp.edit(newEmbed)
       

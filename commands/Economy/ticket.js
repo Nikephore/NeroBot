@@ -16,7 +16,11 @@ module.exports = {
 
       embed.addField('Upgrade Padorus:', `Padoru 1 :star: = 5 🎟️\nPadoru 2 :star: = 7 🎟️\nPadoru 3 :star: = 10 🎟️\nPadoru 4 :star: = 15 🎟️\nPadoru 5 :star: = 25 🎟️`)
 
-      embed.addField('Buy Padorus:', `Padoru 1 :star: = 5 🎟️\nPadoru 2 :star: = 20 🎟️\nPadoru 3 :star: = 35 🎟️\nPadoru 4 :star: = 60 🎟️\nPadoru 5 :star: = 100 🎟️`)
+      embed.addField('Buy Padorus:', `Padoru 1 :star: = 10 🎟️\nPadoru 2 :star: = 25 🎟️\nPadoru 3 :star: = 50 🎟️\nPadoru 4 :star: = 75 🎟️\nPadoru 5 :star: = 150 🎟️`)
+
+      embed.addField('Owner weekly rewards:', `Top 1 = 100 🎟️\nTop 2 = 75 🎟️\nTop 3-5 = 50 🎟️\nTop 6-10 = 40 🎟️\nTop 11-20 = 25 🎟️\n Top 21 and below = 10 🎟️`)
+
+      embed.addField('You can see your position using %topowner', 'The rewards are delivered every Wednesday')
 
       embed.addField(`You currently have **${tickets}** 🎟️`, '\u200B')
 

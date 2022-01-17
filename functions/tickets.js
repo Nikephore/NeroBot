@@ -4,7 +4,7 @@ function giveTicket(message, rarity) {
 
 	message.react('🎟️')
 
-  mongo.addTicket(message.author.id, message.author.username)
+  mongo.addTicket(message.author.id, 1)
 
 	message.channel.send(`**${message.author.username}** obtained a 🎟️. Use %ticket to spend it.`)
   .then(msg => {

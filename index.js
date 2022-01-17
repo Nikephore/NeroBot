@@ -11,6 +11,8 @@ client.commands = new Discord.Collection()
 const loadCommands = require('./commands/command_loader')
 const fil = require('./functions/filter')
 
+console.log("Iniciando...")
+
 const {
   token,
   topggtoken,
@@ -20,7 +22,6 @@ const {
 const webhook = new Topgg.Webhook(auth)
 
 const rolls = require('./functions/rolls')
-
 
 app.post("/dblwebhook", webhook.listener(vote => {
   rolls.addRoll(vote.user, vote.isWeekend)
@@ -55,15 +56,18 @@ require('dotenv').config()
 /**
  * El bot está encendido, nice
  */
+console.log("Antes de Ready")
+
 client.once("ready", () => {
-    client.user.setActivity("el gran incendio de Roma", {type: 'WATCHING'})
-    console.log("Nero esta on fire")
+  client.user.setActivity("el gran incendio de Roma", {type: 'WATCHING'})
+  console.log("Nero esta on fire")
     
+  console.log("Conectando a mongo...")
+  const mongo = require('./mongo')
+  mongo()
 
-    const mongo = require('./mongo')
-    mongo()
-
-    loadCommands(client)
+  console.log("Cargando comandos...")
+  loadCommands(client)
 })
 
 client.on('guildCreate', guild => {
@@ -79,4 +83,6 @@ Guild: ${guild.name}-${guild.id}
   
 })
 
+
+console.log("Login")
 client.login(token)
